@@ -20,7 +20,7 @@ public class Paper {
     @Column(nullable = false)
     private String subject;
     
-    @Column(nullable = false)
+    @Column(name = "year_value", nullable = false)
     private Integer year;
     
     @Column(nullable = false)

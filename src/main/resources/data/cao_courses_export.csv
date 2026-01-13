@@ -1,0 +1,1397 @@
+CAO_Code,Course_Name,Institution,Location,NFQ_Level,Duration,Categories,Course_URL,Description,Points_History
+AC120,International Business,American College,,8,,Business,,,2024(1): 269; 2024(2): 269
+AC137,Liberal Arts,American College,,8,,Arts,,,2024(1): 254; 2024(2): 254
+AD101,First Year Art and Design  (Common Entry -  portfolio),National College of Art and Design,,8,,Arts,,,2024(1): 503
+AD102,Graphic Design and Moing Image Design (portfolio),National College of Art and Design,,8,,Arts,,,2024(1): 694
+AD103,Textile and Surface Design and Jewellery and Objects (portfolio),National College of Art and Design,,8,,Arts,,,2024(1): 568
+AD104,Fine Art and Applied Art (portfolio),National College of Art and Design,,8,,Other,,,2024(1): 514
+AD202,Education and Art  or Design (Second Leel Teaching - portfolio),National College of Art and Design,,8,,"Arts, Education",,,2024(1): 605
+AD211,Fashion Design (portfolio),National College of Art and Design,,8,,Arts,,,2024(1): 695
+AD212,Product Design (portfolio),National College of Art and Design,,8,,Arts,,,2024(1): 426
+AD215,Visual Culture,National College of Art and Design,,8,,Other,,,2024(1): 319
+AD217,Illustration (portfolio),National College of Art and Design,,8,,Other,,,2024(1): 727
+AD222,Interaction Design (portfolio),National College of Art and Design,,8,,Arts,,,2024(1): 893
+AU170,Health Science with Physiotherapy Studies,Atlantic Technological University,Letterkenny,7,,"STEM, Health",,,2024(1): 467
+AU171,Health Science with Occupational Therapy Studies,Atlantic Technological University,Letterkenny,7,,"STEM, Health",,,2024(1): 437
+AU172,Health Science with Dietetics Studies,Atlantic Technological University,Letterkenny,7,,"STEM, Health",,,2024(1): 320
+AU173,Dental Nursing,Atlantic Technological University,Letterkenny,7,,Health,,,2024(1): 253
+AU174,Pharmacy Technician,Atlantic Technological University,Letterkenny,7,,Health,,,2024(1): 201; 2024(2): 201
+AU190,Early Childhood Care  Health and Education,Atlantic Technological University,Letterkenny,7,,"Health, Education",,,2024(1): 170
+AU200,Business - Common Entry,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 233
+AU210,Law with Criminal Justice,Atlantic Technological University,Letterkenny,7,,Law,,,2024(1): 204
+AU220,Culinary Arts,Atlantic Technological University,Letterkenny,7,,Arts,,,2024(1): 160; 2024(2): 160
+AU221,Tourism and Hospitality Operations,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 222
+AU222,Sport and Exercise,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 243; 2024(2): 236
+AU230,Film and Media Production,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 255
+AU231,Animation [Letterkenny],Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 228
+AU232,Fashion with Promotion [Letterkenny],Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 235
+AU233,Graphic Design and Illustration [Letterkenny],Atlantic Technological University,Letterkenny,7,,Arts,,,2024(1): 225
+AU240,Quantity Sureying,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 226
+AU241,Ciil Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 280
+AU242,Construction - Common Entry,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 235
+AU243,Building Engineering - Common Entry,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 264
+AU251,Mechanical Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 257
+AU252,Electric Vehicle Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 224
+AU253,Engineering - Common Entry,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 280
+AU260,Computer Games Deelopment,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 268
+AU261,Computing,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 206; 2024(2): 206
+AU262,Cybersecurity and Digital Forensics,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 261
+AU270,Science - Common Entry,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 225; 2024(2): 225
+AU271,Veterinary Nursing,Atlantic Technological University,Letterkenny,7,,Health,,,2024(1): 380
+AU272,Agriculture,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 251
+AU290,Inclusie Practice for Special Needs Assistance,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 252
+AU300,Business - Accounting,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 332
+AU301,Business,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 287
+AU302,Marketing with Online Technologies,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 307
+AU310,LLB (Law),Atlantic Technological University,Letterkenny,8,,Law,,,2024(1): 327
+AU311,Corporate Law,Atlantic Technological University,Letterkenny,8,,Law,,,2024(1): 319
+AU312,Communications with English,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 307
+AU320,Sports and Exercise - Common Entry,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 317
+AU321,Athletic Therapy and Exercise Rehabilitation,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 357
+AU322,Hospitality Management,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 291
+AU330,Design - Common Entry [Letterkenny],Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 312
+AU340,Fire Safety Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 310
+AU341,Quantity Sureying,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 341
+AU342,Construction Management,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 300
+AU343,Architectural Technology,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 326
+AU350,Mechanical Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 360
+AU351,Electronic Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 342
+AU360,Applied Computing,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 308
+AU361,Computer Science,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 327
+AU362,Cyberpsychology,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 320
+AU363,Computing in Data Science and Artificial Intelligence,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 345
+AU370,Food Science and Nutrition,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 308
+AU371,Agriculture - Common Entry,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 316
+AU372,Bioanalytical Science,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 369
+AU373,Pharmaceutical and Medicinal Science,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 346
+AU380,General Nursing,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 343
+AU381,Mental Health Nursing,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 272
+AU382,Intellectual Disability Nursing,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 271
+AU390,Early Childhood Care  Health and Education,Atlantic Technological University,Letterkenny,8,,"Health, Education",,,2024(1): 300
+AU391,Health and Social Care,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 308
+AU401,Business,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 162; 2024(2): 162
+AU425,Heritage,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 250
+AU426,Business in Tourism,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 214; 2024(2): 214
+AU429,Culinary Arts Professional Chef Programme,Atlantic Technological University,Letterkenny,7,,Arts,,,2024(1): 216; 2024(2): 216
+AU491,Early Childhood Education and Care,Atlantic Technological University,Letterkenny,7,,Education,,,2024(1): 187; 2024(2): 187
+AU501,Business,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 224
+AU502,Business Information Systems,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 253
+AU503,Marketing and Sales,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 251
+AU505,Business with Entrepreneurship,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 254
+AU506,Rural Enterprise and Agri-Business [Mountbellew],Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 506
+AU518,Art (portfolio) [Galway],Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 513
+AU519,Design - Common Entry,Atlantic Technological University,Letterkenny,7,,Arts,,,2024(1): 251
+AU531,Gastronomy Science and Food Innoation,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 232
+AU532,Tourism  Hospitality and Eent Management - Common Entry,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 224
+AU535,Construction Management,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 262
+AU536,Quantity Sureying and Construction Economics,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 251
+AU537,Architectural Technology,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 255
+AU538,Ciil Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 302
+AU542,Software and Electronic Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 250
+AU545,Mechanical Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 303
+AU546,Energy Engineering [Galway],Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 546
+AU547,Biomedical Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 300
+AU548,Agricultural Engineering [Galway],Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 548
+AU549,Engineering - Common Entry,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 317
+AU550,Manufacturing Engineering Design [Galway],Atlantic Technological University,Letterkenny,7,,"STEM, Arts",,,2024(1): 550
+AU555,Applied Freshwater and Marine Biology,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 300
+AU556,Science - undenominated,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 280
+AU557,Agriculture and Enironmental Management,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 269
+AU568,Chemical and Pharmaceutical Science,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 306
+AU569,Applied Biology and Biopharmaceutical Science,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 282
+AU575,Physics and Instrumentation [Galway],Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 575
+AU576,Computing in Software Deelopment,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 263
+AU577,Computing and Digital Media,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 254
+AU583,Furniture Design  Making and Technology - Common Entry,Atlantic Technological University,Letterkenny,7,,"STEM, Arts",,,2024(1): 320
+AU590,Outdoor Education,Atlantic Technological University,Letterkenny,7,,Education,,,2024(1): 244; 2024(2): 183
+AU591,History and Geography,Atlantic Technological University,Letterkenny,7,,Arts,,,2024(1): 211
+AU593,Applied Social Care,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 251
+AU600,Accounting,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 310
+AU601,Business,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 280
+AU602,Business Information Systems,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 307
+AU603,Marketing and Sales,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 308
+AU604,Finance and Economics,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 310
+AU605,Business with Entrepreneurship,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 303
+AU606,Rural Enterprise and Agri Business,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 284
+AU607,Digital Accounting,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 348
+AU615,Film and Documentary,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 321
+AU616,Creatie Media and Storytelling,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 303
+AU617,Animation and Game Design,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 401
+AU618,Art (portfolio) [Galway],Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 838
+AU620,Education (Art and Design and Communication Graphics),Atlantic Technological University,Letterkenny,8,,"Arts, Education",,,2024(1): 410
+AU621,Textile and Fashion Design,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 326
+AU622,Interior Design,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 318
+AU623,Graphic Design and Illustration,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 318
+AU624,Product Design,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 310
+AU625,Heritage,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 337
+AU628,International Tourism Management,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 281
+AU629,Eent Management with Public Relations,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 280
+AU630,International Hotel and Hospitality Management,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 288
+AU631,Gastronomy Science and Food Innoation,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 281
+AU635,Construction Management,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 332
+AU636,Quantity Sureying and Construction Economics,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 351
+AU637,Architectural Technology,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 327
+AU638,Ciil Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 410
+AU642,Software and Electronic Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 309
+AU645,Mechanical Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 430
+AU646,Energy Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 328
+AU647,Biomedical Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 392
+AU648,Agricultural Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 334
+AU649,Engineering - Common Entry,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 462
+AU650,Manufacturing Engineering Design,Atlantic Technological University,Letterkenny,8,,"STEM, Arts",,,2024(1): 319
+AU655,Applied Freshwater and Marine Biology,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 400
+AU656,Science - undenominated,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 350
+AU657,Agriculture and Enironmental Management,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 311
+AU662,Sport and Exercise Science,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 356
+AU663,Public Health Nutrition,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 357
+AU664,Sports Coaching,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 318
+AU668,Chemical and Pharmaceutical Science,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 361
+AU669,Forensic Science and Analysis,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 380
+AU670,Applied Biology and Biopharmaceutical Science,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 378
+AU671,Medical Science,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 490
+AU675,Physics and Instrumentation,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 317
+AU676,Computing in Software Deelopment,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 341
+AU677,Computing and Digital Media,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 300
+AU680,Education (Design  Graphics and Construction),Atlantic Technological University,Letterkenny,8,,"Arts, Education",,,2024(1): 400
+AU681,Furniture Design and Manufacture,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 400
+AU682,Furniture Making and Architectural Woodworking,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 403
+AU683,Furniture Design Making and Technology - Common Entry,Atlantic Technological University,Letterkenny,8,,"STEM, Arts",,,2024(1): 409
+AU690,General Nursing,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 342; 2024(2): 341
+AU691,Psychiatric Nursing,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 273
+AU693,Geography and Outdoor Education,Atlantic Technological University,Letterkenny,8,,Education,,,2024(1): 352
+AU694,History and Geography,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 280
+AU695,Early Childhood Education and Care,Atlantic Technological University,Letterkenny,8,,Education,,,2024(1): 308
+AU696,Applied Social Care,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 309
+AU698,Psychology,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 358; 2024(2): 349
+AU699,Outdoor and Enironmental Education - Common Entry,Atlantic Technological University,Letterkenny,8,,Education,,,2024(1): 330
+AU715,Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 260
+AU717,Applied Construction Technology,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 189; 2024(2): 189
+AU725,Computing,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 174
+AU730,Science,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 168; 2024(2): 168
+AU800,Business,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 224
+AU802,Marketing,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 253
+AU803,International Tourism and Eent Management,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 225
+AU804,Applied Sport with Business,Atlantic Technological University,Letterkenny,7,,Business,,,2024(1): 242
+AU820,Interior Architecture and Design,Atlantic Technological University,Letterkenny,7,,Arts,,,2024(1): 270
+AU821,Creatie Design,Atlantic Technological University,Letterkenny,7,,Arts,,,2024(1): 231
+AU822,Fine Art (portfolio) [Sligo],Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 371
+AU823,Performing Arts (Acting),Atlantic Technological University,Letterkenny,7,,Arts,,,2024(1): 229
+AU824,Performing Arts (Theatre Design),Atlantic Technological University,Letterkenny,7,,Arts,,,2024(1): 223
+AU830,Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 270
+AU831,Mechatronic Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 252
+AU833,Mechanical Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 260; 2024(2): 245
+AU835,Ciil Engineering,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 289
+AU836,Quantity Sureying,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 224
+AU837,Adanced Wood and Sustainable Building Technology,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 225
+AU845,Computing [Sligo],Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 845
+AU846,Computer Networks and Cyber Security,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 253
+AU847,Software Deelopment,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 264
+AU848,Games Deelopment,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 257
+AU855,Enironmental Science with Ecology,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 280
+AU856,Occupational Safety and Health,Atlantic Technological University,Letterkenny,7,,Health,,,2024(1): 246
+AU857,Pharmaceutical Science with Drug Deelopment,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 241
+AU858,Biomedical Science,Atlantic Technological University,Letterkenny,7,,STEM,,,2024(1): 262
+AU859,Forensic Inestigation and Analysis,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 260
+AU861,Health Science and Physiology,Atlantic Technological University,Letterkenny,7,,"STEM, Health",,,2024(1): 273
+AU862,Human Nutrition,Atlantic Technological University,Letterkenny,7,,Other,,,2024(1): 281
+AU900,Business,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 280
+AU901,Business and ICT,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 317
+AU902,Accounting,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 316
+AU903,Sport with Business,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 310
+AU904,Marketing,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 305
+AU905,Tourism and Eent Management,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 284
+AU906,Business and Irish,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 339
+AU915,Law and Business,Atlantic Technological University,Letterkenny,8,,"Business, Law",,,2024(1): 300
+AU916,Sociology and Politics,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 328
+AU917,English and Psychology,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 357
+AU918,Social Care Practice,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 300
+AU919,Early Education and Care,Atlantic Technological University,Letterkenny,8,,Education,,,2024(1): 290
+AU925,Architecture,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 440; 2024(2): 432
+AU926,Interior Architecture and Design,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 401
+AU927,Creatie Design,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 312
+AU928,Fine Art (portfolio) [Sligo],Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 371
+AU929,Writing and Literature,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 306
+AU930,Writing and Literature (online),Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 305
+AU931,Performing Arts,Atlantic Technological University,Letterkenny,8,,Arts,,,2024(1): 309; 2024(2): 306
+AU940,Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 413
+AU943,Mechanical Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 413
+AU944,Ciil Engineering,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 418
+AU945,Quantity Sureying,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 346
+AU946,Construction Project Management and Applied Technology,Atlantic Technological University,Letterkenny,8,,"STEM, Business",,,2024(1): 301
+AU955,Computing,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 307
+AU956,Computer Networks and Cyber Security,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 308
+AU957,Software Deelopment,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 321
+AU965,Science,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 402
+AU966,Enironmental Science with Ecology,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 339
+AU967,Occupational Safety and Health,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 310
+AU968,Pharmaceutical Science with Drug Deelopment,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 300
+AU969,Biomedical Science,Atlantic Technological University,Letterkenny,8,,STEM,,,2024(1): 351
+AU970,Forensic Inestigation and Analysis,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 317
+AU971,Health Science and Physical Actiity,Atlantic Technological University,Letterkenny,8,,"STEM, Health",,,2024(1): 321
+AU972,Human Nutrition,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 341
+AU973,Clinical Measurement Physiology,Atlantic Technological University,Letterkenny,8,,Other,,,2024(1): 465
+AU985,Education  Home Economics and Biology - with concurrent Teacher Educatio,Atlantic Technological University,Letterkenny,8,,"STEM, Business, Education",,,2024(1): 510
+AU986,Education  Home Economics and Religious Ed - with concurrent Teacher Edu,Atlantic Technological University,Letterkenny,8,,"Business, Education",,,2024(1): 424
+AU987,Education  Home Economics and Irish - with concurrent Teacher Education,Atlantic Technological University,Letterkenny,8,,"Business, Education",,,2024(1): 429
+AU988,Education  Home Economics - with concurrent Teacher Education [Sligo  St,Atlantic Technological University,Letterkenny,8,,"Business, Education",,,2024(1): 475
+AU989,Nutrition  Food and Business Management,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 300
+AU990,Home Economics,Atlantic Technological University,Letterkenny,8,,Business,,,2024(1): 350
+AU991,General Nursing,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 346
+AU992,Intellectual Disability Nursing,Atlantic Technological University,Letterkenny,8,,Health,,,2024(1): 282
+BY001,Business,IBAT College Dublin,Dublin,8,,Business,,,2024(1): 290
+BY002,Business,IBAT College Dublin,Dublin,7,,Business,,,2024(1): 126
+CK101,Arts -,University College Cork (NUI),,8,,Arts,,,2024(1): 300
+CK102,Social Science,University College Cork (NUI),,8,,STEM,,,2024(1): 369; 2024(2): 350
+CK104,Arts - Music -,University College Cork (NUI),,8,,Arts,,,2024(1): 317
+CK105,Film and Screen Media -,University College Cork (NUI),,8,,Other,,,2024(1): 378; 2024(2): 357
+CK108,Arts International -,University College Cork (NUI),,8,,Arts,,,2024(1): 400
+CK109,English -,University College Cork (NUI),,8,,Other,,,2024(1): 368; 2024(2): 300
+CK110,World Languages,University College Cork (NUI),,8,,Arts,,,2024(1): 404; 2024(2): 310
+CK111,Early Years and Childhood Studies,University College Cork (NUI),,8,,Other,,,2024(1): 342; 2024(2): 300
+CK112,Theatre and Performatie Practices -,University College Cork (NUI),,8,,Other,,,2024(1): 365
+CK113,Criminology -,University College Cork (NUI),,8,,Other,,,2024(1): 405; 2024(2): 390
+CK114,Social Science (Youth and Community Work),University College Cork (NUI),,8,,STEM,,,2024(1): 409
+CK115,Social Work - Mature Applicants only,University College Cork (NUI),,8,,Other,,,2024(1): 115
+CK118,Digital Humanities and Information Technology -,University College Cork (NUI),,8,,STEM,,,2024(1): 356; 2024(2): 313
+CK120,Applied Psychology,University College Cork (NUI),,8,,Other,,,2024(1): 532; 2024(2): 523
+CK121,Psychology and Computing -,University College Cork (NUI),,8,,Other,,,2024(1): 498; 2024(2): 476
+CK122,Goernment and Political Science,University College Cork (NUI),,8,,STEM,,,2024(1): 323; 2024(2): 310
+CK123,Anthropology -,University College Cork (NUI),,8,,Other,,,2024(1): 307
+CK124,Education - Gaeilge,University College Cork (NUI),,8,,Education,,,2024(1): 408; 2024(2): 328
+CK125,Physical Education  Sports Studies and Arts,University College Cork (NUI),,8,,"Arts, Education",,,2024(1): 521; 2024(2): 519
+CK201,Commerce,University College Cork (NUI),,8,,Business,,,2024(1): 509; 2024(2): 501
+CK202,Accounting,University College Cork (NUI),,8,,Business,,,2024(1): 498
+CK203,Business Information Systems,University College Cork (NUI),,8,,Business,,,2024(1): 443
+CK204,Finance,University College Cork (NUI),,8,,Business,,,2024(1): 578; 2024(2): 577
+CK212,Applied Economics,University College Cork (NUI),,8,,Business,,,2024(1): 466; 2024(2): 455
+CK213,Food Marketing and Entrepreneurship,University College Cork (NUI),,8,,Business,,,2024(1): 463
+CK214,International Deelopment,University College Cork (NUI),,8,,Other,,,2024(1): 343; 2024(2): 323
+CK215,International Business with Languages,University College Cork (NUI),,8,,"Business, Arts",,,2024(1): 456
+CK301,Law (Pathways) -,University College Cork (NUI),,8,,Law,,,2024(1): 530; 2024(2): 529
+CK302,Law and French,University College Cork (NUI),,8,,Law,,,2024(1): 510
+CK304,Law and Irish,University College Cork (NUI),,8,,Law,,,2024(1): 522; 2024(2): 509
+CK307,Law and Business,University College Cork (NUI),,8,,"Business, Law",,,2024(1): 578
+CK401,Computer Science,University College Cork (NUI),,8,,STEM,,,2024(1): 500
+CK402,Biological and Chemical Sciences,University College Cork (NUI),,8,,STEM,,,2024(1): 533
+CK404,Biological  Earth and Enironmental Sciences,University College Cork (NUI),,8,,STEM,,,2024(1): 489; 2024(2): 485
+CK405,Genetics,University College Cork (NUI),,8,,Other,,,2024(1): 521; 2024(2): 516
+CK406,Chemical Sciences,University College Cork (NUI),,8,,STEM,,,2024(1): 521; 2024(2): 520
+CK407,Mathematical Sciences,University College Cork (NUI),,8,,STEM,,,2024(1): 566; 2024(2): 555
+CK408,Physics and Astrophysics,University College Cork (NUI),,8,,STEM,,,2024(1): 590; 2024(2): 578
+CK411,Data Science and Analytics,University College Cork (NUI),,8,,STEM,,,2024(1): 427
+CK412,Agricultural Science,University College Cork (NUI),,8,,STEM,,,2024(1): 446; 2024(2): 422
+CK413,Science Education,University College Cork (NUI),,8,,"STEM, Education",,,2024(1): 517; 2024(2): 508
+CK504,Nutritional Sciences,University College Cork (NUI),,8,,STEM,,,2024(1): 531; 2024(2): 523
+CK505,Food Science,University College Cork (NUI),,8,,STEM,,,2024(1): 440; 2024(2): 433
+CK600,Engineering,University College Cork (NUI),,8,,STEM,,,2024(1): 509; 2024(2): 499
+CK606,Architecture - Offered jointly by UCC and MTU,University College Cork (NUI),,8,,Other,,,2024(1): 522; 2024(2): 520
+CK701,Medicine (Undergraduate Entry - HPAT required),University College Cork (NUI),,8,,Health,,,2024(1): 730
+CK702,Dentistry,University College Cork (NUI),,8,,Other,,,2024(1): 618; 2024(2): 613
+CK703,Pharmacy,University College Cork (NUI),,8,,Health,,,2024(1): 613
+CK704,Occupational Therapy,University College Cork (NUI),,8,,Health,,,2024(1): 556
+CK705,Speech and Language Therapy,University College Cork (NUI),,8,,Health,,,2024(1): 564; 2024(2): 554
+CK706,Public Health Sciences,University College Cork (NUI),,8,,"STEM, Health",,,2024(1): 398; 2024(2): 339
+CK707,Medical and Health Sciences,University College Cork (NUI),,8,,"STEM, Health",,,2024(1): 532; 2024(2): 523
+CK708,Paramedicine,University College Cork (NUI),,8,,Health,,,2024(1): 487
+CK710,General Nursing,University College Cork (NUI),,8,,Health,,,2024(1): 440
+CK712,Children`s and General Nursing (Integrated),University College Cork (NUI),,8,,Health,,,2024(1): 528; 2024(2): 511
+CK720,Mental Health Nursing,University College Cork (NUI),,8,,Health,,,2024(1): 409; 2024(2): 398
+CK730,Intellectual Disability Nursing,University College Cork (NUI),,8,,Health,,,2024(1): 369; 2024(2): 361
+CK740,Midwifery,University College Cork (NUI),,8,,Other,,,2024(1): 444
+CK791,Medicine (Graduate Entry - GAMSAT required),University College Cork (NUI),,8,,Health,,,2024(1): 55
+CM001,Education - Primary Teaching,Marino Institute of Education,,8,,Education,,,2024(1): 473
+CM002,Education - Primary Teaching - Gaeltacht Applicants,Marino Institute of Education,,8,,Education,,,2024(1): 455
+CM003,Oideachas - Bunmhúinteoireacht - Trí Mheán na Gaeilge (TEG),Marino Institute of Education,,8,,Other,,,2024(1): 507
+CM004,Oideachas - Bunmhúinteoireacht - Trí Mheán na Gaeilge (daltaí Gaeltachta,Marino Institute of Education,,8,,Other,,,2024(1): 471
+CM010,Education Studies,Marino Institute of Education,,8,,Education,,,2024(1): 317; 2024(2): 317
+CM020,Early Childhood Education,Marino Institute of Education,,8,,Education,,,2024(1): 336
+CT125,Computing and IT,CCT College Dublin,,8,,Other,,,2024(1): 225
+CT325,Business,CCT College Dublin,,8,,Business,,,2024(1): 318
+DB500,Computing,Dublin Business School,,8,,Other,,,2024(1): 411; 2024(2): 329
+DB502,Computing (Data Analytics and Big Data),Dublin Business School,,8,,STEM,,,2024(1): 298; 2024(2): 288
+DB503,Computing (Software Deelopment),Dublin Business School,,8,,STEM,,,2024(1): 341; 2024(2): 280
+DB510,Audio Production and Music Project Management,Dublin Business School,,8,,"Business, Arts",,,2024(1): 308; 2024(2): 261
+DB512,Business Studies,Dublin Business School,,8,,Business,,,2024(1): 244; 2024(2): 244
+DB514,Business Studies (Law),Dublin Business School,,8,,"Business, Law",,,2024(1): 220; 2024(2): 220
+DB515,Business Studies (Human Resource Management),Dublin Business School,,8,,Business,,,2024(1): 235; 2024(2): 212
+DB517,Marketing (Eent Management),Dublin Business School,,8,,Business,,,2024(1): 271; 2024(2): 271
+DB518,Marketing (Digital Media),Dublin Business School,,8,,Business,,,2024(1): 281; 2024(2): 220
+DB520,Global Business,Dublin Business School,,8,,Business,,,2024(1): 297; 2024(2): 260
+DB521,Accounting and Finance,Dublin Business School,,8,,Business,,,2024(1): 269; 2024(2): 194
+DB524,Business (Information Systems),Dublin Business School,,8,,Business,,,2024(1): 298
+DB526,Business (Cloud Computing),Dublin Business School,,8,,Business,,,2024(1): 292; 2024(2): 279
+DB531,Marketing,Dublin Business School,,8,,Business,,,2024(1): 244; 2024(2): 244
+DB534,Sound Engineering and Music Production,Dublin Business School,,7,,"STEM, Arts",,,2024(1): 109; 2024(2): 109
+DB562,Psychology,Dublin Business School,,8,,Other,,,2024(1): 251; 2024(2): 225
+DB563,Arts,Dublin Business School,,7,,Arts,,,2024(1): 224; 2024(2): 146
+DB566,Social Science,Dublin Business School,,8,,STEM,,,2024(1): 252; 2024(2): 114
+DB567,Film and Creatie Media,Dublin Business School,,8,,Other,,,2024(1): 244; 2024(2): 244
+DB568,Law,Dublin Business School,,8,,Law,,,2024(1): 261; 2024(2): 261
+DB569,Business (Psychology),Dublin Business School,,8,,Business,,,2024(1): 284
+DB571,Business Studies,Dublin Business School,,7,,Business,,,2024(1): 144; 2024(2): 144
+DB572,Business in Accounting,Dublin Business School,,7,,Business,,,2024(1): 172; 2024(2): 172
+DB573,Business in Marketing                                                      AQA      AQA,Dublin Business School,,7,,Business,,,2024(1): 573
+DB574,Business in Information Technology,Dublin Business School,,7,,"STEM, Business",,,2024(1): 264; 2024(2): 264
+DB576,Film and Creatie Media,Dublin Business School,,7,,Other,,,2024(1): 108; 2024(2): 108
+DC001,Education - Early Childhood Education,Dublin City University,,8,,Education,,,2024(1): 420
+DC002,Education - Primary Teaching,Dublin City University,,8,,Education,,,2024(1): 480; 2024(2): 478
+DC003,Education - Primary Teaching - Gaeltacht Applicants,Dublin City University,,8,,Education,,,2024(1): 410
+DC004,Education - Primary Teaching - CIC (Church of Ireland Centre formerly CI,Dublin City University,,8,,Education,,,2024(1): 402
+DC005,Education - Primary Teaching - Irish Sign Language Pathway,Dublin City University,,8,,Education,,,2024(1): 348
+DC009,Arts: Joint Honours (Humanities),Dublin City University,,8,,Arts,,,2024(1): 368
+DC010,Post Primary Teacher Education - Religious Education and English,Dublin City University,,8,,Education,,,2024(1): 420
+DC011,Post Primary Teacher Education - Religious Education and History,Dublin City University,,8,,"Arts, Education",,,2024(1): 418
+DC012,Post Primary Teacher Education - Religious Education and Music,Dublin City University,,8,,"Arts, Education",,,2024(1): 422
+DC013,Post Primary Teacher Education - Gaeilge and French  German or Spanish,Dublin City University,,8,,Education,,,2024(1): 419
+DC014,Jazz and Contemporary Music Performance (audition),Dublin City University,,8,,Arts,,,2024(1): 328
+DC015,Post Primary Teacher Education -  Technology  Engineering and Graphics,Dublin City University,,8,,"STEM, Education",,,2024(1): 400
+DC110,Business Studies International,Dublin City University,,8,,Business,,,2024(1): 488
+DC111,Business Studies,Dublin City University,,8,,Business,,,2024(1): 508
+DC112,Global Business (France),Dublin City University,,8,,Business,,,2024(1): 521
+DC113,Global Business (Germany),Dublin City University,,8,,Business,,,2024(1): 477
+DC114,Global Business (Spain),Dublin City University,,8,,Business,,,2024(1): 554
+DC115,Accounting and Finance,Dublin City University,,8,,Business,,,2024(1): 523
+DC116,Global Business (USA),Dublin City University,,8,,Business,,,2024(1): 613; 2024(2): 601
+DC117,Aiation Management (degree specialism options),Dublin City University,,8,,Business,,,2024(1): 498; 2024(2): 488
+DC118,Gnó agus Gaeilge / Business and Irish,Dublin City University,,8,,Business,,,2024(1): 377
+DC119,Global Business (Canada),Dublin City University,,8,,Business,,,2024(1): 566
+DC120,Computing for Business,Dublin City University,,8,,Business,,,2024(1): 414
+DC121,Computer Science,Dublin City University,,8,,STEM,,,2024(1): 498
+DC123,Data Science,Dublin City University,,8,,STEM,,,2024(1): 499
+DC126,Actuarial Mathematics,Dublin City University,,8,,STEM,,,2024(1): 578
+DC127,Common Entry into Actuarial and Financial Mathematics,Dublin City University,,8,,STEM,,,2024(1): 545
+DC131,Communication Studies,Dublin City University,,8,,Other,,,2024(1): 357
+DC132,Journalism,Dublin City University,,8,,Other,,,2024(1): 389
+DC133,Multimedia,Dublin City University,,8,,Other,,,2024(1): 387
+DC155,Applied Language and Translation Studies,Dublin City University,,8,,Other,,,2024(1): 393
+DC161,Analytical Science,Dublin City University,,8,,STEM,,,2024(1): 431
+DC162,Chemical and Pharmaceutical Sciences,Dublin City University,,8,,STEM,,,2024(1): 485
+DC163,Chemical Sciences General Entry,Dublin City University,,8,,STEM,,,2024(1): 404
+DC166,Enironmental Science and Technology,Dublin City University,,8,,STEM,,,2024(1): 434
+DC168,Genetics and Cell Biology,Dublin City University,,8,,STEM,,,2024(1): 532
+DC175,Physics General Entry,Dublin City University,,8,,STEM,,,2024(1): 402
+DC180,Biological Sciences General Entry,Dublin City University,,8,,STEM,,,2024(1): 487
+DC181,Biotechnology,Dublin City University,,8,,STEM,,,2024(1): 520
+DC190,Electronic and Computer Engineering,Dublin City University,,8,,STEM,,,2024(1): 520
+DC193,Mechatronic Engineering,Dublin City University,,8,,STEM,,,2024(1): 520
+DC194,Mechanical and Sustainability Engineering,Dublin City University,,8,,STEM,,,2024(1): 510
+DC195,Mechanical and Manufacturing Engineering,Dublin City University,,8,,STEM,,,2024(1): 522
+DC197,Biomedical Engineering,Dublin City University,,8,,STEM,,,2024(1): 533
+DC200,Common Entry into Engineering (Undenominated Entry),Dublin City University,,8,,STEM,,,2024(1): 521
+DC202,Sport Science and Health,Dublin City University,,8,,"STEM, Health",,,2024(1): 511
+DC203,Science and Mathematics Education,Dublin City University,,8,,"STEM, Education",,,2024(1): 434
+DC204,Athletic Therapy and Training,Dublin City University,,8,,Health,,,2024(1): 565
+DC205,Physical Education with Biology,Dublin City University,,8,,"STEM, Education",,,2024(1): 542
+DC206,Physical Education with Mathematics,Dublin City University,,8,,"STEM, Education",,,2024(1): 508
+DC207,Psychology and Mathematics,Dublin City University,,8,,STEM,,,2024(1): 487
+DC208,Psychology,Dublin City University,,8,,Other,,,2024(1): 555
+DC209,Health and Society,Dublin City University,,8,,Health,,,2024(1): 420
+DC210,Psychology and Disruptie Technologies,Dublin City University,,8,,Other,,,2024(1): 496
+DC215,General Nursing,Dublin City University,,8,,Health,,,2024(1): 411
+DC216,Mental Health Nursing,Dublin City University,,8,,Health,,,2024(1): 340
+DC217,Intellectual Disability Nursing,Dublin City University,,8,,Health,,,2024(1): 310
+DC218,Children`s and General Nursing (Integrated),Dublin City University,,8,,Health,,,2024(1): 487
+DC230,Economics  Politics and Law,Dublin City University,,8,,"Business, Law",,,2024(1): 451
+DC231,International Relations,Dublin City University,,8,,Other,,,2024(1): 371
+DC232,Law and Society (BCL),Dublin City University,,8,,Law,,,2024(1): 489
+DC235,Education and Training,Dublin City University,,8,,Education,,,2024(1): 337
+DC238,Social Sciences and Cultural Innoation,Dublin City University,,8,,STEM,,,2024(1): 337
+DC240,Marketing  Innoation and Technology,Dublin City University,,8,,"STEM, Business",,,2024(1): 477
+DC241,Digital Business and Innoation,Dublin City University,,8,,Business,,,2024(1): 464
+DC291,Arts: Joint Honours (Media Studies),Dublin City University,,8,,Arts,,,2024(1): 368
+DC292,Arts: Joint Honours (Law),Dublin City University,,8,,"Arts, Law",,,2024(1): 378
+DC293,Arts: Joint Honours (International Languages),Dublin City University,,8,,Arts,,,2024(1): 410
+DC294,Climate and Enironmental Sustainability,Dublin City University,,8,,Other,,,2024(1): 454
+DC295,Arts: Joint Honours (Politics),Dublin City University,,8,,Arts,,,2024(1): 358
+DK710,Business and Management                                                    AQA      AQA,Dundalk Institute of Technology,,7,,Business,,,2024(1): 710
+DK711,Business and Technology,Dundalk Institute of Technology,,7,,"STEM, Business",,,2024(1): 200; 2024(2): 200
+DK712,Digital Marketing and Public Relations,Dundalk Institute of Technology,,7,,Business,,,2024(1): 156; 2024(2): 156
+DK721,Computing - Common entry,Dundalk Institute of Technology,,7,,Other,,,2024(1): 215; 2024(2): 183
+DK723,Computing Systems and Operations,Dundalk Institute of Technology,,7,,Other,,,2024(1): 190
+DK730,Building Sureying,Dundalk Institute of Technology,,7,,Other,,,2024(1): 210
+DK731,Architectural Technology,Dundalk Institute of Technology,,7,,STEM,,,2024(1): 198; 2024(2): 198
+DK732,Construction Management,Dundalk Institute of Technology,,7,,Business,,,2024(1): 215; 2024(2): 215
+DK734,Quantity Sureying,Dundalk Institute of Technology,,7,,Other,,,2024(1): 165; 2024(2): 165
+DK740,Engineering - Electrical and Electronic Systems,Dundalk Institute of Technology,,7,,STEM,,,2024(1): 182; 2024(2): 182
+DK742,Engineering - Mechanical Engineering,Dundalk Institute of Technology,,7,,STEM,,,2024(1): 183; 2024(2): 183
+DK744,Engineering - Ciil Engineering,Dundalk Institute of Technology,,7,,STEM,,,2024(1): 224; 2024(2): 224
+DK750,Hospitality Management                                                     AQA,Dundalk Institute of Technology,,7,,Business,,,2024(1): 750
+DK752,Eent Management,Dundalk Institute of Technology,,7,,Business,,,2024(1): 157; 2024(2): 157
+DK753,Culinary Arts,Dundalk Institute of Technology,,7,,Arts,,,2024(1): 194; 2024(2): 194
+DK763,Sport  Exercise and Enterprise                                             AQA      AQA,Dundalk Institute of Technology,,7,,Other,,,2024(1): 763
+DK767,Community Youth Work (interiew),Dundalk Institute of Technology,,7,,Other,,,2024(1): 240
+DK768,Audio and Music Production,Dundalk Institute of Technology,,7,,Arts,,,2024(1): 227
+DK769,Creatie Media,Dundalk Institute of Technology,,7,,Other,,,2024(1): 210; 2024(2): 210
+DK770,Theatre and Film Practice,Dundalk Institute of Technology,,7,,Other,,,2024(1): 228; 2024(2): 228
+DK781,Science - Bioscience,Dundalk Institute of Technology,,7,,STEM,,,2024(1): 166; 2024(2): 166
+DK783,Science - Pharmaceutical Science,Dundalk Institute of Technology,,7,,STEM,,,2024(1): 209; 2024(2): 209
+DK784,Veterinary Nursing,Dundalk Institute of Technology,,7,,Health,,,2024(1): 410
+DK792,Music and Performance Technologies,Dundalk Institute of Technology,,7,,Arts,,,2024(1): 272; 2024(2): 272
+DK801,International Business and Digitalisation,Dundalk Institute of Technology,,8,,Business,,,2024(1): 298; 2024(2): 252
+DK802,Business with Management,Dundalk Institute of Technology,,8,,Business,,,2024(1): 244; 2024(2): 244
+DK810,Accounting and Finance,Dundalk Institute of Technology,,8,,Business,,,2024(1): 227; 2024(2): 227
+DK816,Business Studies,Dundalk Institute of Technology,,8,,Business,,,2024(1): 209; 2024(2): 209
+DK818,Digital Marketing and Strategic Communication,Dundalk Institute of Technology,,8,,Business,,,2024(1): 289; 2024(2): 255
+DK820,Games Deelopment,Dundalk Institute of Technology,,8,,Other,,,2024(1): 279; 2024(2): 279
+DK821,Computing in Software Deelopment,Dundalk Institute of Technology,,8,,STEM,,,2024(1): 222; 2024(2): 222
+DK823,Mathematics and Data Science,Dundalk Institute of Technology,,8,,STEM,,,2024(1): 325; 2024(2): 325
+DK824,Computing Systems and Operations,Dundalk Institute of Technology,,8,,Other,,,2024(1): 240
+DK830,Building Sureying,Dundalk Institute of Technology,,8,,Other,,,2024(1): 194
+DK831,Architectural Technology,Dundalk Institute of Technology,,8,,STEM,,,2024(1): 234
+DK832,Construction Management,Dundalk Institute of Technology,,8,,Business,,,2024(1): 236
+DK834,Quantity Sureying,Dundalk Institute of Technology,,8,,Other,,,2024(1): 210
+DK843,Engineering (Common Entry),Dundalk Institute of Technology,,8,,STEM,,,2024(1): 368; 2024(2): 368
+DK844,Mechanical Engineering,Dundalk Institute of Technology,,8,,STEM,,,2024(1): 381; 2024(2): 339
+DK845,Electrical and Electronic Engineering,Dundalk Institute of Technology,,8,,STEM,,,2024(1): 393
+DK846,Ciil Engineering,Dundalk Institute of Technology,,8,,STEM,,,2024(1): 392
+DK850,International Tourism Management,Dundalk Institute of Technology,,8,,Business,,,2024(1): 240
+DK851,Hospitality Management with Business,Dundalk Institute of Technology,,8,,Business,,,2024(1): 291; 2024(2): 291
+DK852,Eent Management with Marketing,Dundalk Institute of Technology,,8,,Business,,,2024(1): 271
+DK853,Marketing and International Tourism Management,Dundalk Institute of Technology,,8,,Business,,,2024(1): 328
+DK861,Arts,Dundalk Institute of Technology,,8,,Arts,,,2024(1): 234; 2024(2): 234
+DK862,Social Care,Dundalk Institute of Technology,,8,,Other,,,2024(1): 266
+DK863,Creatie Media,Dundalk Institute of Technology,,8,,Other,,,2024(1): 228; 2024(2): 228
+DK864,Film and Teleision Production,Dundalk Institute of Technology,,8,,Other,,,2024(1): 248; 2024(2): 248
+DK865,Audio and Music Production,Dundalk Institute of Technology,,8,,Arts,,,2024(1): 261
+DK866,Applied Youth Work (interiew),Dundalk Institute of Technology,,8,,Other,,,2024(1): 240
+DK867,Sport and Exercise with Business,Dundalk Institute of Technology,,8,,Business,,,2024(1): 225; 2024(2): 225
+DK870,General Nursing,Dundalk Institute of Technology,,8,,Health,,,2024(1): 368
+DK872,Intellectual Disability Nursing,Dundalk Institute of Technology,,8,,Health,,,2024(1): 271; 2024(2): 227
+DK874,Mental Health Nursing,Dundalk Institute of Technology,,8,,Health,,,2024(1): 270; 2024(2): 235
+DK876,Early Childhood Studies,Dundalk Institute of Technology,,8,,Education,,,2024(1): 224
+DK877,Midwifery,Dundalk Institute of Technology,,8,,Other,,,2024(1): 413
+DK880,Health and Physical Actiity,Dundalk Institute of Technology,,8,,Health,,,2024(1): 251; 2024(2): 244
+DK882,Agriculture,Dundalk Institute of Technology,,8,,Other,,,2024(1): 358
+DK883,Science,Dundalk Institute of Technology,,8,,STEM,,,2024(1): 253; 2024(2): 253
+DK888,Nutrition and Health,Dundalk Institute of Technology,,8,,Health,,,2024(1): 251; 2024(2): 251
+DK892,Music and Performance Technologies,Dundalk Institute of Technology,,8,,Arts,,,2024(1): 272; 2024(2): 272
+DL822,Arts Management,Dun Laoghaire Institute of Art Design and Technology,,8,,"Business, Arts",,,2024(1): 256; 2024(2): 256
+DL823,Business Management,Dun Laoghaire Institute of Art Design and Technology,,8,,Business,,,2024(1): 247; 2024(2): 247
+DL825,Applied Psychology,Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 388
+DL826,Graphic Design (portfolio),Dun Laoghaire Institute of Art Design and Technology,,8,,Arts,,,2024(1): 549
+DL827,Art (portfolio),Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 547
+DL832,Animation (portfolio),Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 1026
+DL833,Photography and Visual Media (portfolio),Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 663
+DL836,Creatie Computing,Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 210; 2024(2): 210
+DL837,New Media Studies,Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 226; 2024(2): 226
+DL838,Creatie Music Production (portfolio/audition),Dun Laoghaire Institute of Art Design and Technology,,8,,Arts,,,2024(1): 753
+DL840,Digital Marketing,Dun Laoghaire Institute of Art Design and Technology,,8,,Business,,,2024(1): 203; 2024(2): 203
+DL841,English and Equality Studies,Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 254; 2024(2): 254
+DL843,Film (portfolio),Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 1085
+DL844,Teleision (portfolio),Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 722
+DL845,Design for Film (portfolio),Dun Laoghaire Institute of Art Design and Technology,,8,,Arts,,,2024(1): 522
+DL847,3D Animation (portfolio),Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 578
+DL848,Business and Digital Technology,Dun Laoghaire Institute of Art Design and Technology,,8,,"STEM, Business",,,2024(1): 244; 2024(2): 244
+DL849,English and Media Studies,Dun Laoghaire Institute of Art Design and Technology,,8,,Other,,,2024(1): 256; 2024(2): 256
+DN100,Architecture,University College Dublin (NUI),,8,,Other,,,2024(1): 553; 2024(2): 552
+DN120,Landscape Architecture,University College Dublin (NUI),,8,,Other,,,2024(1): 474
+DN130,City Planning and Enironmental Policy,University College Dublin (NUI),,8,,Other,,,2024(1): 477
+DN150,Engineering,University College Dublin (NUI),,8,,STEM,,,2024(1): 568
+DN200,Science (options),University College Dublin (NUI),,8,,STEM,,,2024(1): 544
+DN201,Computer Science,University College Dublin (NUI),,8,,STEM,,,2024(1): 542; 2024(2): 533
+DN230,Actuarial and Financial Studies,University College Dublin (NUI),,8,,Other,,,2024(1): 613
+DN240,Sustainability,University College Dublin (NUI),,8,,Other,,,2024(1): 531
+DN250,Agricultural Science (options),University College Dublin (NUI),,8,,STEM,,,2024(1): 400
+DN261,Food Science (options),University College Dublin (NUI),,8,,STEM,,,2024(1): 496; 2024(2): 490
+DN262,Human Nutrition,University College Dublin (NUI),,8,,Other,,,2024(1): 532
+DN300,Veterinary Medicine - Undergraduate Entry (practical experience required,University College Dublin (NUI),,8,,Health,,,2024(1): 589
+DN301,Veterinary Medicine - Graduate Entry (GAMSAT required),University College Dublin (NUI),,8,,Health,,,2024(1): 301
+DN310,Veterinary Nursing,University College Dublin (NUI),,8,,Health,,,2024(1): 499; 2024(2): 481
+DN400,Medicine - Undergraduate Entry (HPAT required),University College Dublin (NUI),,8,,Health,,,2024(1): 735
+DN401,Medicine - Graduate Entry (GAMSAT required),University College Dublin (NUI),,8,,Health,,,2024(1): 57
+DN410,Radiography,University College Dublin (NUI),,8,,Other,,,2024(1): 555; 2024(2): 554
+DN411,Radiography - Graduate Entry,University College Dublin (NUI),,8,,Other,,,2024(1): 411
+DN420,Physiotherapy,University College Dublin (NUI),,8,,Health,,,2024(1): 588
+DN425,Health and Performance Science,University College Dublin (NUI),,8,,"STEM, Health",,,2024(1): 542
+DN430,Sport and Exercise Management,University College Dublin (NUI),,8,,Business,,,2024(1): 485; 2024(2): 478
+DN440,Biomedical  Health and Life Sciences,University College Dublin (NUI),,8,,"STEM, Health",,,2024(1): 600
+DN450,General Nursing,University College Dublin (NUI),,8,,Health,,,2024(1): 410; 2024(2): 408
+DN451,Children`s and General Nursing (Integrated),University College Dublin (NUI),,8,,Health,,,2024(1): 498; 2024(2): 495
+DN452,Midwifery,University College Dublin (NUI),,8,,Other,,,2024(1): 519
+DN453,Mental Health Nursing,University College Dublin (NUI),,8,,Health,,,2024(1): 367
+DN520,Joint Honours (options),University College Dublin (NUI),,8,,Other,,,2024(1): 419
+DN530,Humanities (options),University College Dublin (NUI),,8,,Other,,,2024(1): 467; 2024(2): 466
+DN541,Modern Languages (options),University College Dublin (NUI),,8,,Arts,,,2024(1): 398
+DN600,Law (options),University College Dublin (NUI),,8,,Law,,,2024(1): 556
+DN610,Business and Law,University College Dublin (NUI),,8,,"Business, Law",,,2024(1): 576
+DN620,Criminology with Psychology,University College Dublin (NUI),,8,,Other,,,2024(1): 519
+DN650,Commerce,University College Dublin (NUI),,8,,Business,,,2024(1): 545
+DN660,Commerce International (options),University College Dublin (NUI),,8,,Business,,,2024(1): 542
+DN670,Economics and Finance,University College Dublin (NUI),,8,,Business,,,2024(1): 625
+DN700,Social Sciences (options),University College Dublin (NUI),,8,,STEM,,,2024(1): 468
+DN710,Economics,University College Dublin (NUI),,8,,Business,,,2024(1): 532
+DN720,Psychology,University College Dublin (NUI),,8,,Other,,,2024(1): 565; 2024(2): 554
+DN750,Social Policy and Sociology,University College Dublin (NUI),,8,,Other,,,2024(1): 410
+DN760,Education (options),University College Dublin (NUI),,8,,Education,,,2024(1): 478; 2024(2): 473
+DS602,Computing,Dorset College,,7,,Other,,,2024(1): 602
+DS701,Business,Dorset College,,7,,Business,,,2024(1): 153
+DS702,Computing,Dorset College,,7,,Other,,,2024(1): 215
+GB001,Business,Galway Business School,,7,,Business,,,2024(1): 1
+GC200,Business,Griffith College,Cork,8,,Business,,,2024(1): 249; 2024(2): 249
+GC201,Accounting and Finance [Cork]                                               AQA,Griffith College,Cork,8,,Business,,,2024(1): 201
+GC230,Computing Science,Griffith College,Cork,8,,STEM,,,2024(1): 242; 2024(2): 235
+GC300,Business,Griffith College,Cork,8,,Business,,,2024(1): 252; 2024(2): 252
+GC301,Accounting and Finance [Limerick]                                          AQA,Griffith College,Cork,8,,Business,,,2024(1): 301
+GC302,Business (HRM) [Limerick]                                                  AQA,Griffith College,Cork,8,,Business,,,2024(1): 302
+GC307,Business (Marketing) [Limerick]                                            AQA,Griffith College,Cork,8,,Business,,,2024(1): 307
+GC335,Computing,Griffith College,Cork,7,,Other,,,2024(1): 197; 2024(2): 145
+GC400,Business,Griffith College,Cork,8,,Business,,,2024(1): 283; 2024(2): 283
+GC401,Accounting and Finance,Griffith College,Cork,8,,Business,,,2024(1): 254; 2024(2): 254
+GC402,Business (HRM),Griffith College,Cork,8,,Business,,,2024(1): 246; 2024(2): 246
+GC403,Law,Griffith College,Cork,8,,Law,,,2024(1): 249; 2024(2): 249
+GC407,Business (Marketing),Griffith College,Cork,8,,Business,,,2024(1): 260; 2024(2): 260
+GC409,Psychology,Griffith College,Cork,8,,Other,,,2024(1): 244; 2024(2): 236
+GC418,Law - Criminal Justice,Griffith College,Cork,8,,Law,,,2024(1): 378; 2024(2): 232
+GC419,Law - Commerical Law [Dublin],Griffith College,Cork,8,,Law,,,2024(1): 419
+GC430,Computing Science,Griffith College,Cork,8,,STEM,,,2024(1): 249; 2024(2): 220
+GC435,Computing,Griffith College,Cork,7,,Other,,,2024(1): 129; 2024(2): 129
+GC450,Communications and Media Production,Griffith College,Cork,8,,Other,,,2024(1): 275; 2024(2): 275
+GC456,Film  TV and Screen Media Production,Griffith College,Cork,8,,Other,,,2024(1): 292; 2024(2): 219
+GC460,Music Production for Games (portfolio) [Dublin],Griffith College,Cork,7,,Arts,,,2024(1): 460
+GC462,Graphic Communication Design (portfolio) [Dublin],Griffith College,Cork,8,,Arts,,,2024(1): 462
+GC465,Communications,Griffith College,Cork,7,,Other,,,2024(1): 188; 2024(2): 170
+GC466,Film  TV and Screen Media Production [Dublin]                              AQA      AQA,Griffith College,Cork,7,,Other,,,2024(1): 466
+GC480,Graphic Communication Design,Griffith College,Cork,7,,Arts,,,2024(1): 152; 2024(2): 152
+GC489,Interior Architecture (portfolio) [Dublin],Griffith College,Cork,8,,Other,,,2024(1): 330
+GC490,Interior Architecture and Design,Griffith College,Cork,7,,Arts,,,2024(1): 203; 2024(2): 171
+GC494,Fashion Design (portfolio) [Dublin],Griffith College,Cork,8,,Arts,,,2024(1): 390
+GC495,Fashion Design,Griffith College,Cork,7,,Arts,,,2024(1): 169; 2024(2): 169
+GY101,Arts (Joint-Honours),University of Galway,,8,,Arts,,,2024(1): 300
+GY104,BSc (Psychology),University of Galway,,8,,Other,,,2024(1): 534
+GY105,Arts (History),University of Galway,,8,,Arts,,,2024(1): 340
+GY109,Arts (Mathematics and Education),University of Galway,,8,,"STEM, Arts, Education",,,2024(1): 433
+GY110,Arts (Children and Youth Studies - options),University of Galway,,8,,Arts,,,2024(1): 401
+GY111,Arts (English and Creatie Writing),University of Galway,,8,,Arts,,,2024(1): 413
+GY113,Arts with Human Rights,University of Galway,,8,,Arts,,,2024(1): 343
+GY118,Arts (Drama  Theatre and Performance Studies),University of Galway,,8,,Arts,,,2024(1): 410
+GY119,Arts (Journalism),University of Galway,,8,,Arts,,,2024(1): 360
+GY122,Na Dána (Cumarsáid agus Gaeilge),University of Galway,,8,,Other,,,2024(1): 399
+GY123,BSc (Social Science),University of Galway,,8,,STEM,,,2024(1): 320
+GY125,Arts (Digital Arts and Technology),University of Galway,,8,,"STEM, Arts",,,2024(1): 413
+GY127,Arts (Film and Digital Media),University of Galway,,8,,Arts,,,2024(1): 409
+GY128,Arts (Global Languages),University of Galway,,8,,Arts,,,2024(1): 377
+GY129,Arts (Global Experience),University of Galway,,8,,Arts,,,2024(1): 360
+GY130,Arts (Music),University of Galway,,8,,Arts,,,2024(1): 348
+GY132,Goernment (Politics  Economics and Law),University of Galway,,8,,"Business, Law",,,2024(1): 351
+GY133,Education (Computer Science and Mathematical Studies),University of Galway,,8,,"STEM, Education",,,2024(1): 413
+GY134,BSc (Geography and Geosystems),University of Galway,,8,,Other,,,2024(1): 350
+GY135,Arts (Global Media),University of Galway,,8,,Arts,,,2024(1): 357
+GY136,Gaeilge agus Léann an Aistriúcháin,University of Galway,,8,,Other,,,2024(1): 411
+GY137,Arts (Child  Youth and Family: Policy and Practice),University of Galway,,8,,Arts,,,2024(1): 358
+GY201,Commerce,University of Galway,,8,,Business,,,2024(1): 430
+GY202,Commerce (International) with French,University of Galway,,8,,Business,,,2024(1): 519
+GY203,Commerce (International) with German,University of Galway,,8,,Business,,,2024(1): 520
+GY204,Commerce (International) with Spanish,University of Galway,,8,,Business,,,2024(1): 509
+GY206,Business Information Systems (Work Placement and Optional Int`l Study),University of Galway,,8,,Business,,,2024(1): 507
+GY207,Commerce (Accounting) including optional Global Experience year,University of Galway,,8,,Business,,,2024(1): 509
+GY208,Commerce (Gaeilge),University of Galway,,8,,Business,,,2024(1): 441
+GY209,Commerce (Global Experience),University of Galway,,8,,Business,,,2024(1): 540
+GY250,Law (BCL) and Business,University of Galway,,8,,"Business, Law",,,2024(1): 500
+GY251,Law (BCL),University of Galway,,8,,Law,,,2024(1): 500
+GY252,Law (BCL) and Human Rights,University of Galway,,8,,Law,,,2024(1): 506
+GY254,Law (BCL)  Criminology and Criminal Justice,University of Galway,,8,,Law,,,2024(1): 501
+GY261,Business Studies (International Hotel Management - interiew) [Shannon],University of Galway,,8,,Business,,,2024(1): 467
+GY262,Commerce (International Hotel Management - interiew) [Shannon],University of Galway,,8,,Business,,,2024(1): 712
+GY301,Science,University of Galway,,8,,STEM,,,2024(1): 400
+GY303,Biomedical Science,University of Galway,,8,,STEM,,,2024(1): 577
+GY304,Biotechnology,University of Galway,,8,,STEM,,,2024(1): 470
+GY308,Enironmental Science,University of Galway,,8,,STEM,,,2024(1): 405
+GY309,Financial Mathematics and Economics,University of Galway,,8,,"STEM, Business",,,2024(1): 473; 2024(2): 454
+GY310,Marine Science,University of Galway,,8,,STEM,,,2024(1): 420; 2024(2): 402
+GY313,Occupational Health and Safety Management,University of Galway,,8,,"Health, Business",,,2024(1): 408
+GY314,Earth and Ocean Sciences,University of Galway,,8,,STEM,,,2024(1): 417
+GY318,Biopharmaceutical Chemistry,University of Galway,,8,,STEM,,,2024(1): 510
+GY319,Mathematical Science,University of Galway,,8,,STEM,,,2024(1): 510
+GY320,Physics,University of Galway,,8,,STEM,,,2024(1): 401
+GY321,Genetics and Genomics,University of Galway,,8,,Other,,,2024(1): 478
+GY322,Agricultural Science,University of Galway,,8,,STEM,,,2024(1): 409
+GY350,Computer Science and Information Technology,University of Galway,,8,,STEM,,,2024(1): 498
+GY401,Engineering (Undenominated),University of Galway,,8,,STEM,,,2024(1): 532
+GY402,Ciil Engineering,University of Galway,,8,,STEM,,,2024(1): 500
+GY405,Mechanical Engineering,University of Galway,,8,,STEM,,,2024(1): 544
+GY406,Electronic and Computer Engineering,University of Galway,,8,,STEM,,,2024(1): 520
+GY408,Biomedical Engineering,University of Galway,,8,,STEM,,,2024(1): 578
+GY410,Project and Construction Management,University of Galway,,8,,Business,,,2024(1): 518
+GY413,Energy Systems Engineering,University of Galway,,8,,STEM,,,2024(1): 516
+GY414,Electrical and Electronic Engineering,University of Galway,,8,,STEM,,,2024(1): 509
+GY501,Medicine (fie year/six year course - HPAT required),University of Galway,,8,,Health,,,2024(1): 728
+GY502,Occupational Therapy,University of Galway,,8,,Health,,,2024(1): 554; 2024(2): 553
+GY503,Speech and Language Therapy,University of Galway,,8,,Health,,,2024(1): 544; 2024(2): 540
+GY504,Podiatric Medicine,University of Galway,,8,,Health,,,2024(1): 445
+GY515,General Nursing (Galway and Portiuncula),University of Galway,,8,,Health,,,2024(1): 429
+GY516,Mental Health Nursing,University of Galway,,8,,Health,,,2024(1): 378
+GY517,Midwifery,University of Galway,,8,,Other,,,2024(1): 451
+ID001,Accounting and Finance,ICD Business School,,8,,Business,,,2024(1): 1
+ID002,Business Studies,ICD Business School,,8,,Business,,,2024(1): 2
+LM002,Arts,University of Limerick,,8,,Arts,,,2024(1): 316
+LM019,Social Sciences,University of Limerick,,8,,STEM,,,2024(1): 462; 2024(2): 452
+LM020,Law and Accounting,University of Limerick,,8,,"Business, Law",,,2024(1): 433
+LM027,Common and Ciil Law,University of Limerick,,8,,Law,,,2024(1): 576
+LM028,Criminal Justice,University of Limerick,,8,,Other,,,2024(1): 379
+LM029,Law Plus,University of Limerick,,8,,Law,,,2024(1): 507
+LM038,Psychology and Sociology,University of Limerick,,8,,Other,,,2024(1): 485
+LM039,Journalism and Digital Communication,University of Limerick,,8,,Other,,,2024(1): 420
+LM040,European Studies,University of Limerick,,8,,Other,,,2024(1): 398
+LM044,Applied Languages,University of Limerick,,8,,Arts,,,2024(1): 402
+LM050,Business Studies (options),University of Limerick,,8,,Business,,,2024(1): 451
+LM056,International Business,University of Limerick,,8,,Business,,,2024(1): 544
+LM058,Financial Mathematics,University of Limerick,,8,,STEM,,,2024(1): 444
+LM063,Technology Management,University of Limerick,,8,,"STEM, Business",,,2024(1): 398
+LM066,Enironmental Science,University of Limerick,,8,,STEM,,,2024(1): 420
+LM068,Food Science and Health,University of Limerick,,8,,"STEM, Health",,,2024(1): 430
+LM076,Product Design and Technology (portfolio),University of Limerick,,8,,"STEM, Arts",,,2024(1): 431
+LM077,Aeronautical Engineering,University of Limerick,,8,,STEM,,,2024(1): 554
+LM082,Construction Management and Engineering,University of Limerick,,8,,"STEM, Business",,,2024(1): 468
+LM089,Sport and Exercise Sciences,University of Limerick,,8,,STEM,,,2024(1): 502
+LM090,Physical Education with concurrent Teacher Education,University of Limerick,,8,,Education,,,2024(1): 533
+LM091,Languages with concurrent Teacher Education,University of Limerick,,8,,"Arts, Education",,,2024(1): 452
+LM092,Science with concurrent Teacher Education (Biology with Physics or Chemi,University of Limerick,,8,,"STEM, Education",,,2024(1): 499
+LM093,Equine Science,University of Limerick,,8,,STEM,,,2024(1): 357
+LM094,Graphics and Construction Technology with concurrent Teacher Education,University of Limerick,,8,,"STEM, Education",,,2024(1): 475
+LM095,Graphics  Engineering and Technology with concurrent Teacher Education,University of Limerick,,8,,"STEM, Education",,,2024(1): 422
+LM096,Science with concurrent Teacher Education (Physical Sciences with Chemis,University of Limerick,,8,,"STEM, Education",,,2024(1): 435
+LM097,Mathematics and Computer Science with concurrent Teacher Education,University of Limerick,,8,,"STEM, Education",,,2024(1): 443
+LM099,Architecture,University of Limerick,,8,,Other,,,2024(1): 521
+LM100,Physiotherapy,University of Limerick,,8,,Health,,,2024(1): 589
+LM101,Medicine (Graduate Entry - GAMSAT required),University of Limerick,,8,,Health,,,2024(1): 52
+LM102,Psychology,University of Limerick,,8,,Other,,,2024(1): 519
+LM103,Paramedic Studies Clean Driing Licence required (Full B and minimum Pro,University of Limerick,,8,,Other,,,2024(1): 386
+LM104,Occupational Therapy,University of Limerick,,8,,Health,,,2024(1): 568; 2024(2): 556
+LM105,Exercise and Health Fitness Management,University of Limerick,,8,,"Health, Business",,,2024(1): 412
+LM113,Interaction Design,University of Limerick,,8,,Arts,,,2024(1): 368
+LM114,Music  Media and Performance Technology,University of Limerick,,8,,"STEM, Arts",,,2024(1): 380
+LM115,Chemical and Biochemical Engineering,University of Limerick,,8,,STEM,,,2024(1): 466
+LM116,Engineering (Biomedical or Ciil or Design and Manufacture or Mechanical,University of Limerick,,8,,"STEM, Arts",,,2024(1): 510
+LM118,Electronic and Computer Engineering,University of Limerick,,8,,STEM,,,2024(1): 443
+LM121,Computer Science (Computer Systems or Computer Games Deelopment or Cybe,University of Limerick,,8,,STEM,,,2024(1): 422
+LM123,Biological and Chemical Sciences,University of Limerick,,8,,STEM,,,2024(1): 488
+LM124,Mathematics (Mathematical Sciences or Mathematics and Physics or Economi,University of Limerick,,8,,STEM,,,2024(1): 456
+LM125,Physics (Applied Physics or Mathematics and Physics),University of Limerick,,8,,STEM,,,2024(1): 445
+LM126,Electrical Engineering,University of Limerick,,8,,STEM,,,2024(1): 424
+LM131,Irish Music (audition),University of Limerick,,8,,Arts,,,2024(1): 530
+LM132,Irish Dance (audition),University of Limerick,,8,,Other,,,2024(1): 480
+LM133,Contemporary Dance (audition),University of Limerick,,8,,Other,,,2024(1): 518
+LM134,Voice (audition),University of Limerick,,8,,Other,,,2024(1): 482
+LM135,World Music (audition),University of Limerick,,8,,Arts,,,2024(1): 406
+LM150,General Nursing,University of Limerick,,8,,Health,,,2024(1): 430
+LM152,Mental Health Nursing,University of Limerick,,8,,Health,,,2024(1): 388; 2024(2): 379
+LM154,Intellectual Disability Nursing,University of Limerick,,8,,Health,,,2024(1): 321
+LM156,Midwifery,University of Limerick,,8,,Other,,,2024(1): 433
+LM173,Immersie Software Engineering (portfolio),University of Limerick,,8,,STEM,,,2024(1): 676
+LM174,Artificial Intelligence and Machine Learning,University of Limerick,,8,,Other,,,2024(1): 488
+LM180,Equine Science,University of Limerick,,7,,STEM,,,2024(1): 309
+MH001,Education - Primary Teaching (Froebel),Maynooth University,,8,,Education,,,2024(1): 507; 2024(2): 500
+MH002,Education - Primary Teaching - Gaeltacht  Applicants (Froebel),Maynooth University,,8,,Education,,,2024(1): 2
+MH003,Early Childhood - Teaching and Learning (full-time),Maynooth University,,8,,Education,,,2024(1): 389
+MH101,Arts,Maynooth University,,8,,Arts,,,2024(1): 307
+MH103,Music,Maynooth University,,8,,Arts,,,2024(1): 103
+MH106,Psychology,Maynooth University,,8,,Other,,,2024(1): 532
+MH107,Social Science,Maynooth University,,8,,STEM,,,2024(1): 318
+MH109,Media Studies,Maynooth University,,8,,Other,,,2024(1): 357
+MH116,Community and Youth Work (Full-Time),Maynooth University,,8,,Other,,,2024(1): 116
+MH201,Science,Maynooth University,,8,,STEM,,,2024(1): 350
+MH202,Biotechnology,Maynooth University,,8,,STEM,,,2024(1): 444; 2024(2): 442
+MH203,Biological and Geographical Sciences,Maynooth University,,8,,STEM,,,2024(1): 410
+MH204,Physics with Astrophysics,Maynooth University,,8,,STEM,,,2024(1): 383
+MH206,Theoretical Physics and Mathematics,Maynooth University,,8,,STEM,,,2024(1): 513
+MH207,Data Science,Maynooth University,,8,,STEM,,,2024(1): 423
+MH208,Biological and Biomedical Sciences,Maynooth University,,8,,STEM,,,2024(1): 470
+MH209,Psychology (through Science),Maynooth University,,8,,STEM,,,2024(1): 518
+MH210,Pharmaceutical and Biomedical Chemistry,Maynooth University,,8,,STEM,,,2024(1): 451
+MH212,Science/Maths and Computer Sc/Maths and Applied Maths (with Education -,Maynooth University,,8,,"STEM, Education",,,2024(1): 420
+MH221,Sport Science and Health,Maynooth University,,8,,"STEM, Health",,,2024(1): 462
+MH222,Food Science and Human Nutrition,Maynooth University,,8,,STEM,,,2024(1): 441
+MH304,Engineering,Maynooth University,,8,,STEM,,,2024(1): 355; 2024(2): 355
+MH305,Product Design and Innoation,Maynooth University,,8,,Arts,,,2024(1): 329
+MH306,Robotics and Intelligent Deices,Maynooth University,,8,,Other,,,2024(1): 350
+MH401,Finance,Maynooth University,,8,,Business,,,2024(1): 361; 2024(2): 358
+MH402,Quantitatie Finance,Maynooth University,,8,,Business,,,2024(1): 455
+MH403,Accounting and Finance,Maynooth University,,8,,Business,,,2024(1): 409
+MH404,Business (options),Maynooth University,,8,,Business,,,2024(1): 400
+MH407,Business and Accounting,Maynooth University,,8,,Business,,,2024(1): 400
+MH409,Business and Languages,Maynooth University,,8,,"Business, Arts",,,2024(1): 400
+MH411,Entrepreneurship,Maynooth University,,8,,Business,,,2024(1): 360
+MH412,Business with Sport Science,Maynooth University,,8,,"STEM, Business",,,2024(1): 487
+MH415,Economics,Maynooth University,,8,,Business,,,2024(1): 423
+MH416,International Economics,Maynooth University,,8,,Business,,,2024(1): 421
+MH501,LLB Law,Maynooth University,,8,,Law,,,2024(1): 451
+MH502,BCL Law (Law and another subject - options),Maynooth University,,8,,Law,,,2024(1): 418
+MH503,BCL Law and Languages,Maynooth University,,8,,"Arts, Law",,,2024(1): 430
+MH601,Computer Science through Arts (options),Maynooth University,,8,,"STEM, Arts",,,2024(1): 380
+MH602,Computer Science through Science (options),Maynooth University,,8,,STEM,,,2024(1): 401
+MH603,Computational Thinking,Maynooth University,,8,,Other,,,2024(1): 577
+MH803,Local Studies or Community Studies (part-time/eening  Mature Students o,Maynooth University,,8,,Other,,,2024(1): 803
+MI002,Arts,Mary Immaculate College,Limerick,8,,Arts,,,2024(1): 280
+MI003,Psychology,Mary Immaculate College,Limerick,8,,Other,,,2024(1): 484
+MI004,Education - Primary Teaching - International,Mary Immaculate College,Limerick,8,,Education,,,2024(1): 565
+MI005,Education - Primary Teaching,Mary Immaculate College,Limerick,8,,Education,,,2024(1): 488
+MI006,Education - Primary Teaching - Gaeltacht Applicants [Limerick],Mary Immaculate College,Limerick,8,,Education,,,2024(1): 451
+MI007,Early Childhood Care and Education,Mary Immaculate College,Limerick,8,,Education,,,2024(1): 376
+MI008,Education and Psychology - Primary Teaching,Mary Immaculate College,Limerick,8,,Education,,,2024(1): 590
+MI009,English Language and Literature,Mary Immaculate College,Limerick,8,,Arts,,,2024(1): 387
+MI010,Drama and English,Mary Immaculate College,Limerick,8,,Arts,,,2024(1): 378
+MI016,Education  Business Studies and Accounting,Mary Immaculate College,Limerick,8,,"Business, Education",,,2024(1): 413
+MI017,Education  Business Studies and Religious Studies,Mary Immaculate College,Limerick,8,,"Business, Education",,,2024(1): 367
+MI018,Education  Gaeilge and Religious Studies,Mary Immaculate College,Limerick,8,,Education,,,2024(1): 431
+MI019,Education  Gaeilge and Business Studies,Mary Immaculate College,Limerick,8,,"Business, Education",,,2024(1): 419
+MI020,Education  Mathematics and Gaeilge,Mary Immaculate College,Limerick,8,,"STEM, Education",,,2024(1): 476
+MI021,Education  Mathematics and Business Studies,Mary Immaculate College,Limerick,8,,"STEM, Business, Education",,,2024(1): 414
+MI022,Education  Home Economics and Business Studies,Mary Immaculate College,Limerick,8,,"Business, Education",,,2024(1): 531
+MT510,Recreation and Leisure Management,Munster Technological University,Cork,7,,Business,,,2024(1): 328
+MT511,Health  Sport and Exercise Sciences,Munster Technological University,Cork,7,,"STEM, Health",,,2024(1): 269
+MT512,Health and Exercise Sciences with Massage Therapy,Munster Technological University,Cork,7,,"STEM, Health",,,2024(1): 264
+MT513,Coaching and Sports Performance,Munster Technological University,Cork,7,,Other,,,2024(1): 173; 2024(2): 173
+MT541,Business (Common Entry),Munster Technological University,Cork,7,,Business,,,2024(1): 225
+MT550,Business (Common Entry),Munster Technological University,Cork,7,,Business,,,2024(1): 250
+MT551,Business Technology and Communications,Munster Technological University,Cork,7,,"STEM, Business",,,2024(1): 222
+MT552,Tourism Management,Munster Technological University,Cork,7,,Business,,,2024(1): 253
+MT553,Beerage Industry Management,Munster Technological University,Cork,7,,Business,,,2024(1): 190
+MT554,Hospitality Management,Munster Technological University,Cork,7,,Business,,,2024(1): 254; 2024(2): 245
+MT555,Culinary Arts,Munster Technological University,Cork,7,,Arts,,,2024(1): 243
+MT557,Culinary Arts [Kerry],Munster Technological University,Cork,7,,Arts,,,2024(1): 557
+MT571,Early Childhood Education and Care,Munster Technological University,Cork,7,,Education,,,2024(1): 223
+MT573,Social Care Work,Munster Technological University,Cork,7,,Other,,,2024(1): 290; 2024(2): 260
+MT574,Social Care,Munster Technological University,Cork,7,,Other,,,2024(1): 269; 2024(2): 260
+MT575,Community Deelopment,Munster Technological University,Cork,7,,Other,,,2024(1): 143
+MT655,Culinary Studies,Munster Technological University,Cork,7,,Other,,,2024(1): 151; 2024(2): 151
+MT657,Culinary Arts,Munster Technological University,Cork,7,,Arts,,,2024(1): 283
+MT680,Biological and Enironmental Studies,Munster Technological University,Cork,7,,Other,,,2024(1): 237; 2024(2): 237
+MT682,Pharmacy Technician,Munster Technological University,Cork,7,,Health,,,2024(1): 249
+MT700,Software Deelopment,Munster Technological University,Cork,7,,STEM,,,2024(1): 390
+MT703,Computing,Munster Technological University,Cork,7,,Other,,,2024(1): 235
+MT705,Information Technology,Munster Technological University,Cork,7,,STEM,,,2024(1): 320
+MT706,Computer Systems and Networking,Munster Technological University,Cork,7,,STEM,,,2024(1): 288
+MT711,Animation  Visual Effects and Motion Design (portfolio) [Kerry],Munster Technological University,Cork,7,,Arts,,,2024(1): 295
+MT731,Ciil Engineering,Munster Technological University,Cork,7,,STEM,,,2024(1): 259
+MT732,Ciil Engineering,Munster Technological University,Cork,7,,STEM,,,2024(1): 254
+MT736,Mechanical Engineering,Munster Technological University,Cork,7,,STEM,,,2024(1): 310
+MT739,Biomedical Engineering,Munster Technological University,Cork,7,,STEM,,,2024(1): 324
+MT745,Electrical Engineering,Munster Technological University,Cork,7,,STEM,,,2024(1): 321
+MT746,Electronic Engineering,Munster Technological University,Cork,7,,STEM,,,2024(1): 330
+MT747,Automotie Technology and Management,Munster Technological University,Cork,7,,"STEM, Business",,,2024(1): 253
+MT748,Agricultural Engineering,Munster Technological University,Cork,7,,STEM,,,2024(1): 270
+MT750,Agriculture (In year one students spend two days in Clonakilty Agricultu,Munster Technological University,Cork,7,,Other,,,2024(1): 289
+MT758,Construction  (Common Entry),Munster Technological University,Cork,7,,Other,,,2024(1): 270
+MT759,Architectural Technology,Munster Technological University,Cork,7,,STEM,,,2024(1): 304
+MT760,Interior Architecture,Munster Technological University,Cork,7,,Other,,,2024(1): 318
+MT761,Enironmental Engineering,Munster Technological University,Cork,7,,STEM,,,2024(1): 270
+MT764,Marine Engineering,Munster Technological University,Cork,7,,STEM,,,2024(1): 225
+MT765,Marine Electrotechnology,Munster Technological University,Cork,7,,STEM,,,2024(1): 282
+MT766,Nautical Science,Munster Technological University,Cork,7,,STEM,,,2024(1): 237
+MT770,Physical Sciences (Common Entry),Munster Technological University,Cork,7,,STEM,,,2024(1): 308
+MT772,Pharmaceutical Science,Munster Technological University,Cork,7,,STEM,,,2024(1): 308
+MT774,Analytical and Pharmaceutical Chemistry,Munster Technological University,Cork,7,,STEM,,,2024(1): 320
+MT775,Applied Biosciences,Munster Technological University,Cork,7,,STEM,,,2024(1): 400
+MT777,Agricultural Science,Munster Technological University,Cork,7,,STEM,,,2024(1): 253
+MT781,Animal Bioscience,Munster Technological University,Cork,7,,STEM,,,2024(1): 275
+MT782,Applied Physics and Instrumentation,Munster Technological University,Cork,7,,STEM,,,2024(1): 319
+MT784,Veterinary Nursing,Munster Technological University,Cork,7,,Health,,,2024(1): 351
+MT800,Software Deelopment,Munster Technological University,Cork,8,,STEM,,,2024(1): 453
+MT802,Computer Systems,Munster Technological University,Cork,8,,STEM,,,2024(1): 381
+MT803,Computing,Munster Technological University,Cork,8,,Other,,,2024(1): 308
+MT805,I.T. Management,Munster Technological University,Cork,8,,Business,,,2024(1): 348
+MT811,Animation  Visual Effects and Motion Design (portfolio) [Kerry],Munster Technological University,Cork,8,,Arts,,,2024(1): 430
+MT820,Contemporary Applied Art (Ceramics  Glass  Textiles - portfolio) [CCAD S,Munster Technological University,Cork,8,,Other,,,2024(1): 500
+MT821,Fine Art (portfolio) [CCAD Sharman Crawford Street],Munster Technological University,Cork,8,,Other,,,2024(1): 240
+MT822,Photography with New Media,Munster Technological University,Cork,8,,Other,,,2024(1): 279; 2024(2): 252
+MT823,Visual Communications (portfolio) [CCAD Cork],Munster Technological University,Cork,8,,Other,,,2024(1): 240
+MT824,Creatie Digital Media,Munster Technological University,Cork,8,,Other,,,2024(1): 384
+MT830,Engineering (Common Entry),Munster Technological University,Cork,8,,STEM,,,2024(1): 454
+MT831,Structural Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 424
+MT832,Ciil Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 340
+MT833,Instrument Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 316
+MT834,Mechanical and Manufacturing Engineering [Kerry],Munster Technological University,Cork,8,,STEM,,,2024(1): 648
+MT836,Mechanical Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 453
+MT837,Sustainable Energy Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 400
+MT838,Chemical and Biopharmaceutical Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 454
+MT839,Biomedical Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 455
+MT844,Smart Product Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 380
+MT845,Electrical Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 361
+MT846,Electronic Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 351
+MT847,Automotie Business Management and Technology,Munster Technological University,Cork,8,,"STEM, Business",,,2024(1): 329
+MT848,Agricultural Engineering,Munster Technological University,Cork,8,,STEM,,,2024(1): 310
+MT856,Construction Management,Munster Technological University,Cork,8,,Business,,,2024(1): 339
+MT857,Quantity Sureying,Munster Technological University,Cork,8,,Other,,,2024(1): 389
+MT859,Architectural Technology,Munster Technological University,Cork,8,,STEM,,,2024(1): 368
+MT860,Interior Architecture,Munster Technological University,Cork,8,,Other,,,2024(1): 360
+MT870,Physical Sciences (Common Entry),Munster Technological University,Cork,8,,STEM,,,2024(1): 327; 2024(2): 327
+MT871,Biomedical Science (offered jointly MTU Cork Campus and UCC) [Cork and U,Munster Technological University,Cork,8,,STEM,,,2024(1): 556
+MT872,Pharmaceutical Science,Munster Technological University,Cork,8,,STEM,,,2024(1): 308
+MT873,Pharmaceutical Biotechnology,Munster Technological University,Cork,8,,STEM,,,2024(1): 442
+MT874,Analytical Chemistry with Quality Assurance,Munster Technological University,Cork,8,,STEM,,,2024(1): 380
+MT875,Biological Sciences (Common Entry),Munster Technological University,Cork,8,,STEM,,,2024(1): 442
+MT876,Nutrition and Health Science,Munster Technological University,Cork,8,,"STEM, Health",,,2024(1): 397
+MT877,Agricultural Science,Munster Technological University,Cork,8,,STEM,,,2024(1): 299
+MT878,Enironmental Science and Sustainable Technology,Munster Technological University,Cork,8,,STEM,,,2024(1): 317
+MT879,Agri-Biosciences,Munster Technological University,Cork,8,,STEM,,,2024(1): 357
+MT880,Wildlife Biology,Munster Technological University,Cork,8,,STEM,,,2024(1): 317
+MT881,Veterinary Bioscience,Munster Technological University,Cork,8,,"STEM, Health",,,2024(1): 300
+MT906,Physical Education Studies with Business,Munster Technological University,Cork,8,,"Business, Education",,,2024(1): 451
+MT910,Sport and Exercise Management,Munster Technological University,Cork,8,,Business,,,2024(1): 408
+MT911,Health  Sport and Exercise Sciences,Munster Technological University,Cork,8,,"STEM, Health",,,2024(1): 302
+MT912,Health and Exercise Sciences with Massage Therapy,Munster Technological University,Cork,8,,"STEM, Health",,,2024(1): 307
+MT913,Coaching and Sports Performance,Munster Technological University,Cork,8,,Other,,,2024(1): 300
+MT915,Coaching Science and Sports Pedagogy,Munster Technological University,Cork,8,,STEM,,,2024(1): 411
+MT925,Counselling with Addiction (Mature applicants only) [Kerry],Munster Technological University,Cork,8,,Other,,,2024(1): 925
+MT926,General Nursing,Munster Technological University,Cork,8,,Health,,,2024(1): 352
+MT927,Mental Health Nursing,Munster Technological University,Cork,8,,Health,,,2024(1): 327; 2024(2): 307
+MT930,Home Economics and Business (First three years in MTU; Final two years i,Munster Technological University,Cork,8,,Business,,,2024(1): 495; 2024(2): 484
+MT931,Popular Music - Electric Guitar (entrance assessment) [Cork School of Mu,Munster Technological University,Cork,8,,Arts,,,2024(1): 446
+MT932,Popular Music - Electric Bass (entrance assessment) [Cork School of Musi,Munster Technological University,Cork,8,,Arts,,,2024(1): 456
+MT933,Popular Music - Keyboards (entrance assessment) [Cork School of Music],Munster Technological University,Cork,8,,Arts,,,2024(1): 552
+MT934,Popular Music - Drums (entrance assessment) [Cork School of Music],Munster Technological University,Cork,8,,Arts,,,2024(1): 542
+MT935,Popular Music - Voice (entrance assessment) [Cork School of Music],Munster Technological University,Cork,8,,Arts,,,2024(1): 445
+MT936,Music (entrance assessment) [Cork School of Music],Munster Technological University,Cork,8,,Arts,,,2024(1): 321
+MT938,Musical Theatre (entrance assessment) [Cork School of Music],Munster Technological University,Cork,8,,Arts,,,2024(1): 503
+MT939,Theatre and Drama Studies (entrance assessment) [Cork School of Music],Munster Technological University,Cork,8,,Arts,,,2024(1): 465
+MT940,Eent Management,Munster Technological University,Cork,8,,Business,,,2024(1): 309
+MT941,Business (Common Entry),Munster Technological University,Cork,8,,Business,,,2024(1): 306
+MT942,Accounting,Munster Technological University,Cork,8,,Business,,,2024(1): 301
+MT943,Marketing,Munster Technological University,Cork,8,,Business,,,2024(1): 337
+MT944,Business Information Systems,Munster Technological University,Cork,8,,Business,,,2024(1): 348
+MT945,International Business with Language,Munster Technological University,Cork,8,,Business,,,2024(1): 333
+MT946,Global Business and Pilot Studies,Munster Technological University,Cork,8,,Business,,,2024(1): 319
+MT947,Tourism Management,Munster Technological University,Cork,8,,Business,,,2024(1): 291
+MT948,Hospitality Management,Munster Technological University,Cork,8,,Business,,,2024(1): 317
+MT957,Culinary Arts Management [Kerry],Munster Technological University,Cork,8,,"Business, Arts",,,2024(1): 957
+MT970,Montessori Education,Munster Technological University,Cork,8,,Education,,,2024(1): 338; 2024(2): 321
+MT971,Early Childhood Education and Care,Munster Technological University,Cork,8,,Education,,,2024(1): 306
+MT972,Early Childhood Education and Care,Munster Technological University,Cork,8,,Education,,,2024(1): 329; 2024(2): 318
+MT974,Social Care,Munster Technological University,Cork,8,,Other,,,2024(1): 308
+MU001,Theology and Arts (jointly awarded with Maynooth Uniersity),Pontifical University St Patrick\`s College,,8,,Arts,,,2024(1): 290; 2024(2): 290
+MU002,Theology,Pontifical University St Patrick\`s College,,8,,Other,,,2024(1): 371
+MU003,Theology and Arts International (jointly awarded with Maynooth Uniersit,Pontifical University St Patrick\`s College,,8,,Arts,,,2024(1): 497
+MU004,Baccalaureate in Philosophy,Pontifical University St Patrick\`s College,,8,,Arts,,,2024(1): 4
+NC003,Computing,National College of Ireland (NCI),,8,,Other,,,2024(1): 260
+NC005,Human Resource Management,National College of Ireland (NCI),,8,,Business,,,2024(1): 281
+NC009,Business,National College of Ireland (NCI),,8,,Business,,,2024(1): 270
+NC010,Psychology,National College of Ireland (NCI),,8,,Other,,,2024(1): 392
+NC020,Marketing Practice                                                         AQA      AQA,National College of Ireland (NCI),,8,,Business,,,2024(1): 20
+NC022,Accounting and Finance,National College of Ireland (NCI),,8,,Business,,,2024(1): 330
+NC025,Data Science,National College of Ireland (NCI),,8,,STEM,,,2024(1): 341; 2024(2): 341
+NC030,Early Childhood Education and Care                                         AQA      AQA,National College of Ireland (NCI),,8,,Education,,,2024(1): 30
+NC102,Computing                                                                  AQA      AQA,National College of Ireland (NCI),,7,,Other,,,2024(1): 102
+NC103,Business                                                                   AQA      AQA,National College of Ireland (NCI),,7,,Business,,,2024(1): 103
+NC105,Data Science                                                               AQA      AQA,National College of Ireland (NCI),,7,,STEM,,,2024(1): 105
+PC404,Applied Social Studies - Professional Social Care,Carlow College St. Patrick`s,,7,,Other,,,2024(1): 404
+PC410,Arts and Humanities,Carlow College St. Patrick`s,,8,,Arts,,,2024(1): 280; 2024(2): 226
+PC411,English and History,Carlow College St. Patrick`s,,8,,Arts,,,2024(1): 292; 2024(2): 224
+PC414,Psychology,Carlow College St. Patrick`s,,8,,Other,,,2024(1): 298; 2024(2): 201
+RC001,Medicine - Undergraduate Entry (HPAT required),RCSI University of Medicine & Health Sciences,,8,,Health,,,2024(1): 732
+RC004,Physiotherapy,RCSI University of Medicine & Health Sciences,,8,,Health,,,2024(1): 569; 2024(2): 566
+RC005,Pharmacy,RCSI University of Medicine & Health Sciences,,8,,Health,,,2024(1): 601; 2024(2): 590
+RC006,Adanced Therapeutic Technologies,RCSI University of Medicine & Health Sciences,,8,,Other,,,2024(1): 487; 2024(2): 475
+RC101,Medicine - Graduate Entry (GAMSAT required),RCSI University of Medicine & Health Sciences,,8,,Health,,,2024(1): 56
+SC601,Strength and Conditioning,Setanta College,,7,,Other,,,2024(1): 370
+SC701,Strength and Conditioning,Setanta College,,7,,Other,,,2024(1): 276
+SC801,Strength and Conditioning,Setanta College,,8,,Other,,,2024(1): 382
+SE200,Arts [Waterford]                                                           AQA      AQA,South East Technological University,Waterford,8,,Arts,,,2024(1): 200
+SE201,Design (Visual Communications),South East Technological University,Waterford,8,,Arts,,,2024(1): 292
+SE202,Product Design Innoation,South East Technological University,Waterford,8,,Arts,,,2024(1): 245
+SE203,Visual Art,South East Technological University,Waterford,8,,Other,,,2024(1): 260
+SE204,Visual Communications and Design,South East Technological University,Waterford,8,,Arts,,,2024(1): 220
+SE205,Psychology,South East Technological University,Waterford,8,,Other,,,2024(1): 440; 2024(2): 433
+SE206,Music (audition) [Waterford - College Street],South East Technological University,Waterford,8,,Arts,,,2024(1): 270
+SE207,Art (portfolio) [Wexford - Hill Street],South East Technological University,Waterford,8,,Other,,,2024(1): 700
+SE208,TV and Media Production,South East Technological University,Waterford,8,,Other,,,2024(1): 341
+SE209,Design,South East Technological University,Waterford,7,,Arts,,,2024(1): 280
+SE210,Visual Communications and Design,South East Technological University,Waterford,7,,Arts,,,2024(1): 195
+SE211,Art (portfolio) [Wexford - Hill Street],South East Technological University,Waterford,7,,Other,,,2024(1): 700
+SE212,TV and Media Production,South East Technological University,Waterford,7,,Other,,,2024(1): 299
+SE300,Content Creation and Social Media,South East Technological University,Waterford,8,,Other,,,2024(1): 307
+SE301,Content Creation and Social Media,South East Technological University,Waterford,7,,Other,,,2024(1): 233
+SE400,Business - with/without a language,South East Technological University,Waterford,8,,Business,,,2024(1): 270
+SE401,Business,South East Technological University,Waterford,8,,Business,,,2024(1): 260
+SE402,Business,South East Technological University,Waterford,8,,Business,,,2024(1): 323
+SE403,Business with Law,South East Technological University,Waterford,8,,"Business, Law",,,2024(1): 270
+SE404,Law (LLB),South East Technological University,Waterford,8,,Law,,,2024(1): 319
+SE405,Law (LLB),South East Technological University,Waterford,8,,Law,,,2024(1): 287
+SE406,Criminal Justice Studies,South East Technological University,Waterford,8,,Other,,,2024(1): 288
+SE407,Accounting,South East Technological University,Waterford,8,,Business,,,2024(1): 318
+SE408,Accounting,South East Technological University,Waterford,8,,Business,,,2024(1): 304
+SE409,Public Relations and Media,South East Technological University,Waterford,8,,Other,,,2024(1): 244
+SE410,Marketing and Digital Media,South East Technological University,Waterford,8,,Business,,,2024(1): 293
+SE411,Digital Marketing with Analytics,South East Technological University,Waterford,8,,Business,,,2024(1): 280
+SE412,International Business,South East Technological University,Waterford,8,,Business,,,2024(1): 279
+SE413,Business Information Systems,South East Technological University,Waterford,8,,Business,,,2024(1): 282
+SE414,Business,South East Technological University,Waterford,7,,Business,,,2024(1): 210
+SE415,Business,South East Technological University,Waterford,7,,Business,,,2024(1): 206
+SE416,Business,South East Technological University,Waterford,7,,Business,,,2024(1): 250
+SE417,Public Relations and Media,South East Technological University,Waterford,7,,Other,,,2024(1): 190
+SE418,Digital Marketing with Analytics,South East Technological University,Waterford,7,,Business,,,2024(1): 251
+SE419,Fashion Buying and Retail Management,South East Technological University,Waterford,7,,Business,,,2024(1): 152
+SE420,Business (campus options) [Carlow or Waterford or Wexford]                 AQA      AQA,South East Technological University,Waterford,7,,Business,,,2024(1): 420
+SE421,Business with Law,South East Technological University,Waterford,7,,"Business, Law",,,2024(1): 249
+SE422,Legal Studies,South East Technological University,Waterford,7,,Other,,,2024(1): 212
+SE423,Legal Studies,South East Technological University,Waterford,7,,Other,,,2024(1): 204
+SE500,Science,South East Technological University,Waterford,8,,STEM,,,2024(1): 279
+SE501,Science,South East Technological University,Waterford,8,,STEM,,,2024(1): 299
+SE502,Agricultural Science,South East Technological University,Waterford,8,,STEM,,,2024(1): 379
+SE503,Sustainable Farm Management and Agribusiness,South East Technological University,Waterford,8,,Business,,,2024(1): 262
+SE504,Pharmaceutical Science,South East Technological University,Waterford,8,,STEM,,,2024(1): 283
+SE505,Forestry,South East Technological University,Waterford,7,,Other,,,2024(1): 270
+SE506,Horticulture,South East Technological University,Waterford,7,,Other,,,2024(1): 242
+SE507,Horticulture,South East Technological University,Waterford,7,,Other,,,2024(1): 179
+SE508,Agriculture,South East Technological University,Waterford,7,,Other,,,2024(1): 338
+SE509,Sustainable Farm Management and Agribusiness,South East Technological University,Waterford,7,,Business,,,2024(1): 211
+SE510,Food Science,South East Technological University,Waterford,7,,STEM,,,2024(1): 328
+SE511,Pharmaceutical Science,South East Technological University,Waterford,7,,STEM,,,2024(1): 207
+SE512,Science,South East Technological University,Waterford,7,,STEM,,,2024(1): 276
+SE513,Analytical Science,South East Technological University,Waterford,7,,STEM,,,2024(1): 357
+SE514,Molecular Biology with Biopharmaceutical Science,South East Technological University,Waterford,7,,STEM,,,2024(1): 266
+SE515,Biosciences,South East Technological University,Waterford,7,,STEM,,,2024(1): 246
+SE516,Science - Applied Biology or Applied Chemistry,South East Technological University,Waterford,7,,STEM,,,2024(1): 171
+SE521,Brewing and Distilling,South East Technological University,Waterford,8,,Other,,,2024(1): 388
+SE600,Computer Science,South East Technological University,Waterford,8,,STEM,,,2024(1): 309
+SE601,Information Technology Management,South East Technological University,Waterford,8,,"STEM, Business",,,2024(1): 308
+SE602,Computer Forensics and Security,South East Technological University,Waterford,8,,STEM,,,2024(1): 301
+SE603,Software Deelopment,South East Technological University,Waterford,8,,STEM,,,2024(1): 309
+SE604,Software Systems Deelopment,South East Technological University,Waterford,8,,STEM,,,2024(1): 300
+SE605,Creatie Computing,South East Technological University,Waterford,8,,Other,,,2024(1): 338
+SE606,Cyber Crime and IT Security,South East Technological University,Waterford,8,,STEM,,,2024(1): 317
+SE607,Computer Games Deelopment,South East Technological University,Waterford,8,,STEM,,,2024(1): 299
+SE608,Computing in Interactie Digital Art and Design,South East Technological University,Waterford,8,,Arts,,,2024(1): 319
+SE609,Software Deelopment,South East Technological University,Waterford,7,,STEM,,,2024(1): 263
+SE610,Software Systems Deelopment,South East Technological University,Waterford,7,,STEM,,,2024(1): 211
+SE611,Creatie Computing,South East Technological University,Waterford,7,,Other,,,2024(1): 241
+SE612,Cyber Crime and IT Security,South East Technological University,Waterford,7,,STEM,,,2024(1): 225
+SE613,Information Technology,South East Technological University,Waterford,7,,STEM,,,2024(1): 204
+SE614,Information Technology Management,South East Technological University,Waterford,7,,"STEM, Business",,,2024(1): 255
+SE615,Computing in Interactie Digital Art and Design,South East Technological University,Waterford,7,,Arts,,,2024(1): 259
+SE616,Computing - Applications or Programming,South East Technological University,Waterford,7,,Other,,,2024(1): 244
+SE618,Computer Games Programming,South East Technological University,Waterford,7,,STEM,,,2024(1): 307
+SE700,Engineering,South East Technological University,Waterford,8,,STEM,,,2024(1): 272; 2024(2): 272
+SE701,Architecture,South East Technological University,Waterford,8,,Other,,,2024(1): 402
+SE702,Architectural Technology,South East Technological University,Waterford,8,,STEM,,,2024(1): 330
+SE703,Architectural and Building Information Modelling Technology [Waterford -,South East Technological University,Waterford,8,,STEM,,,2024(1): 305
+SE704,Quantity Sureying,South East Technological University,Waterford,8,,Other,,,2024(1): 280
+SE705,Quantity Sureying,South East Technological University,Waterford,8,,Other,,,2024(1): 307
+SE706,Construction Management,South East Technological University,Waterford,8,,Business,,,2024(1): 298
+SE707,Construction Management and Engineering,South East Technological University,Waterford,8,,"STEM, Business",,,2024(1): 263
+SE708,Electronic Systems,South East Technological University,Waterford,8,,Other,,,2024(1): 289
+SE709,Biomedical Electronics,South East Technological University,Waterford,8,,Other,,,2024(1): 288
+SE710,Robotics and Automated Systems,South East Technological University,Waterford,8,,Other,,,2024(1): 308
+SE711,Mechanical Engineering,South East Technological University,Waterford,8,,STEM,,,2024(1): 433
+SE712,Mechanical and Manufacturing Engineering,South East Technological University,Waterford,8,,STEM,,,2024(1): 264
+SE713,Ciil Engineering,South East Technological University,Waterford,8,,STEM,,,2024(1): 433
+SE714,Aerospace Engineering,South East Technological University,Waterford,8,,STEM,,,2024(1): 440
+SE716,Architectural Technology,South East Technological University,Waterford,7,,STEM,,,2024(1): 234
+SE717,Architectural Technology,South East Technological University,Waterford,7,,STEM,,,2024(1): 273
+SE719,Ciil Engineering,South East Technological University,Waterford,7,,STEM,,,2024(1): 206
+SE720,Electrical Engineering,South East Technological University,Waterford,7,,STEM,,,2024(1): 207
+SE721,Electronic Engineering,South East Technological University,Waterford,7,,STEM,,,2024(1): 206
+SE722,Electronic Engineering,South East Technological University,Waterford,7,,STEM,,,2024(1): 243
+SE723,Mechanical Engineering,South East Technological University,Waterford,7,,STEM,,,2024(1): 200
+SE724,Mechanical Engineering,South East Technological University,Waterford,7,,STEM,,,2024(1): 360
+SE725,Manufacturing Engineering,South East Technological University,Waterford,7,,STEM,,,2024(1): 280
+SE726,Construction Management,South East Technological University,Waterford,7,,Business,,,2024(1): 261
+SE727,Biomedical Electronics,South East Technological University,Waterford,7,,Other,,,2024(1): 323
+SE728,Robotics and Automated Systems,South East Technological University,Waterford,7,,Other,,,2024(1): 266
+SE729,Aircraft Systems,South East Technological University,Waterford,7,,Other,,,2024(1): 357
+SE730,Electronic Engineering,South East Technological University,Waterford,7,,STEM,,,2024(1): 274
+SE731,Mechanical Engineering,South East Technological University,Waterford,7,,STEM,,,2024(1): 193
+SE732,Agricultural Systems Engineering,South East Technological University,Waterford,8,,STEM,,,2024(1): 309
+SE733,Agricultural Systems Engineering,South East Technological University,Waterford,7,,STEM,,,2024(1): 297
+SE734,Set Design and Construction,South East Technological University,Waterford,8,,Arts,,,2024(1): 291; 2024(2): 291
+SE735,Set Design and Construction,South East Technological University,Waterford,7,,Arts,,,2024(1): 238
+SE900,Health Sciences,South East Technological University,Waterford,8,,"STEM, Health",,,2024(1): 300
+SE901,Sport Rehabilitation and Athletic Therapy,South East Technological University,Waterford,8,,Health,,,2024(1): 473
+SE902,Exercise Sciences,South East Technological University,Waterford,8,,STEM,,,2024(1): 279
+SE903,Strength and Conditioning,South East Technological University,Waterford,8,,Other,,,2024(1): 340
+SE904,Sports Coaching and Performance,South East Technological University,Waterford,8,,Other,,,2024(1): 272
+SE905,Sport and Exercise Science,South East Technological University,Waterford,8,,STEM,,,2024(1): 440
+SE906,Recreation and Sport Management,South East Technological University,Waterford,8,,Business,,,2024(1): 271
+SE907,Sports Management and Coaching (Gaelic Games - portfolio) [Carlow],South East Technological University,Waterford,8,,Business,,,2024(1): 700
+SE908,Sports Management and Coaching (Rugby - portfolio) [Carlow],South East Technological University,Waterford,8,,Business,,,2024(1): 700
+SE909,Sports Management and Coaching (Football - portfolio) [Carlow],South East Technological University,Waterford,8,,Business,,,2024(1): 700
+SE910,Sport  Business and Coaching,South East Technological University,Waterford,8,,Business,,,2024(1): 307
+SE911,Early Childhood Care and Education,South East Technological University,Waterford,8,,Education,,,2024(1): 269
+SE912,Early Childhood Education and Practice,South East Technological University,Waterford,8,,Education,,,2024(1): 244
+SE913,Early Childhood Education and Practice,South East Technological University,Waterford,8,,Education,,,2024(1): 260
+SE914,Psychiatric Nursing,South East Technological University,Waterford,8,,Health,,,2024(1): 330
+SE915,General Nursing,South East Technological University,Waterford,8,,Health,,,2024(1): 418
+SE916,Intellectual Disability Nursing,South East Technological University,Waterford,8,,Health,,,2024(1): 308
+SE917,Applied Social Studies in Professional Social Care,South East Technological University,Waterford,8,,Other,,,2024(1): 263
+SE918,Professional Social Care Practice,South East Technological University,Waterford,8,,Other,,,2024(1): 260
+SE919,Social Care Practice,South East Technological University,Waterford,8,,Other,,,2024(1): 260
+SE920,Social Science,South East Technological University,Waterford,8,,STEM,,,2024(1): 293
+SE921,Hospitality Management,South East Technological University,Waterford,8,,Business,,,2024(1): 307
+SE922,Tourism and Eent Management,South East Technological University,Waterford,8,,Business,,,2024(1): 281
+SE923,Culinary Arts,South East Technological University,Waterford,8,,Arts,,,2024(1): 269
+SE924,Tourism and Hospitality Serices,South East Technological University,Waterford,7,,Other,,,2024(1): 200
+SE925,Tourism and Eent Management,South East Technological University,Waterford,7,,Business,,,2024(1): 243
+SE926,Professional Social Care Practice,South East Technological University,Waterford,7,,Other,,,2024(1): 188
+SE927,Applied Social Care,South East Technological University,Waterford,7,,Other,,,2024(1): 188
+SE928,Applied Health Care,South East Technological University,Waterford,7,,Health,,,2024(1): 225
+SE929,Sport Coaching and Business Management (Gaelic Games - portfolio) [Carlo,South East Technological University,Waterford,7,,Business,,,2024(1): 700
+SE930,Sport Coaching and Business Management (Rugby - portfolio) [Carlow],South East Technological University,Waterford,7,,Business,,,2024(1): 700
+SE931,Sport Coaching and Business Management (Football - portfolio) [Carlow],South East Technological University,Waterford,7,,Business,,,2024(1): 700
+SE932,Sport  Business and Coaching,South East Technological University,Waterford,7,,Business,,,2024(1): 241
+SE933,Recreation and Sport Management,South East Technological University,Waterford,7,,Business,,,2024(1): 170; 2024(2): 170
+SE934,Early Childhood Education and Practice,South East Technological University,Waterford,7,,Education,,,2024(1): 198
+SE935,Early Childhood Education and Practice,South East Technological University,Waterford,7,,Education,,,2024(1): 207
+SE936,Physiology and Health Science,South East Technological University,Waterford,7,,"STEM, Health",,,2024(1): 424
+SE937,Pharmacy Technician Studies,South East Technological University,Waterford,7,,Health,,,2024(1): 225
+SE938,Culinary Arts,South East Technological University,Waterford,7,,Arts,,,2024(1): 133
+TR002,Music,required for entry to Joint Honours/Modern Language,,8,,Arts,,,2024(1): 441; 2024(2): 436
+TR003,History,required for entry to Joint Honours/Modern Language,,8,,Arts,,,2024(1): 499; 2024(2): 498
+TR004,Law,required for entry to Joint Honours/Modern Language,,8,,Law,,,2024(1): 578
+TR005,Philosophy,required for entry to Joint Honours/Modern Language,,8,,Arts,,,2024(1): 510
+TR006,Psychology,required for entry to Joint Honours/Modern Language,,8,,Other,,,2024(1): 592; 2024(2): 584
+TR007,Clinical Speech and Language Studies,required for entry to Joint Honours/Modern Language,,8,,Other,,,2024(1): 564; 2024(2): 553
+TR009,Music Education,required for entry to Joint Honours/Modern Language,,8,,"Arts, Education",,,2024(1): 490
+TR015,Philosophy  Political Science  Economics and Sociology,required for entry to Joint Honours/Modern Language,,8,,"STEM, Business, Arts",,,2024(1): 602; 2024(2): 601
+TR016,Deaf Studies,required for entry to Joint Honours/Modern Language,,8,,Other,,,2024(1): 336
+TR018,Law and French,required for entry to Joint Honours/Modern Language,,8,,Law,,,2024(1): 600
+TR019,Law and German,required for entry to Joint Honours/Modern Language,,8,,Law,,,2024(1): 543
+TR021,Classics  Ancient History and Archaeology,required for entry to Joint Honours/Modern Language,,8,,Arts,,,2024(1): 485; 2024(2): 472
+TR022,Early and Modern Irish,required for entry to Joint Honours/Modern Language,,8,,Other,,,2024(1): 343
+TR023,English Studies,required for entry to Joint Honours/Modern Language,,8,,Other,,,2024(1): 542; 2024(2): 529
+TR024,European Studies,required for entry to Joint Honours/Modern Language,,8,,Other,,,2024(1): 555
+TR025,Drama and Theatre Studies,required for entry to Joint Honours/Modern Language,,8,,Arts,,,2024(1): 431
+TR028,Ancient and Medieal History and Culture,required for entry to Joint Honours/Modern Language,,8,,Arts,,,2024(1): 422
+TR031,Mathematics,required for entry to Joint Honours/Modern Language,,8,,STEM,,,2024(1): 565
+TR032,Engineering,required for entry to Joint Honours/Modern Language,,8,,STEM,,,2024(1): 556
+TR033,Computer Science,required for entry to Joint Honours/Modern Language,,8,,STEM,,,2024(1): 531; 2024(2): 522
+TR034,Management Science and Information Systems Studies,required for entry to Joint Honours/Modern Language,,8,,"STEM, Business",,,2024(1): 613
+TR035,Theoretical Physics,required for entry to Joint Honours/Modern Language,,8,,STEM,,,2024(1): 551; 2024(2): 517
+TR038,Engineering with Management,required for entry to Joint Honours/Modern Language,,8,,"STEM, Business",,,2024(1): 613
+TR039,Computer Science  Linguistics and a Language (French  Irish or Spanish),required for entry to Joint Honours/Modern Language,,8,,STEM,,,2024(1): 499; 2024(2): 498
+TR040,Middle Eastern and European Languages and Cultures,required for entry to Joint Honours/Modern Language,,8,,Arts,,,2024(1): 443; 2024(2): 388
+TR041,Religion,required for entry to Joint Honours/Modern Language,,8,,Other,,,2024(1): 350
+TR042,Film,required for entry to Joint Honours/Modern Language,,8,,Other,,,2024(1): 532; 2024(2): 523
+TR043,History of Art and Architecture,required for entry to Joint Honours/Modern Language,,8,,Arts,,,2024(1): 486
+TR051,Medicine (HPAT required),required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 738
+TR052,Dental Science,required for entry to Joint Honours/Modern Language,,8,,"STEM, Health",,,2024(1): 625
+TR053,Physiotherapy,required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 578; 2024(2): 577
+TR054,Occupational Therapy,required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 548; 2024(2): 544
+TR055,Radiation Therapy,required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 543; 2024(2): 542
+TR056,Human Health and Disease,required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 579; 2024(2): 578
+TR060,Biological and Biomedical Sciences,required for entry to Joint Honours/Modern Language,,8,,STEM,,,2024(1): 555; 2024(2): 554
+TR061,Chemical Sciences,required for entry to Joint Honours/Modern Language,,8,,STEM,,,2024(1): 532; 2024(2): 531
+TR062,Geography and Geoscience,required for entry to Joint Honours/Modern Language,,8,,STEM,,,2024(1): 445
+TR063,Physical Sciences,required for entry to Joint Honours/Modern Language,,8,,STEM,,,2024(1): 525; 2024(2): 521
+TR064,Enironmental Science and Engineering,required for entry to Joint Honours/Modern Language,,8,,STEM,,,2024(1): 543
+TR072,Pharmacy,required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 613; 2024(2): 602
+TR080,Global Business,required for entry to Joint Honours/Modern Language,,8,,Business,,,2024(1): 601
+TR081,Business  Economic and Social Studies (BESS),required for entry to Joint Honours/Modern Language,,8,,Business,,,2024(1): 555
+TR084,Social Studies (Social Work),required for entry to Joint Honours/Modern Language,,8,,Other,,,2024(1): 444
+TR085,Business Studies and French,required for entry to Joint Honours/Modern Language,,8,,Business,,,2024(1): 545; 2024(2): 543
+TR086,Business Studies and German,required for entry to Joint Honours/Modern Language,,8,,Business,,,2024(1): 488
+TR087,Business Studies and Russian,required for entry to Joint Honours/Modern Language,,8,,Business,,,2024(1): 465; 2024(2): 423
+TR089,Business Studies and Polish,required for entry to Joint Honours/Modern Language,,8,,Business,,,2024(1): 478
+TR090,Business Studies and Spanish,required for entry to Joint Honours/Modern Language,,8,,Business,,,2024(1): 568; 2024(2): 567
+TR091,General Nursing (Meath and St James`s),required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 392; 2024(2): 390
+TR093,General Nursing (Adelaide School of Nursing),required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 346
+TR095,Mental Health Nursing,required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 341; 2024(2): 335
+TR097,Intellectual Disability Nursing,required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 320
+TR801,Dental Nursing,Trinity College Dublin,,7,,Health,,,2024(1): 445; 2024(2): 409
+TR802,Dental Hygiene,Trinity College Dublin,,7,,Health,,,2024(1): 534
+TR803,Dental Technology,Trinity College Dublin,,7,,"STEM, Health",,,2024(1): 351
+TR911,Children`s and General Nursing (Integrated),required for entry to Joint Honours/Modern Language,,8,,Health,,,2024(1): 509; 2024(2): 507
+TR913,Midwifery,required for entry to Joint Honours/Modern Language,,8,,Other,,,2024(1): 500; 2024(2): 495
+TU651,Applied Biology,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 252
+TU652,Computing [Tallaght]                                                       AQA,Technological University Dublin,Tallaght,7,,Other,,,2024(1): 652
+TU654,Pharmacy Technician Studies,Technological University Dublin,Tallaght,7,,Health,,,2024(1): 288
+TU670,Business (campus options) [Blanchardstown or Tallaght]                     AQA,Technological University Dublin,Tallaght,7,,Business,,,2024(1): 670
+TU678,Business (general entry),Technological University Dublin,Tallaght,7,,Business,,,2024(1): 251
+TU701,Automation Engineering and Robotics,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 253
+TU703,Building Engineering,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 242
+TU704,Ciil Engineering,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 253
+TU705,Electrical and Control Engineering [Grangegorman]                          AQA,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 705
+TU706,Electrical Serices Engineering [Grangegorman]                             AQA,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 706
+TU708,Engineering (General Entry) [Blanchardstown]                               AQA,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 708
+TU709,Engineering (General Entry),Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 405
+TU713,Computer Engineering,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 241
+TU714,Electronics and Communications Engineering,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 223
+TU716,Networking Technologies,Technological University Dublin,Tallaght,7,,Other,,,2024(1): 240
+TU717,Mechanical Engineering,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 260
+TU720,Automotie Management and Technology [Bolton Street]                       AQA,Technological University Dublin,Tallaght,7,,"STEM, Business",,,2024(1): 720
+TU721,Aiation Technology,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 320
+TU722,Process Instrumentation and Automation [Learn and Work] [Blanchardstown],Technological University Dublin,Tallaght,7,,Other,,,2024(1): 385
+TU725,Mechanical Engineering (General Entry) [Tallaght]                          AQA      AQA,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 725
+TU726,Electronic Engineering and Engineering Software (General Entry) [Tallagh,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 208
+TU731,Auctioneering  Valuation and Estate Agency,Technological University Dublin,Tallaght,7,,Other,,,2024(1): 350
+TU735,Sports Management and Coaching,Technological University Dublin,Tallaght,7,,Business,,,2024(1): 280
+TU736,Sports Science and Health,Technological University Dublin,Tallaght,7,,"STEM, Health",,,2024(1): 451
+TU737,Sports Studies,Technological University Dublin,Tallaght,7,,Other,,,2024(1): 301
+TU741,Baking and Pastry Arts Management [Grangegorman]                           AQA,Technological University Dublin,Tallaght,7,,"Business, Arts",,,2024(1): 741
+TU742,Culinary Arts [Tallaght]                                                   AQA,Technological University Dublin,Tallaght,7,,Arts,,,2024(1): 742
+TU745,Hospitality Management,Technological University Dublin,Tallaght,7,,Business,,,2024(1): 206
+TU746,International Hospitality and Tourism Management [Tallaght]                AQA,Technological University Dublin,Tallaght,7,,Business,,,2024(1): 746
+TU747,Tourism Management [Grangegorman]                                          AQA,Technological University Dublin,Tallaght,7,,Business,,,2024(1): 747
+TU751,Biosciences,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 410; 2024(2): 392
+TU752,DNA and Forensic Analysis,Technological University Dublin,Tallaght,7,,Other,,,2024(1): 422
+TU754,Industrial and Enironmental Physics,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 250
+TU755,Science (General Entry),Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 280
+TU756,Computing (General Entry),Technological University Dublin,Tallaght,7,,Other,,,2024(1): 210
+TU757,Computing (Information Technology),Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 272
+TU758,Digital Forensics and Cyber Security,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 280
+TU760,Bioanalysis,Technological University Dublin,Tallaght,7,,Other,,,2024(1): 300
+TU761,Ophthalmic Dispensing,Technological University Dublin,Tallaght,7,,Other,,,2024(1): 761
+TU762,Medicinal Chemistry and Pharmaceutical Sciences,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 347
+TU763,Pharmaceutical Science,Technological University Dublin,Tallaght,7,,STEM,,,2024(1): 352
+TU772,Business (general entry) [Blanchardstown]                                  AQA,Technological University Dublin,Tallaght,7,,Business,,,2024(1): 772
+TU781,Digital Marketing,Technological University Dublin,Tallaght,7,,Business,,,2024(1): 200
+TU782,Digital Marketing [Tallaght]                                               AQA,Technological University Dublin,Tallaght,7,,Business,,,2024(1): 782
+TU787,Business (general entry) [Tallaght]                                        AQA,Technological University Dublin,Tallaght,7,,Business,,,2024(1): 787
+TU788,Accounting and Finance (campus options),Technological University Dublin,Tallaght,7,,Business,,,2024(1): 201
+TU790,Early Childhood Education and Care (campus options) [Blanchardstown or T   AQA,Technological University Dublin,Tallaght,7,,Education,,,2024(1): 790
+TU791,Applied Social Studies in Social Care,Technological University Dublin,Tallaght,7,,Other,,,2024(1): 281
+TU792,Community and Youth Deelopment [Blanchardstown]                           AQA      AQA,Technological University Dublin,Tallaght,7,,Other,,,2024(1): 792
+TU795,Visual Merchandising and Display (portfolio) [Grangegorman],Technological University Dublin,Tallaght,7,,Other,,,2024(1): 418
+TU796,Creatie Digital Media,Technological University Dublin,Tallaght,7,,Other,,,2024(1): 304
+TU801,Sustainable Energy Engineering,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 236; 2024(2): 236
+TU802,Electrical Serices and Energy Management,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 253; 2024(2): 253
+TU804,Engineering (General Entry),Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 301
+TU805,Engineering (General Entry),Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 443
+TU807,Computer Engineering in Mobile Systems,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 260
+TU810,Mechatronic Engineering,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 261
+TU811,Product Design,Technological University Dublin,Tallaght,8,,Arts,,,2024(1): 423
+TU828,Mechanical Engineering (General Entry),Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 327
+TU829,Electronic Engineering and Engineering Software (General Entry) [Tallagh,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 829
+TU831,Architectural Technology,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 410
+TU832,Architecture (Suitability Test and Interiew) [Bolton Street],Technological University Dublin,Tallaght,8,,Other,,,2024(1): 652
+TU833,Construction Management,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 400
+TU835,Planning and Enironmental Management,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 316
+TU836,Property Economics (Valuation Sureying),Technological University Dublin,Tallaght,8,,Business,,,2024(1): 411
+TU837,Quantity Sureying and Construction Economics,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 414
+TU850,Data Science and Artificial Intelligence,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 403
+TU851,Analytical Chemistry (Enironmental Forensic and Pharmaceutical) [Grange,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 304; 2024(2): 304
+TU852,Chemical Sciences with Medicinal Chemistry,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 423
+TU854,Science (General Entry),Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 440
+TU855,Science with Nanotechnology,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 326
+TU856,Computer Science,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 454
+TU857,Computer Science (Infrastructure),Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 410
+TU858,Computer Science (International),Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 413
+TU859,Computing (General Entry),Technological University Dublin,Tallaght,8,,Other,,,2024(1): 859
+TU860,Computing (Information Technology),Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 280
+TU862,Computing with Machine Learning and Artificial Intelligence,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 244
+TU863,Digital Forensics and Cyber Security,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 300
+TU864,DNA and Forensic Analysis,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 430
+TU865,Cloud Computing,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 242
+TU866,Biomedical and Molecular Diagnostics,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 475
+TU867,Medical Science,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 522
+TU868,Clinical Measurement Science,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 477
+TU869,Enironmental Health,Technological University Dublin,Tallaght,8,,Health,,,2024(1): 300; 2024(2): 300
+TU870,Human Nutrition and Dietetics,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 555
+TU871,Optometry,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 544
+TU872,Public Health Nutrition,Technological University Dublin,Tallaght,8,,Health,,,2024(1): 390
+TU874,Mathematical Sciences (also leading to Industrial Mathematics) [Grangego,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 302; 2024(2): 302
+TU875,Pharmaceutical Healthcare,Technological University Dublin,Tallaght,8,,Health,,,2024(1): 381
+TU876,Pharmaceutical Science,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 383
+TU877,Physics Technology,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 357; 2024(2): 357
+TU878,Physics with Energy and Enironment,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 363
+TU879,Physics with Medical Physics and Bioengineering,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 339; 2024(2): 331
+TU880,Physics with Data Science,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 371
+TU881,Food Science,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 330
+TU882,Nutraceuticals in Health and Nutrition,Technological University Dublin,Tallaght,8,,Health,,,2024(1): 309
+TU889,Biotechnology,Technological University Dublin,Tallaght,8,,STEM,,,2024(1): 421
+TU902,Business (general entry),Technological University Dublin,Tallaght,8,,Business,,,2024(1): 214; 2024(2): 214
+TU903,Business and Management,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 451
+TU904,Business and Law,Technological University Dublin,Tallaght,8,,"Business, Law",,,2024(1): 445
+TU905,Economics and Finance,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 423
+TU906,Human Resource Management,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 326
+TU907,Logistics and Supply Chain Management,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 307
+TU910,Accounting,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 380
+TU912,Business Analytics,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 338
+TU914,Business Computing,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 320
+TU917,Law (LL.B.) with a Language,Technological University Dublin,Tallaght,8,,Law,,,2024(1): 347
+TU918,Law (LL.B.),Technological University Dublin,Tallaght,8,,Law,,,2024(1): 420
+TU919,Adertising and Marketing Communications,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 218; 2024(2): 218
+TU920,Digital Marketing,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 272
+TU921,Digital Marketing Technologies,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 226
+TU922,Marketing,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 388
+TU924,E-Commerce in Retailing,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 252; 2024(2): 243
+TU932,Business (general entry),Technological University Dublin,Tallaght,8,,Business,,,2024(1): 200; 2024(2): 200
+TU933,Accounting and Finance (campus options),Technological University Dublin,Tallaght,8,,Business,,,2024(1): 260
+TU935,Sports Management and Coaching,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 300
+TU936,Sports Science and Health,Technological University Dublin,Tallaght,8,,"STEM, Health",,,2024(1): 451
+TU942,Culinary Arts,Technological University Dublin,Tallaght,8,,Arts,,,2024(1): 224
+TU951,International Hospitality and Tourism Management,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 238; 2024(2): 238
+TU952,International Hospitality Management,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 269
+TU953,Tourism and Digital Marketing,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 953
+TU954,Eent Management,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 293
+TU955,Sports and Leisure Management,Technological University Dublin,Tallaght,8,,Business,,,2024(1): 955
+TU961,Commercial Modern Music (BIMM - audition) [Francis Street],Technological University Dublin,Tallaght,8,,Arts,,,2024(1): 504
+TU962,Drama (Performance - audition) [Grangegorman],Technological University Dublin,Tallaght,8,,Arts,,,2024(1): 411
+TU965,International Business and Languages,Technological University Dublin,Tallaght,8,,"Business, Arts",,,2024(1): 291
+TU973,Design - Visual Communication (portfolio) [Grangegorman],Technological University Dublin,Tallaght,8,,Arts,,,2024(1): 847
+TU974,Fine Art (portfolio) [Grangegorman],Technological University Dublin,Tallaght,8,,Other,,,2024(1): 712
+TU975,Interior Design (portfolio) [Grangegorman],Technological University Dublin,Tallaght,8,,Arts,,,2024(1): 709
+TU976,Photography,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 304; 2024(2): 236
+TU978,Creatie Industries and Visual Culture,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 265
+TU981,Creatie Digital Media,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 327
+TU982,Media Production and Digital Arts,Technological University Dublin,Tallaght,8,,Arts,,,2024(1): 283
+TU983,Film and Broadcasting,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 430
+TU984,Game Design,Technological University Dublin,Tallaght,8,,Arts,,,2024(1): 454
+TU985,Journalism,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 301
+TU989,Early Childhood Education and Care (campus options) [Blanchardstown or T,Technological University Dublin,Tallaght,8,,Education,,,2024(1): 261; 2024(2): 254
+TU991,Applied Social Studies in Social Care,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 303
+TU992,Community Deelopment and Youth Work,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 237; 2024(2): 237
+TU995,Early Childhood Education,Technological University Dublin,Tallaght,8,,Education,,,2024(1): 310
+TU996,Social Care,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 363
+TU997,Applied Social Care,Technological University Dublin,Tallaght,8,,Other,,,2024(1): 301
+US610,Accounting and Finance,Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 348
+US612,Business Studies (Marketing and Management),Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 316
+US631,Culinary Arts,Technological University of the Shannon,Limerick,7,,Arts,,,2024(1): 200
+US640,Sports Deelopment and Coaching,Technological University of the Shannon,Limerick,7,,Other,,,2024(1): 179
+US651,Agricultural Mechanisation (in Year,Technological University of the Shannon,Limerick,7,,Other,,,2024(1): 254; 2024(2): 215
+US660,Pharmacy Technician,Technological University of the Shannon,Limerick,7,,Health,,,2024(1): 252
+US661,Dental Nursing,Technological University of the Shannon,Limerick,7,,Health,,,2024(1): 270
+US700,Graphic Design (portfolio) [Athlone],Technological University of the Shannon,Limerick,7,,Arts,,,2024(1): 765
+US702,Creatie Broadcast and Film Production,Technological University of the Shannon,Limerick,7,,Other,,,2024(1): 308
+US703,Music Production and Technology,Technological University of the Shannon,Limerick,7,,"STEM, Arts",,,2024(1): 281
+US704,Music and Sound Engineering,Technological University of the Shannon,Limerick,7,,"STEM, Arts",,,2024(1): 285; 2024(2): 218
+US710,Computing  - Mobile and Web,Technological University of the Shannon,Limerick,7,,Other,,,2024(1): 205
+US711,Computer Engineering with Network Infrastructure,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 270
+US712,Software Design with Artificial Intelligence for Cloud Computing [Athlon,Technological University of the Shannon,Limerick,7,,"STEM, Arts",,,2024(1): 270
+US713,Software Design with Virtual Reality and Gaming,Technological University of the Shannon,Limerick,7,,"STEM, Arts",,,2024(1): 226
+US714,Computer Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 220
+US715,Software Design with Digitalisation,Technological University of the Shannon,Limerick,7,,"STEM, Arts",,,2024(1): 243
+US720,Business,Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 231; 2024(2): 222
+US721,Business,Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 278
+US722,Business with Computing,Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 217; 2024(2): 196
+US723,Enterprise and Innoation,Technological University of the Shannon,Limerick,7,,Other,,,2024(1): 179; 2024(2): 137
+US724,Digital Marketing,Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 210
+US730,Applied Biology,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 297
+US731,Biotechnology,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 320
+US732,Forensic and Pharmaceutical Sciences,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 256
+US733,Pharmaceutical Sciences (Drug Deelopment and Analysis),Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 222
+US735,Medical Technology,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 358
+US736,Enironmental Science and Climate,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 317
+US738,Veterinary Nursing,Technological University of the Shannon,Limerick,7,,Health,,,2024(1): 390
+US740,Agricultural Science and Sustainability,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 239; 2024(2): 148
+US750,Electrical Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 289
+US751,Electronic Engineering with Computer Systems,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 227
+US752,Renewable and Electrical Energy Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 280
+US753,Robotics and Automation Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 197
+US760,Ciil Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 234
+US761,Ciil Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 240
+US769,Agricultural Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 303
+US770,Mechanical Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 233
+US771,Mechanical Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 300
+US772,Mechanical Engineering with Energy,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 327
+US773,Engineering  (Common Entry to US,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 231
+US774,Precision Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 254
+US775,Road Transport Technology and Management,Technological University of the Shannon,Limerick,7,,"STEM, Business",,,2024(1): 298
+US776,Automation and Robotics,Technological University of the Shannon,Limerick,7,,Other,,,2024(1): 230
+US777,Polymer and Mechanical Engineering,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 207
+US778,Animation and Illustration (portfolio) [Athlone],Technological University of the Shannon,Limerick,7,,Other,,,2024(1): 631
+US779,Engineering Technology Management,Technological University of the Shannon,Limerick,7,,"STEM, Business",,,2024(1): 307; 2024(2): 259
+US780,Early Childhood Education and Care,Technological University of the Shannon,Limerick,7,,Education,,,2024(1): 196
+US781,Social Care Work,Technological University of the Shannon,Limerick,7,,Other,,,2024(1): 144; 2024(2): 144
+US782,Applied Social Studies in Social Care,Technological University of the Shannon,Limerick,7,,Other,,,2024(1): 218
+US783,Early Childhood Education and Care,Technological University of the Shannon,Limerick,7,,Education,,,2024(1): 306
+US784,Applied Sports Science with Sport and Exercise Nutrition,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 218
+US785,Sports Deelopment and Performance,Technological University of the Shannon,Limerick,7,,Other,,,2024(1): 230; 2024(2): 227
+US786,Applied Sport Science Strength and Conditioning,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 188; 2024(2): 188
+US787,Business Studies with Sports Management,Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 271
+US788,Exercise and Health Science,Technological University of the Shannon,Limerick,7,,"STEM, Health",,,2024(1): 241
+US789,Applied Sport Science with Performance Technology,Technological University of the Shannon,Limerick,7,,STEM,,,2024(1): 216
+US790,Business Studies with Trael and Tourism Management,Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 211
+US791,Business Studies with Eent Management,Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 242
+US792,Business Studies with Beauty and Spa Management,Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 222
+US793,Business Studies with Eent Management,Technological University of the Shannon,Limerick,7,,Business,,,2024(1): 251
+US795,Culinary Arts,Technological University of the Shannon,Limerick,7,,Arts,,,2024(1): 163; 2024(2): 163
+US800,Art and Design (Common Entry - portfolio) [Limerick],Technological University of the Shannon,Limerick,8,,Arts,,,2024(1): 785
+US801,B Ed Art and Design (Offered jointly by TUS and UL - portfolio) [Limeric,Technological University of the Shannon,Limerick,8,,Arts,,,2024(1): 841
+US802,Animation and Illustration (portfolio) [Athlone],Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 874
+US803,Graphic and Digital Design (portfolio) [Athlone],Technological University of the Shannon,Limerick,8,,Arts,,,2024(1): 761
+US805,Digital Animation (portfolio) [Clonmel],Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 742
+US806,Game Art and Design (portfolio) [Clonmel],Technological University of the Shannon,Limerick,8,,Arts,,,2024(1): 830
+US807,Creatie Broadcast and Film Production,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 307
+US808,Music Production and Technology,Technological University of the Shannon,Limerick,8,,"STEM, Arts",,,2024(1): 299
+US809,Music and Sound Engineering,Technological University of the Shannon,Limerick,8,,"STEM, Arts",,,2024(1): 290
+US810,Visual Effects for Film  TV and Animation (portfolio) [Clonmel],Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 935
+US811,Interior Design (portfolio) [Limerick],Technological University of the Shannon,Limerick,8,,Arts,,,2024(1): 819
+US812,Design Engineering,Technological University of the Shannon,Limerick,8,,"STEM, Arts",,,2024(1): 432
+US820,Software Deelopment,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 338
+US821,Software Design with Virtual Reality and Gaming,Technological University of the Shannon,Limerick,8,,"STEM, Arts",,,2024(1): 289; 2024(2): 281
+US822,Software Design with Artificial Intelligence for Cloud Computing [Athlon,Technological University of the Shannon,Limerick,8,,"STEM, Arts",,,2024(1): 333
+US823,Software Design with Digitalisation,Technological University of the Shannon,Limerick,8,,"STEM, Arts",,,2024(1): 300
+US824,Computer Engineering for Network Infrastructure,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 423
+US825,Immersie Digital Media,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 254
+US826,Computing - Mobile and  Web,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 306
+US827,Computer Networks and Cyber Security,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 328
+US828,Software Deelopment with Games Programming,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 270
+US829,Computer Engineering for Robotics,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 222
+US837,Law,Technological University of the Shannon,Limerick,8,,Law,,,2024(1): 318
+US838,Business and Law,Technological University of the Shannon,Limerick,8,,"Business, Law",,,2024(1): 292
+US840,Business,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 289
+US841,Business,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 300
+US842,Business,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 220
+US843,Business Studies (Digital Marketing),Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 253
+US844,Digital Marketing,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 235
+US845,Accounting and Finance,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 350; 2024(2): 323
+US846,Accounting with Finance,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 298
+US847,Accounting with Finance (with Placement),Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 309
+US848,Business and Law,Technological University of the Shannon,Limerick,8,,"Business, Law",,,2024(1): 280
+US849,Law and Taxation,Technological University of the Shannon,Limerick,8,,Law,,,2024(1): 307
+US850,Law,Technological University of the Shannon,Limerick,8,,Law,,,2024(1): 327
+US851,Business Studies (Marketing and Management),Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 251
+US852,Business Studies (Enterprise and Innoation),Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 264; 2024(2): 264
+US853,International Business,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 291
+US854,International Business Studies,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 303
+US855,Business with Computing,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 288
+US860,Biotechnology with Biopharmaceutical Science,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 378
+US861,Biotechnology,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 324
+US862,Microbiology,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 308
+US863,Forensic and Pharmaceutical Sciences,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 441
+US864,Drug and Medicinal Product Analysis,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 309
+US865,Pharmacology,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 305
+US866,Pharmaceutical Sciences,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 280
+US867,Bioeterinary Science,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 289
+US868,Enironmental Science and Climate,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 289
+US869,Medical Technology,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 347
+US870,Agricultural Science and Sustainability,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 302; 2024(2): 281
+US877,General Nursing,Technological University of the Shannon,Limerick,8,,Health,,,2024(1): 378
+US878,Mental Health Nursing,Technological University of the Shannon,Limerick,8,,Health,,,2024(1): 299
+US880,Quantity Sureying,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 288
+US881,Quantity Sureying,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 308
+US882,Property Valuation and Management,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 306
+US883,Built Enironment (Common Entry),Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 300
+US884,Construction Management,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 290
+US885,Construction Management,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 280
+US886,Ciil Engineering Management,Technological University of the Shannon,Limerick,8,,"STEM, Business",,,2024(1): 358
+US887,Ciil Engineering,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 437
+US900,Electrical Engineering,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 347
+US901,Renewable and Electrical Energy Engineering,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 304
+US902,Robotics and Automation Engineering,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 328
+US903,Electronic Engineering with Computer Systems,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 278
+US909,Engineering Technology Management,Technological University of the Shannon,Limerick,8,,"STEM, Business",,,2024(1): 319
+US910,Mechanical Engineering,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 309
+US911,Mechanical Engineering,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 318
+US912,Mechanical Engineering with Energy,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 342
+US913,Polymer and Mechanical  Engineering,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 369
+US914,Precision Engineering,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 246
+US915,Automotie Engineering and Transport Management,Technological University of the Shannon,Limerick,8,,"STEM, Business",,,2024(1): 314
+US916,Automation and Robotics,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 318
+US917,Computer Engineering,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 296
+US918,International Software Design (with International Placement) [Athlone],Technological University of the Shannon,Limerick,8,,"STEM, Arts",,,2024(1): 918
+US920,Social Care Work,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 337
+US921,Social Care Practice,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 270
+US922,Social Care Work,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 260
+US923,Social Care Work,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 225
+US924,Applied Psychology,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 403
+US925,Applied Psychology,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 420
+US926,Early Childhood Education and Care,Technological University of the Shannon,Limerick,8,,Education,,,2024(1): 262
+US927,Early Childhood Education and Care,Technological University of the Shannon,Limerick,8,,Education,,,2024(1): 298; 2024(2): 262
+US928,Community and Addiction Studies,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 248; 2024(2): 248
+US930,Culinary Entrepreneurship,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 278; 2024(2): 278
+US931,Culinary Entrepreneurship,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 262
+US932,Hospitality Management (with International Placement),Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 273
+US940,Business Studies with Trael and Tourism Management,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 229
+US941,Business Studies with Eent Management,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 251
+US942,Business Studies with Eent Management,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 251
+US946,Business Studies with Beauty and Spa Management,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 280
+US950,Nutrition and Health Science,Technological University of the Shannon,Limerick,8,,"STEM, Health",,,2024(1): 287
+US951,Sports Science with Exercise Physiology,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 368
+US952,Sports Management (with International Placement),Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 234
+US953,Business Studies with Sports Management,Technological University of the Shannon,Limerick,8,,Business,,,2024(1): 225
+US954,Sports Deelopment and Performance,Technological University of the Shannon,Limerick,8,,Other,,,2024(1): 264
+US956,Athletic and Rehabilitation Therapy,Technological University of the Shannon,Limerick,8,,Health,,,2024(1): 484
+US957,Physical Actiity and Health Science,Technological University of the Shannon,Limerick,8,,"STEM, Health",,,2024(1): 271
+US958,Applied Sports Science with Strength and Conditioning,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 244
+US959,Applied Sports Science with Performance Technology,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 278
+US961,Applied Sports Science with Sport and Exercise Nutrition,Technological University of the Shannon,Limerick,8,,STEM,,,2024(1): 218

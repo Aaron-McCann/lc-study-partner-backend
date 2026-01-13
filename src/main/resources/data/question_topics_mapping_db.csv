@@ -1,0 +1,113 @@
+id,question_id,topic,confidence_score,is_primary
+1,1,Calculus,1.0,1
+2,1,"Number Systems",0.5,0
+3,2,Trigonometry,1.0,1
+4,2,Calculus,0.5,0
+5,2,Algebra,0.5,0
+6,2,Geometry,0.5,0
+7,2,"Number Systems",0.5,0
+8,3,Algebra,1.0,1
+9,3,Trigonometry,0.5,0
+10,3,"Number Systems",0.5,0
+11,4,Trigonometry,1.0,1
+12,4,"Number Systems",0.333333333333333,0
+13,5,"Number Systems",1.0,1
+14,6,"Number Systems",1.0,1
+15,7,"Statistics & Probability",1.0,1
+16,7,"Number Systems",1.0,1
+17,8,"Statistics & Probability",1.0,1
+18,8,Calculus,0.333333333333333,0
+19,8,Trigonometry,0.333333333333333,0
+20,8,"Number Systems",0.333333333333333,0
+21,9,Algebra,1.0,1
+22,9,Trigonometry,0.333333333333333,0
+23,9,"Number Systems",0.333333333333333,0
+24,10,Algebra,1.0,1
+25,10,"Number Systems",1.0,1
+26,11,Trigonometry,1.0,1
+27,11,Geometry,1.0,1
+28,11,"Number Systems",1.0,1
+29,11,"Applied Mathematics",1.0,1
+30,12,"Number Systems",1.0,1
+31,13,Trigonometry,1.0,1
+32,13,Geometry,0.5,0
+33,13,"Number Systems",0.5,0
+34,14,Calculus,1.0,1
+35,14,Trigonometry,1.0,1
+36,14,"Number Systems",1.0,1
+37,14,"Applied Mathematics",1.0,1
+38,15,"Number Systems",1.0,1
+39,15,"Applied Mathematics",1.0,1
+40,16,"Number Systems",1.0,1
+41,17,Trigonometry,1.0,1
+42,17,"Number Systems",1.0,1
+43,18,Trigonometry,1.0,1
+44,18,"Statistics & Probability",1.0,1
+45,18,"Number Systems",1.0,1
+46,19,"Number Systems",1.0,1
+47,20,Calculus,1.0,1
+48,20,Trigonometry,1.0,1
+49,20,Geometry,1.0,1
+50,20,"Number Systems",1.0,1
+51,21,"Number Systems",1.0,1
+52,22,Trigonometry,1.0,1
+53,23,Trigonometry,1.0,1
+54,23,"Number Systems",0.333333333333333,0
+55,24,Algebra,1.0,1
+56,24,"Number Systems",1.0,1
+57,25,Algebra,1.0,1
+58,25,"Number Systems",0.5,0
+59,26,"Statistics & Probability",1.0,1
+60,26,Calculus,0.333333333333333,0
+61,26,Trigonometry,0.333333333333333,0
+62,26,"Number Systems",0.333333333333333,0
+63,27,"Statistics & Probability",1.0,1
+64,27,"Number Systems",1.0,1
+65,28,Calculus,1.0,1
+66,28,"Number Systems",1.0,1
+67,29,Calculus,1.0,1
+68,29,Algebra,0.666666666666667,0
+69,29,"Number Systems",0.333333333333333,0
+70,30,Trigonometry,1.0,1
+71,30,"Number Systems",0.5,0
+72,31,Trigonometry,1.0,1
+73,31,Algebra,1.0,1
+74,32,Geometry,1.0,1
+75,32,Algebra,0.8,1
+76,32,"Number Systems",0.8,1
+77,33,Geometry,1.0,1
+78,34,"Statistics & Probability",1.0,1
+79,35,"Statistics & Probability",1.0,1
+80,35,"Number Systems",1.0,1
+81,36,Calculus,1.0,1
+82,36,"Number Systems",1.0,1
+83,37,Calculus,1.0,1
+84,37,Algebra,0.666666666666667,0
+85,37,"Number Systems",0.333333333333333,0
+86,38,Trigonometry,1.0,1
+87,38,"Number Systems",0.5,0
+88,39,Trigonometry,1.0,1
+89,39,Algebra,1.0,1
+90,40,Geometry,1.0,1
+91,40,Algebra,0.8,1
+92,40,"Number Systems",0.8,1
+93,41,Geometry,1.0,1
+94,42,"Statistics & Probability",1.0,1
+95,43,"Statistics & Probability",1.0,1
+96,43,"Number Systems",1.0,1
+97,44,Calculus,1.0,1
+98,44,"Number Systems",1.0,1
+99,45,Calculus,1.0,1
+100,45,Algebra,0.666666666666667,0
+101,45,"Number Systems",0.333333333333333,0
+102,46,Trigonometry,1.0,1
+103,46,"Number Systems",0.5,0
+104,47,Trigonometry,1.0,1
+105,47,Algebra,1.0,1
+106,48,Geometry,1.0,1
+107,48,Algebra,0.8,1
+108,48,"Number Systems",0.8,1
+109,49,Geometry,1.0,1
+110,50,"Statistics & Probability",1.0,1
+111,51,"Statistics & Probability",1.0,1
+112,51,"Number Systems",1.0,1

@@ -1,0 +1,13 @@
+id,name,description,keywords,difficulty_range,typical_marks,question_count
+1,Algebra,"Solving equations, manipulation of algebraic expressions, simultaneous equations","equation; solve; variable; expression; simplify; expand; factorize; quadratic; linear; simultaneous","Easy to Hard","4-10 marks",8
+2,"Calculus - Differentiation","Finding derivatives, rates of change, tangent lines, optimization","differentiate; derivative; gradient; rate of change; dy/dx; tangent; maximum; minimum","Easy to Medium","4-8 marks",5
+3,"Calculus - Integration","Finding integrals, area under curves, fundamental theorem of calculus","integrate; integration; integral; ∫; area under curve; antiderivative","Medium to Hard","5-12 marks",1
+4,Trigonometry,"Trigonometric functions, identities, solving triangles, periodic functions","sin; cos; tan; trigonometric; angle; triangle; identity; period","Easy to Hard","4-15 marks",10
+5,"Coordinate Geometry - Line","Equations of lines, distance, midpoint, perpendicular and parallel lines","line; slope; gradient; perpendicular; parallel; distance; midpoint","Easy to Medium","4-8 marks",4
+6,"Coordinate Geometry - Circle","Equations of circles, tangents, intersections with lines","circle; radius; centre; tangent to circle; equation of circle","Easy to Medium","3-6 marks",3
+7,"Complex Numbers","Operations with complex numbers, polar form, modulus and argument","complex; imaginary; modulus; argument; polar form; conjugate",Medium,"5-8 marks",2
+8,Probability,"Basic probability, conditional probability, independent events","probability; event; independent; conditional; tree diagram","Easy to Medium","5-8 marks",2
+9,Statistics,"Mean, median, standard deviation, normal distribution, hypothesis testing","mean; median; standard deviation; normal distribution; z-score","Easy to Hard","4-10 marks",8
+10,"Sequences and Series","Arithmetic and geometric sequences, series, convergence","sequence; series; arithmetic; geometric; nth term; sum","Medium to Hard","6-12 marks",1
+11,Functions,"Domain, range, composite functions, inverse functions, transformations","function; f(x); domain; range; composite; inverse; transformation",Medium,"5-8 marks",0
+12,"Length, Area and Volume","Calculations involving 2D and 3D shapes, surface area, volume","area; volume; perimeter; surface area; sphere; cylinder; cone","Easy to Medium","4-8 marks",1
