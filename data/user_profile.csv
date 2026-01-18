@@ -1,0 +1,2 @@
+id,firstName,lastName,username,email,avatarUrl,role,createdAt
+1,Study,User,student,student@example.com,,STUDENT,2024-01-01T00:00:00

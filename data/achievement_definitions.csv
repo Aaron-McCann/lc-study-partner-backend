@@ -1,0 +1,6 @@
+id,name,description,iconName,type,targetValue,createdAt
+1,First Session,Complete your first study session,award,SESSIONS_COMPLETED,1,2024-01-01T00:00:00
+2,Study Streak,Study for 3 consecutive days,flame,STREAK_DAYS,3,2024-01-01T00:00:00
+3,Early Bird,Start a study session before 7 AM,sunrise,EARLY_SESSION,1,2024-01-01T00:00:00
+4,Dedicated Learner,Complete 10 study sessions,trophy,SESSIONS_COMPLETED,10,2024-01-01T00:00:00
+5,Study Marathon,Study for 25 total hours,clock,HOURS_STUDIED,25,2024-01-01T00:00:00

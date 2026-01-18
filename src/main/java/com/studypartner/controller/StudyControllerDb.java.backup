@@ -1,7 +1,15 @@
 package com.studypartner.controller;
 
-import com.studypartner.model.*;
-import com.studypartner.service.CsvDataService;
+import com.studypartner.entity.StudySession;
+import com.studypartner.entity.User;
+import com.studypartner.entity.Achievement;
+import com.studypartner.entity.UserAchievement;
+import com.studypartner.entity.PlannedStudyBlock;
+import com.studypartner.repository.StudySessionRepository;
+import com.studypartner.repository.UserRepository;
+import com.studypartner.repository.AchievementRepository;
+import com.studypartner.repository.UserAchievementRepository;
+import com.studypartner.repository.PlannedStudyBlockRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +17,11 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @RestController
@@ -17,10 +29,25 @@ import java.util.stream.Collectors;
 @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:8080", "http://localhost:8082"})
 public class StudyController {
     
-    private final CsvDataService csvDataService;
+    private final StudySessionRepository studySessionRepository;
+    private final UserRepository userRepository;
+    private final AchievementRepository achievementRepository;
+    private final UserAchievementRepository userAchievementRepository;
+    private final PlannedStudyBlockRepository plannedStudyBlockRepository;
     
-    public StudyController(CsvDataService csvDataService) {
-        this.csvDataService = csvDataService;
+    // For now, use a hardcoded test user ID
+    private static final Long TEST_USER_ID = 1L;
+    
+    public StudyController(StudySessionRepository studySessionRepository, 
+                          UserRepository userRepository,
+                          AchievementRepository achievementRepository,
+                          UserAchievementRepository userAchievementRepository,
+                          PlannedStudyBlockRepository plannedStudyBlockRepository) {
+        this.studySessionRepository = studySessionRepository;
+        this.userRepository = userRepository;
+        this.achievementRepository = achievementRepository;
+        this.userAchievementRepository = userAchievementRepository;
+        this.plannedStudyBlockRepository = plannedStudyBlockRepository;
     }
     
     /**
@@ -30,14 +57,32 @@ public class StudyController {
     @PostMapping("/sessions")
     public ResponseEntity<?> startSession(@RequestBody StartSessionRequest request) {
         try {
-            StudySessionData session = new StudySessionData(
-                request.getSubject(),
-                request.getTopic(),
-                LocalDateTime.now(),
-                request.getType() != null ? request.getType().toUpperCase() : "REGULAR"
-            );
+            // Get test user
+            Optional<User> userOpt = userRepository.findById(TEST_USER_ID);
+            if (userOpt.isEmpty()) {
+                return ResponseEntity.badRequest().body("Test user not found");
+            }
             
-            StudySessionData savedSession = csvDataService.saveStudySession(session);
+            User user = userOpt.get();
+            
+            // Convert string type to enum
+            StudySession.SessionType sessionType;
+            try {
+                sessionType = StudySession.SessionType.valueOf(request.getType().toUpperCase());
+            } catch (IllegalArgumentException e) {
+                sessionType = StudySession.SessionType.REGULAR;
+            }
+            
+            // Create new session
+            StudySession session = new StudySession();
+            session.setUser(user);
+            session.setSubject(request.getSubject());
+            session.setTopic(request.getTopic());
+            session.setStartTime(LocalDateTime.now());
+            session.setType(sessionType);
+            
+            StudySession savedSession = studySessionRepository.save(session);
+            
             return ResponseEntity.ok(convertToDto(savedSession));
             
         } catch (Exception e) {
@@ -53,18 +98,25 @@ public class StudyController {
     @PutMapping("/sessions/{id}/end")
     public ResponseEntity<?> endSession(@PathVariable Long id, @RequestBody EndSessionRequest request) {
         try {
-            Optional<StudySessionData> sessionOpt = csvDataService.getStudySessionById(id);
+            Optional<StudySession> sessionOpt = studySessionRepository.findById(id);
             if (sessionOpt.isEmpty()) {
                 return ResponseEntity.notFound().build();
             }
             
-            StudySessionData session = sessionOpt.get();
+            StudySession session = sessionOpt.get();
+            
+            // Check if session belongs to test user
+            if (!session.getUser().getId().equals(TEST_USER_ID)) {
+                return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Session does not belong to current user");
+            }
+            
+            // End the session
             session.endSession();
             if (request.getNotes() != null) {
                 session.setNotes(request.getNotes());
             }
             
-            StudySessionData savedSession = csvDataService.saveStudySession(session);
+            StudySession savedSession = studySessionRepository.save(session);
             
             // Update achievement progress after ending session
             updateAchievementProgress();
@@ -87,13 +139,12 @@ public class StudyController {
             LocalDateTime startOfDay = LocalDate.now().atStartOfDay();
             LocalDateTime endOfDay = LocalDate.now().atTime(LocalTime.MAX);
             
-            List<StudySessionData> sessions = csvDataService.getAllStudySessions()
+            List<StudySession> sessions = studySessionRepository.findByUserIdOrderByStartTimeDesc(TEST_USER_ID)
                 .stream()
                 .filter(session -> 
                     session.getStartTime().isAfter(startOfDay) && 
                     session.getStartTime().isBefore(endOfDay)
                 )
-                .sorted((a, b) -> b.getStartTime().compareTo(a.getStartTime()))
                 .toList();
             
             List<StudySessionDto> sessionDtos = sessions.stream()
@@ -119,13 +170,12 @@ public class StudyController {
             LocalDateTime start = LocalDate.parse(startDate).atStartOfDay();
             LocalDateTime end = LocalDate.parse(endDate).atTime(LocalTime.MAX);
             
-            List<StudySessionData> sessions = csvDataService.getAllStudySessions()
+            List<StudySession> sessions = studySessionRepository.findByUserIdOrderByStartTimeDesc(TEST_USER_ID)
                 .stream()
                 .filter(session -> 
                     session.getStartTime().isAfter(start) && 
                     session.getStartTime().isBefore(end)
                 )
-                .sorted((a, b) -> b.getStartTime().compareTo(a.getStartTime()))
                 .toList();
             
             List<StudySessionDto> sessionDtos = sessions.stream()
@@ -147,31 +197,34 @@ public class StudyController {
     public ResponseEntity<StudyStatsDto> getStats() {
         try {
             LocalDateTime weekStart = LocalDate.now().minusDays(7).atStartOfDay();
-            List<StudySessionData> allSessions = csvDataService.getAllStudySessions();
             
             // Get total hours this week
-            double totalHours = allSessions.stream()
-                .filter(session -> session.getStartTime().isAfter(weekStart))
-                .filter(session -> session.getDurationMinutes() != null)
-                .mapToDouble(session -> session.getDurationMinutes() / 60.0)
-                .sum();
+            Double totalHours = studySessionRepository.getTotalHoursByUserAndTimeRange(
+                TEST_USER_ID, weekStart, LocalDateTime.now());
             
             // Get total sessions count
-            int totalSessions = allSessions.size();
+            Long totalSessions = studySessionRepository.countSessionsByUserSince(TEST_USER_ID, 
+                LocalDateTime.of(1970, 1, 1, 0, 0));
+            
+            // Get all sessions for calculations
+            List<StudySession> allSessions = studySessionRepository.findByUserIdOrderByStartTimeDesc(TEST_USER_ID);
             
             // Calculate average session length
             double averageLength = allSessions.stream()
                 .filter(session -> session.getDurationMinutes() != null)
-                .mapToInt(StudySessionData::getDurationMinutes)
+                .mapToInt(StudySession::getDurationMinutes)
                 .average()
                 .orElse(0.0);
             
             // Calculate subject breakdown
             Map<String, Double> subjectHours = new HashMap<>();
-            for (StudySessionData session : allSessions) {
+            double totalMinutes = 0.0;
+            
+            for (StudySession session : allSessions) {
                 if (session.getDurationMinutes() != null) {
                     double hours = session.getDurationMinutes() / 60.0;
                     subjectHours.merge(session.getSubject(), hours, Double::sum);
+                    totalMinutes += session.getDurationMinutes();
                 }
             }
             
@@ -185,8 +238,8 @@ public class StudyController {
             StudyStreakDto streak = calculateStreak(allSessions);
             
             StudyStatsDto stats = new StudyStatsDto();
-            stats.setTotalHoursThisWeek(totalHours);
-            stats.setTotalSessions(totalSessions);
+            stats.setTotalHoursThisWeek(totalHours != null ? totalHours : 0.0);
+            stats.setTotalSessions(totalSessions != null ? totalSessions.intValue() : 0);
             stats.setAverageSessionLength(averageLength);
             stats.setTopSubject(topSubject);
             stats.setStreak(streak);
@@ -214,13 +267,13 @@ public class StudyController {
     @GetMapping("/subject-breakdown")
     public ResponseEntity<List<SubjectBreakdownDto>> getSubjectBreakdown() {
         try {
-            List<StudySessionData> allSessions = csvDataService.getAllStudySessions();
+            List<StudySession> allSessions = studySessionRepository.findByUserIdOrderByStartTimeDesc(TEST_USER_ID);
             
             // Calculate subject hours
             Map<String, Double> subjectHours = new HashMap<>();
             double totalMinutes = 0.0;
             
-            for (StudySessionData session : allSessions) {
+            for (StudySession session : allSessions) {
                 if (session.getDurationMinutes() != null) {
                     double hours = session.getDurationMinutes() / 60.0;
                     subjectHours.merge(session.getSubject(), hours, Double::sum);
@@ -256,7 +309,7 @@ public class StudyController {
     @GetMapping("/streak")
     public ResponseEntity<StudyStreakDto> getStreak() {
         try {
-            List<StudySessionData> allSessions = csvDataService.getAllStudySessions();
+            List<StudySession> allSessions = studySessionRepository.findByUserIdOrderByStartTimeDesc(TEST_USER_ID);
             StudyStreakDto streak = calculateStreak(allSessions);
             return ResponseEntity.ok(streak);
         } catch (Exception e) {
@@ -264,211 +317,8 @@ public class StudyController {
         }
     }
     
-    /**
-     * Get all achievements with user progress
-     * GET /api/study/achievements
-     */
-    @GetMapping("/achievements")
-    public ResponseEntity<List<AchievementDto>> getAchievements() {
-        try {
-            List<AchievementDefinitionData> allAchievements = csvDataService.getAllAchievementDefinitions();
-            List<UserAchievementData> userAchievements = csvDataService.getAllUserAchievements();
-            
-            // Create a map for quick lookup of user achievements
-            Map<Long, UserAchievementData> userAchievementMap = userAchievements.stream()
-                .collect(Collectors.toMap(
-                    UserAchievementData::getAchievementId,
-                    ua -> ua
-                ));
-            
-            // Convert to DTOs with user progress
-            List<AchievementDto> achievementDtos = allAchievements.stream()
-                .map(achievement -> {
-                    UserAchievementData userAchievement = userAchievementMap.get(achievement.getId());
-                    
-                    AchievementDto dto = new AchievementDto();
-                    dto.setId(achievement.getId());
-                    dto.setName(achievement.getName());
-                    dto.setDescription(achievement.getDescription());
-                    dto.setIconName(achievement.getIconName());
-                    
-                    if (userAchievement != null) {
-                        dto.setUnlocked(userAchievement.isUnlocked());
-                        dto.setProgress(calculateProgress(achievement, userAchievement.getCurrentProgress()));
-                        dto.setUnlockedAt(userAchievement.getUnlockedAt() != null ? 
-                            userAchievement.getUnlockedAt().toString() : null);
-                    } else {
-                        dto.setUnlocked(false);
-                        dto.setProgress(calculateProgress(achievement, 0));
-                        dto.setUnlockedAt(null);
-                    }
-                    
-                    return dto;
-                })
-                .toList();
-            
-            return ResponseEntity.ok(achievementDtos);
-            
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-        }
-    }
-    
-    // ==========================================
-    // Planned Study Block Endpoints
-    // ==========================================
-    
-    /**
-     * Get planned study blocks for a date range
-     * GET /api/study/planned-blocks
-     */
-    @GetMapping("/planned-blocks")
-    public ResponseEntity<List<PlannedStudyBlockDto>> getPlannedBlocks(
-            @RequestParam String startDate,
-            @RequestParam String endDate) {
-        try {
-            LocalDateTime start = LocalDate.parse(startDate).atStartOfDay();
-            LocalDateTime end = LocalDate.parse(endDate).atTime(LocalTime.MAX);
-            
-            List<PlannedStudyBlockData> blocks = csvDataService.getAllPlannedBlocks()
-                .stream()
-                .filter(block -> 
-                    block.getStartTime().isAfter(start.minusSeconds(1)) && 
-                    block.getStartTime().isBefore(end.plusSeconds(1))
-                )
-                .toList();
-            
-            List<PlannedStudyBlockDto> blockDtos = blocks.stream()
-                .map(this::convertToPlannedBlockDto)
-                .toList();
-            
-            return ResponseEntity.ok(blockDtos);
-            
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-        }
-    }
-    
-    /**
-     * Create a new planned study block
-     * POST /api/study/planned-blocks
-     */
-    @PostMapping("/planned-blocks")
-    public ResponseEntity<?> createPlannedBlock(@RequestBody CreatePlannedBlockRequest request) {
-        try {
-            PlannedStudyBlockData block = new PlannedStudyBlockData();
-            block.setSubject(request.getSubject());
-            block.setTopic(request.getTopic());
-            block.setStartTime(LocalDateTime.parse(request.getStartTime()));
-            block.setEndTime(LocalDateTime.parse(request.getEndTime()));
-            block.setNotes(request.getNotes());
-            block.setType(request.getType() != null ? request.getType().toUpperCase() : "REGULAR");
-            block.setCreatedAt(LocalDateTime.now());
-            
-            PlannedStudyBlockData savedBlock = csvDataService.savePlannedBlock(block);
-            
-            return ResponseEntity.ok(convertToPlannedBlockDto(savedBlock));
-            
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body("Error creating planned block: " + e.getMessage());
-        }
-    }
-    
-    /**
-     * Update a planned study block
-     * PUT /api/study/planned-blocks/{id}
-     */
-    @PutMapping("/planned-blocks/{id}")
-    public ResponseEntity<?> updatePlannedBlock(@PathVariable Long id, @RequestBody CreatePlannedBlockRequest request) {
-        try {
-            Optional<PlannedStudyBlockData> blockOpt = csvDataService.getPlannedBlockById(id);
-            if (blockOpt.isEmpty()) {
-                return ResponseEntity.notFound().build();
-            }
-            
-            PlannedStudyBlockData block = blockOpt.get();
-            
-            // Update fields
-            if (request.getSubject() != null) {
-                block.setSubject(request.getSubject());
-            }
-            if (request.getTopic() != null) {
-                block.setTopic(request.getTopic());
-            }
-            if (request.getStartTime() != null) {
-                block.setStartTime(LocalDateTime.parse(request.getStartTime()));
-            }
-            if (request.getEndTime() != null) {
-                block.setEndTime(LocalDateTime.parse(request.getEndTime()));
-            }
-            if (request.getNotes() != null) {
-                block.setNotes(request.getNotes());
-            }
-            if (request.getType() != null) {
-                block.setType(request.getType().toUpperCase());
-            }
-            
-            PlannedStudyBlockData savedBlock = csvDataService.savePlannedBlock(block);
-            
-            return ResponseEntity.ok(convertToPlannedBlockDto(savedBlock));
-            
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body("Error updating planned block: " + e.getMessage());
-        }
-    }
-    
-    /**
-     * Delete a planned study block
-     * DELETE /api/study/planned-blocks/{id}
-     */
-    @DeleteMapping("/planned-blocks/{id}")
-    public ResponseEntity<?> deletePlannedBlock(@PathVariable Long id) {
-        try {
-            Optional<PlannedStudyBlockData> blockOpt = csvDataService.getPlannedBlockById(id);
-            if (blockOpt.isEmpty()) {
-                return ResponseEntity.notFound().build();
-            }
-            
-            csvDataService.deletePlannedBlock(id);
-            
-            return ResponseEntity.ok().build();
-            
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body("Error deleting planned block: " + e.getMessage());
-        }
-    }
-    
-    /**
-     * Mark a planned study block as completed
-     * PUT /api/study/planned-blocks/{id}/complete
-     */
-    @PutMapping("/planned-blocks/{id}/complete")
-    public ResponseEntity<?> completePlannedBlock(@PathVariable Long id) {
-        try {
-            Optional<PlannedStudyBlockData> blockOpt = csvDataService.getPlannedBlockById(id);
-            if (blockOpt.isEmpty()) {
-                return ResponseEntity.notFound().build();
-            }
-            
-            PlannedStudyBlockData block = blockOpt.get();
-            block.setCompleted(true);
-            PlannedStudyBlockData savedBlock = csvDataService.savePlannedBlock(block);
-            
-            return ResponseEntity.ok(convertToPlannedBlockDto(savedBlock));
-            
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body("Error completing planned block: " + e.getMessage());
-        }
-    }
-    
-    // ============= HELPER METHODS =============
-    
     // Helper method to calculate study streak
-    private StudyStreakDto calculateStreak(List<StudySessionData> sessions) {
+    private StudyStreakDto calculateStreak(List<StudySession> sessions) {
         if (sessions.isEmpty()) {
             StudyStreakDto streak = new StudyStreakDto();
             streak.setCurrentStreak(0);
@@ -551,7 +401,7 @@ public class StudyController {
     }
     
     // Helper method to calculate achievement progress percentage
-    private Integer calculateProgress(AchievementDefinitionData achievement, Integer currentValue) {
+    private Integer calculateProgress(Achievement achievement, Integer currentValue) {
         if (achievement.getTargetValue() == null || achievement.getTargetValue() == 0) {
             return currentValue != null && currentValue > 0 ? 100 : 0;
         }
@@ -566,7 +416,13 @@ public class StudyController {
     // Helper method to update achievement progress (call after study actions)
     private void updateAchievementProgress() {
         try {
-            List<StudySessionData> allSessions = csvDataService.getAllStudySessions();
+            Optional<User> userOpt = userRepository.findById(TEST_USER_ID);
+            if (userOpt.isEmpty()) {
+                return;
+            }
+            
+            User user = userOpt.get();
+            List<StudySession> allSessions = studySessionRepository.findByUserIdOrderByStartTimeDesc(TEST_USER_ID);
             
             // Calculate current user stats
             int totalSessions = allSessions.size();
@@ -578,14 +434,12 @@ public class StudyController {
             StudyStreakDto streak = calculateStreak(allSessions);
             
             // Update achievements based on current stats
-            List<AchievementDefinitionData> achievements = csvDataService.getAllAchievementDefinitions();
+            List<Achievement> achievements = achievementRepository.findAllByOrderByCreatedAtAsc();
             
-            for (AchievementDefinitionData achievement : achievements) {
-                Optional<UserAchievementData> userAchievementOpt = csvDataService
-                    .getUserAchievementByAchievementId(achievement.getId());
-                
-                UserAchievementData userAchievement = userAchievementOpt
-                    .orElse(new UserAchievementData(achievement.getId(), achievement.getName()));
+            for (Achievement achievement : achievements) {
+                UserAchievement userAchievement = userAchievementRepository
+                    .findByUserIdAndAchievementId(TEST_USER_ID, achievement.getId())
+                    .orElse(new UserAchievement(user, achievement));
                 
                 if (!userAchievement.isUnlocked()) {
                     Integer currentProgress = calculateCurrentProgress(achievement, totalSessions, totalHours, streak);
@@ -598,7 +452,7 @@ public class StudyController {
                         userAchievement.unlock();
                     }
                     
-                    csvDataService.saveUserAchievement(userAchievement);
+                    userAchievementRepository.save(userAchievement);
                 }
             }
         } catch (Exception e) {
@@ -608,34 +462,290 @@ public class StudyController {
     }
     
     // Helper method to calculate current progress for an achievement
-    private Integer calculateCurrentProgress(AchievementDefinitionData achievement, int totalSessions, double totalHours, StudyStreakDto streak) {
+    private Integer calculateCurrentProgress(Achievement achievement, int totalSessions, double totalHours, StudyStreakDto streak) {
         return switch (achievement.getType()) {
-            case "SESSIONS_COMPLETED" -> totalSessions;
-            case "HOURS_STUDIED" -> (int) Math.round(totalHours);
-            case "STREAK_DAYS" -> streak.getCurrentStreak();
-            case "EARLY_SESSION" -> hasEarlySession() ? 1 : 0;
+            case SESSIONS_COMPLETED -> totalSessions;
+            case HOURS_STUDIED -> (int) Math.round(totalHours);
+            case STREAK_DAYS -> streak.getCurrentStreak();
+            case EARLY_SESSION -> hasEarlySession() ? 1 : 0;
             default -> 0;
         };
     }
     
     // Helper method to check if user has any early morning sessions
     private boolean hasEarlySession() {
-        List<StudySessionData> allSessions = csvDataService.getAllStudySessions();
+        List<StudySession> allSessions = studySessionRepository.findByUserIdOrderByStartTimeDesc(TEST_USER_ID);
         return allSessions.stream()
             .anyMatch(session -> session.getStartTime().getHour() < 7);
     }
     
+    /**
+     * Get all achievements with user progress
+     * GET /api/study/achievements
+     */
+    @GetMapping("/achievements")
+    public ResponseEntity<List<AchievementDto>> getAchievements() {
+        try {
+            List<Achievement> allAchievements = achievementRepository.findAllByOrderByCreatedAtAsc();
+            List<UserAchievement> userAchievements = userAchievementRepository.findByUserIdOrderByCreatedAtDesc(TEST_USER_ID);
+            
+            // Create a map for quick lookup of user achievements
+            Map<Long, UserAchievement> userAchievementMap = userAchievements.stream()
+                .collect(Collectors.toMap(
+                    ua -> ua.getAchievement().getId(),
+                    ua -> ua
+                ));
+            
+            // Convert to DTOs with user progress
+            List<AchievementDto> achievementDtos = allAchievements.stream()
+                .map(achievement -> {
+                    UserAchievement userAchievement = userAchievementMap.get(achievement.getId());
+                    
+                    AchievementDto dto = new AchievementDto();
+                    dto.setId(achievement.getId());
+                    dto.setName(achievement.getName());
+                    dto.setDescription(achievement.getDescription());
+                    dto.setIconName(achievement.getIconName());
+                    
+                    if (userAchievement != null) {
+                        dto.setUnlocked(userAchievement.isUnlocked());
+                        dto.setProgress(calculateProgress(achievement, userAchievement.getCurrentProgress()));
+                        dto.setUnlockedAt(userAchievement.getUnlockedAt() != null ? 
+                            userAchievement.getUnlockedAt().toString() : null);
+                    } else {
+                        dto.setUnlocked(false);
+                        dto.setProgress(calculateProgress(achievement, 0));
+                        dto.setUnlockedAt(null);
+                    }
+                    
+                    return dto;
+                })
+                .toList();
+            
+            return ResponseEntity.ok(achievementDtos);
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+    
+    /**
+     * Get weekly progress (placeholder implementation)
+     * GET /api/study/weekly-progress
+     */
+    @GetMapping("/weekly-progress")
+    public ResponseEntity<boolean[]> getWeeklyProgress() {
+        boolean[] progress = {false, false, false, false, false, false, false};
+        return ResponseEntity.ok(progress);
+    }
+    
+    /**
+     * Log a completed pomodoro session (placeholder implementation)
+     * POST /api/study/pomodoro
+     */
+    @PostMapping("/pomodoro")
+    public ResponseEntity<ApiResponseDto> logPomodoro(@RequestBody PomodoroRequest request) {
+        // For now, just return success
+        ApiResponseDto response = new ApiResponseDto();
+        response.setSuccess(true);
+        response.setMessage("Pomodoro session logged successfully");
+        
+        return ResponseEntity.ok(response);
+    }
+    
+    // ==========================================
+    // Planned Study Block Endpoints
+    // ==========================================
+    
+    /**
+     * Get planned study blocks for a date range
+     * GET /api/study/planned-blocks
+     */
+    @GetMapping("/planned-blocks")
+    public ResponseEntity<List<PlannedStudyBlockDto>> getPlannedBlocks(
+            @RequestParam String startDate,
+            @RequestParam String endDate) {
+        try {
+            LocalDateTime start = LocalDate.parse(startDate).atStartOfDay();
+            LocalDateTime end = LocalDate.parse(endDate).atTime(LocalTime.MAX);
+            
+            List<PlannedStudyBlock> blocks = plannedStudyBlockRepository.findByUserIdAndDateRange(
+                TEST_USER_ID, start, end);
+            
+            List<PlannedStudyBlockDto> blockDtos = blocks.stream()
+                .map(this::convertToPlannedBlockDto)
+                .toList();
+            
+            return ResponseEntity.ok(blockDtos);
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+    
+    /**
+     * Create a new planned study block
+     * POST /api/study/planned-blocks
+     */
+    @PostMapping("/planned-blocks")
+    public ResponseEntity<?> createPlannedBlock(@RequestBody CreatePlannedBlockRequest request) {
+        try {
+            Optional<User> userOpt = userRepository.findById(TEST_USER_ID);
+            if (userOpt.isEmpty()) {
+                return ResponseEntity.badRequest().body("Test user not found");
+            }
+            
+            User user = userOpt.get();
+            
+            PlannedStudyBlock block = new PlannedStudyBlock();
+            block.setUser(user);
+            block.setSubject(request.getSubject());
+            block.setTopic(request.getTopic());
+            block.setStartTime(LocalDateTime.parse(request.getStartTime()));
+            block.setEndTime(LocalDateTime.parse(request.getEndTime()));
+            block.setNotes(request.getNotes());
+            
+            if (request.getType() != null) {
+                try {
+                    block.setType(StudySession.SessionType.valueOf(request.getType().toUpperCase()));
+                } catch (IllegalArgumentException e) {
+                    block.setType(StudySession.SessionType.REGULAR);
+                }
+            }
+            
+            PlannedStudyBlock savedBlock = plannedStudyBlockRepository.save(block);
+            
+            return ResponseEntity.ok(convertToPlannedBlockDto(savedBlock));
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("Error creating planned block: " + e.getMessage());
+        }
+    }
+    
+    /**
+     * Update a planned study block
+     * PUT /api/study/planned-blocks/{id}
+     */
+    @PutMapping("/planned-blocks/{id}")
+    public ResponseEntity<?> updatePlannedBlock(@PathVariable Long id, @RequestBody CreatePlannedBlockRequest request) {
+        try {
+            Optional<PlannedStudyBlock> blockOpt = plannedStudyBlockRepository.findById(id);
+            if (blockOpt.isEmpty()) {
+                return ResponseEntity.notFound().build();
+            }
+            
+            PlannedStudyBlock block = blockOpt.get();
+            
+            // Check if block belongs to test user
+            if (!block.getUser().getId().equals(TEST_USER_ID)) {
+                return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Block does not belong to current user");
+            }
+            
+            // Update fields
+            if (request.getSubject() != null) {
+                block.setSubject(request.getSubject());
+            }
+            if (request.getTopic() != null) {
+                block.setTopic(request.getTopic());
+            }
+            if (request.getStartTime() != null) {
+                block.setStartTime(LocalDateTime.parse(request.getStartTime()));
+            }
+            if (request.getEndTime() != null) {
+                block.setEndTime(LocalDateTime.parse(request.getEndTime()));
+            }
+            if (request.getNotes() != null) {
+                block.setNotes(request.getNotes());
+            }
+            if (request.getType() != null) {
+                try {
+                    block.setType(StudySession.SessionType.valueOf(request.getType().toUpperCase()));
+                } catch (IllegalArgumentException e) {
+                    // Keep existing type if invalid
+                }
+            }
+            
+            PlannedStudyBlock savedBlock = plannedStudyBlockRepository.save(block);
+            
+            return ResponseEntity.ok(convertToPlannedBlockDto(savedBlock));
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("Error updating planned block: " + e.getMessage());
+        }
+    }
+    
+    /**
+     * Delete a planned study block
+     * DELETE /api/study/planned-blocks/{id}
+     */
+    @DeleteMapping("/planned-blocks/{id}")
+    public ResponseEntity<?> deletePlannedBlock(@PathVariable Long id) {
+        try {
+            Optional<PlannedStudyBlock> blockOpt = plannedStudyBlockRepository.findById(id);
+            if (blockOpt.isEmpty()) {
+                return ResponseEntity.notFound().build();
+            }
+            
+            PlannedStudyBlock block = blockOpt.get();
+            
+            // Check if block belongs to test user
+            if (!block.getUser().getId().equals(TEST_USER_ID)) {
+                return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Block does not belong to current user");
+            }
+            
+            plannedStudyBlockRepository.delete(block);
+            
+            return ResponseEntity.ok().build();
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("Error deleting planned block: " + e.getMessage());
+        }
+    }
+    
+    /**
+     * Mark a planned study block as completed
+     * PUT /api/study/planned-blocks/{id}/complete
+     */
+    @PutMapping("/planned-blocks/{id}/complete")
+    public ResponseEntity<?> completePlannedBlock(@PathVariable Long id) {
+        try {
+            Optional<PlannedStudyBlock> blockOpt = plannedStudyBlockRepository.findById(id);
+            if (blockOpt.isEmpty()) {
+                return ResponseEntity.notFound().build();
+            }
+            
+            PlannedStudyBlock block = blockOpt.get();
+            
+            // Check if block belongs to test user
+            if (!block.getUser().getId().equals(TEST_USER_ID)) {
+                return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Block does not belong to current user");
+            }
+            
+            block.setCompleted(true);
+            PlannedStudyBlock savedBlock = plannedStudyBlockRepository.save(block);
+            
+            return ResponseEntity.ok(convertToPlannedBlockDto(savedBlock));
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("Error completing planned block: " + e.getMessage());
+        }
+    }
+    
     // Helper method to convert entity to DTO
-    private StudySessionDto convertToDto(StudySessionData session) {
+    private StudySessionDto convertToDto(StudySession session) {
         StudySessionDto dto = new StudySessionDto();
         dto.setId(session.getId());
-        dto.setUserId(1L); // Single user ID
+        dto.setUserId(session.getUser().getId());
         dto.setSubject(session.getSubject());
         dto.setTopic(session.getTopic());
         dto.setStartTime(session.getStartTime().toString());
         dto.setEndTime(session.getEndTime() != null ? session.getEndTime().toString() : null);
         dto.setDurationMinutes(session.getDurationMinutes());
-        dto.setType(session.getType().toLowerCase());
+        dto.setType(session.getType().name().toLowerCase());
         dto.setNotes(session.getNotes());
         dto.setCreatedAt(session.getCreatedAt().toString());
         
@@ -643,7 +753,7 @@ public class StudyController {
     }
     
     // Helper method to convert PlannedStudyBlock to DTO
-    private PlannedStudyBlockDto convertToPlannedBlockDto(PlannedStudyBlockData block) {
+    private PlannedStudyBlockDto convertToPlannedBlockDto(PlannedStudyBlock block) {
         PlannedStudyBlockDto dto = new PlannedStudyBlockDto();
         dto.setId(block.getId().toString());
         dto.setSubject(block.getSubject());
@@ -663,25 +773,51 @@ public class StudyController {
     }
     
     /**
-     * Log a completed pomodoro session (placeholder implementation)
-     * POST /api/study/pomodoro
+     * Get current study streak (separate endpoint for frontend compatibility)
+     * GET /api/study/streak
      */
-    @PostMapping("/pomodoro")
-    public ResponseEntity<ApiResponseDto> logPomodoro(@RequestBody PomodoroRequest request) {
-        // For now, just return success
-        ApiResponseDto response = new ApiResponseDto();
-        response.setSuccess(true);
-        response.setMessage("Pomodoro session logged successfully");
-        
-        return ResponseEntity.ok(response);
+    @GetMapping("/streak")
+    public ResponseEntity<StudyStreakDto> getStreak() {
+        try {
+            Map<String, Object> streakData = calculateStreak();
+            
+            StudyStreakDto streakDto = new StudyStreakDto();
+            streakDto.setCurrentStreak((Integer) streakData.get("currentStreak"));
+            streakDto.setLongestStreak((Integer) streakData.get("longestStreak"));
+            streakDto.setLastStudyDate((String) streakData.get("lastStudyDate"));
+            streakDto.setWeeklyProgress((boolean[]) streakData.get("weeklyProgress"));
+            
+            return ResponseEntity.ok(streakDto);
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
     }
     
-    // Request/Response DTOs (reusing from original controller)
+    /**
+     * Get weekly progress (separate endpoint for frontend compatibility)
+     * GET /api/study/weekly-progress
+     */
+    @GetMapping("/weekly-progress")
+    public ResponseEntity<boolean[]> getWeeklyProgress() {
+        try {
+            Map<String, Object> streakData = calculateStreak();
+            boolean[] weeklyProgress = (boolean[]) streakData.get("weeklyProgress");
+            
+            return ResponseEntity.ok(weeklyProgress);
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+    
+    // Request/Response DTOs
     public static class StartSessionRequest {
         private String subject;
         private String topic;
         private String type;
         
+        // Getters and setters
         public String getSubject() { return subject; }
         public void setSubject(String subject) { this.subject = subject; }
         public String getTopic() { return topic; }
@@ -722,6 +858,7 @@ public class StudyController {
         private String notes;
         private String createdAt;
         
+        // Getters and setters
         public Long getId() { return id; }
         public void setId(Long id) { this.id = id; }
         public Long getUserId() { return userId; }
@@ -788,6 +925,7 @@ public class StudyController {
         private Integer progress;
         private String unlockedAt;
         
+        // Getters and setters
         public Long getId() { return id; }
         public void setId(Long id) { this.id = id; }
         public String getName() { return name; }
@@ -875,5 +1013,21 @@ public class StudyController {
         public void setType(String type) { this.type = type; }
         public String getNotes() { return notes; }
         public void setNotes(String notes) { this.notes = notes; }
+    }
+    
+    public static class StudyStreakDto {
+        private int currentStreak;
+        private int longestStreak;
+        private String lastStudyDate;
+        private boolean[] weeklyProgress;
+        
+        public int getCurrentStreak() { return currentStreak; }
+        public void setCurrentStreak(int currentStreak) { this.currentStreak = currentStreak; }
+        public int getLongestStreak() { return longestStreak; }
+        public void setLongestStreak(int longestStreak) { this.longestStreak = longestStreak; }
+        public String getLastStudyDate() { return lastStudyDate; }
+        public void setLastStudyDate(String lastStudyDate) { this.lastStudyDate = lastStudyDate; }
+        public boolean[] getWeeklyProgress() { return weeklyProgress; }
+        public void setWeeklyProgress(boolean[] weeklyProgress) { this.weeklyProgress = weeklyProgress; }
     }
 }
