@@ -5,13 +5,16 @@ import com.studypartner.service.CsvDataService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/papers")
-@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:8080", "http://localhost:8082"})
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:8080", "http://localhost:8082"}, 
+            allowedHeaders = "*", 
+            methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS})
 public class PaperController {
     
     private final CsvDataService csvDataService;
