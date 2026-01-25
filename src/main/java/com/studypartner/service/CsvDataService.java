@@ -22,6 +22,8 @@ public class CsvDataService {
     private static final String USER_ACHIEVEMENTS_FILE = DATA_DIR + "user_achievements.csv";
     private static final String ACHIEVEMENT_DEFINITIONS_FILE = DATA_DIR + "achievement_definitions.csv";
     private static final String USER_PROFILE_FILE = DATA_DIR + "user_profile.csv";
+    private static final String PAPERS_FILE = DATA_DIR + "papers.csv";
+    private static final String QUESTIONS_FILE = DATA_DIR + "questions.csv";
     
     private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
     
@@ -345,5 +347,133 @@ public class CsvDataService {
     @FunctionalInterface
     private interface CsvFormatter<T> {
         String format(T item);
+    }
+    
+    // ============= PAPERS =============
+    
+    public List<PaperData> getAllPapers() {
+        return readCsvFile(PAPERS_FILE, this::parsePaper);
+    }
+    
+    public Optional<PaperData> getPaperById(Long id) {
+        return getAllPapers().stream()
+                .filter(paper -> paper.getId().equals(id))
+                .findFirst();
+    }
+    
+    public PaperData savePaper(PaperData paper) {
+        List<PaperData> papers = getAllPapers();
+        
+        if (paper.getId() == null) {
+            // Generate new ID
+            Long maxId = papers.stream()
+                    .mapToLong(PaperData::getId)
+                    .max().orElse(0L);
+            paper.setId(maxId + 1);
+        } else {
+            // Update existing
+            papers.removeIf(p -> p.getId().equals(paper.getId()));
+        }
+        
+        papers.add(paper);
+        writeCsvFile(PAPERS_FILE, papers, this::formatPaper);
+        return paper;
+    }
+    
+    private PaperData parsePaper(String[] fields) {
+        if (fields.length < 6) return null;
+        
+        PaperData paper = new PaperData();
+        paper.setId(parseId(fields[0]));
+        paper.setSubject(fields[1]);
+        paper.setYear(parseInt(fields[2]));
+        paper.setPaper(fields[3]);
+        paper.setLevel(fields[4]);
+        paper.setDuration(fields[5].isEmpty() ? null : fields[5]);
+        paper.setCreatedAt(fields.length > 6 ? parseDateTime(fields[6]) : LocalDateTime.now());
+        return paper;
+    }
+    
+    private String formatPaper(PaperData paper) {
+        return String.format("%d,%s,%s,%s,%s,%s,%s",
+                paper.getId(),
+                escapeField(paper.getSubject()),
+                paper.getYear() != null ? paper.getYear() : "",
+                escapeField(paper.getPaper()),
+                escapeField(paper.getLevel()),
+                escapeField(paper.getDuration() != null ? paper.getDuration() : ""),
+                formatDateTime(paper.getCreatedAt())
+        );
+    }
+    
+    // ============= QUESTIONS =============
+    
+    public List<QuestionData> getAllQuestions() {
+        return readCsvFile(QUESTIONS_FILE, this::parseQuestion);
+    }
+    
+    public List<QuestionData> getQuestionsByPaperId(Long paperId) {
+        return getAllQuestions().stream()
+                .filter(question -> question.getPaperId().equals(paperId))
+                .collect(Collectors.toList());
+    }
+    
+    public Optional<QuestionData> getQuestionById(Long id) {
+        return getAllQuestions().stream()
+                .filter(question -> question.getId().equals(id))
+                .findFirst();
+    }
+    
+    public QuestionData saveQuestion(QuestionData question) {
+        List<QuestionData> questions = getAllQuestions();
+        
+        if (question.getId() == null) {
+            // Generate new ID
+            Long maxId = questions.stream()
+                    .mapToLong(QuestionData::getId)
+                    .max().orElse(0L);
+            question.setId(maxId + 1);
+        } else {
+            // Update existing
+            questions.removeIf(q -> q.getId().equals(question.getId()));
+        }
+        
+        questions.add(question);
+        writeCsvFile(QUESTIONS_FILE, questions, this::formatQuestion);
+        return question;
+    }
+    
+    private QuestionData parseQuestion(String[] fields) {
+        if (fields.length < 10) return null;
+        
+        QuestionData question = new QuestionData();
+        question.setId(parseId(fields[0]));
+        question.setPaperId(parseId(fields[1]));
+        question.setQuestionNumber(fields[2]);
+        question.setContent(fields[3]);
+        question.setQuestionLink(fields[4].isEmpty() ? null : fields[4]);
+        question.setMarks(parseInt(fields[5]));
+        question.setTopic(fields[6]);
+        question.setDifficulty(fields[7]);
+        question.setSource(fields[8]);
+        question.setSampleAnswer(fields[9].isEmpty() ? null : fields[9]);
+        question.setCreatedAt(fields.length > 10 ? parseDateTime(fields[10]) : LocalDateTime.now());
+        return question;
+    }
+    
+    private String formatQuestion(QuestionData question) {
+        return String.format("%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s",
+                question.getId(),
+                question.getPaperId(),
+                escapeField(question.getQuestionNumber()),
+                escapeField(question.getContent()),
+                escapeField(question.getQuestionLink() != null ? question.getQuestionLink() : ""),
+                question.getMarks() != null ? question.getMarks() : "",
+                escapeField(question.getTopic()),
+                escapeField(question.getDifficulty()),
+                escapeField(question.getSource()),
+                escapeField(question.getSampleAnswer() != null ? question.getSampleAnswer() : ""),
+                formatDateTime(question.getCreatedAt())
+        );
     }
 }
