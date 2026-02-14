@@ -1,6 +1,6 @@
 achievementId,achievementName,currentProgress,unlocked,unlockedAt
 1,First Session,1,true,2026-01-18T15:19:43
-2,Study Streak,1,false,
-3,Early Bird,0,false,
-4,Dedicated Learner,1,false,
+3,Early Bird,1,true,2026-02-14T04:50:52
+2,Study Streak,2,false,
+4,Dedicated Learner,6,false,
 5,Study Marathon,0,false,

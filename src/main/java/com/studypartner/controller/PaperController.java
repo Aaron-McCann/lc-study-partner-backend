@@ -174,10 +174,87 @@ public class PaperController {
     public ResponseEntity<PaperStatsDto> getPaperStats() {
         try {
             List<PaperData> papers = csvDataService.getAllPapers();
+            List<QuestionCompletionData> completions = csvDataService.getAllQuestionCompletions();
             
             PaperStatsDto stats = new PaperStatsDto();
             stats.setTotal(papers.size());
-            stats.setCompleted(0); // Placeholder - completion tracking to be added
+            stats.setCompleted(completions.size()); // Number of completed questions
+            
+            return ResponseEntity.ok(stats);
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
+    /**
+     * Mark a question as completed
+     * POST /api/papers/questions/{questionId}/complete
+     */
+    @PostMapping("/questions/{questionId}/complete")
+    public ResponseEntity<ApiResponseDto> markQuestionCompleted(@PathVariable Long questionId) {
+        try {
+            Optional<QuestionData> questionOpt = csvDataService.getQuestionById(questionId);
+            if (questionOpt.isEmpty()) {
+                return ResponseEntity.notFound().build();
+            }
+            
+            QuestionData question = questionOpt.get();
+            Optional<PaperData> paperOpt = csvDataService.getPaperById(question.getPaperId());
+            
+            QuestionCompletionData completion = new QuestionCompletionData(
+                questionId, 
+                question.getPaperId(),
+                paperOpt.map(PaperData::getSubject).orElse("Unknown"),
+                question.getTopic()
+            );
+            
+            csvDataService.saveQuestionCompletion(completion);
+            
+            ApiResponseDto response = new ApiResponseDto();
+            response.setSuccess(true);
+            response.setMessage("Question marked as completed");
+            
+            return ResponseEntity.ok(response);
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
+    /**
+     * Get completion stats by subject
+     * GET /api/papers/stats/subjects
+     */
+    @GetMapping("/stats/subjects")
+    public ResponseEntity<List<SubjectCompletionDto>> getSubjectCompletionStats() {
+        try {
+            Map<String, Integer> completionCounts = csvDataService.getCompletionCountsBySubject();
+            List<PaperData> papers = csvDataService.getAllPapers();
+            
+            // Get total questions by subject
+            Map<String, Long> totalQuestionsBySubject = papers.stream()
+                .collect(Collectors.groupingBy(
+                    PaperData::getSubject,
+                    Collectors.summingLong(paper -> 
+                        csvDataService.getQuestionsByPaperId(paper.getId()).size()
+                    )
+                ));
+            
+            List<SubjectCompletionDto> stats = totalQuestionsBySubject.entrySet().stream()
+                .map(entry -> {
+                    SubjectCompletionDto dto = new SubjectCompletionDto();
+                    dto.setSubject(entry.getKey());
+                    dto.setTotalQuestions(entry.getValue().intValue());
+                    dto.setCompletedQuestions(completionCounts.getOrDefault(entry.getKey(), 0));
+                    dto.setCompletionPercentage(
+                        entry.getValue() > 0 ? 
+                        (int) Math.round((dto.getCompletedQuestions() * 100.0) / entry.getValue()) : 0
+                    );
+                    return dto;
+                })
+                .sorted((a, b) -> Integer.compare(b.getCompletionPercentage(), a.getCompletionPercentage()))
+                .collect(Collectors.toList());
             
             return ResponseEntity.ok(stats);
             
@@ -221,6 +298,7 @@ public class PaperController {
         dto.setTopic(question.getTopic());
         dto.setDifficulty(question.getDifficulty());
         dto.setSampleAnswer(question.getSampleAnswer());
+        dto.setCompleted(csvDataService.isQuestionCompleted(question.getId()));
         
         return dto;
     }
@@ -265,6 +343,7 @@ public class PaperController {
         private String topic;
         private String difficulty;
         private String sampleAnswer;
+        private boolean completed;
         
         // Getters and Setters
         public Long getId() { return id; }
@@ -285,6 +364,8 @@ public class PaperController {
         public void setDifficulty(String difficulty) { this.difficulty = difficulty; }
         public String getSampleAnswer() { return sampleAnswer; }
         public void setSampleAnswer(String sampleAnswer) { this.sampleAnswer = sampleAnswer; }
+        public boolean isCompleted() { return completed; }
+        public void setCompleted(boolean completed) { this.completed = completed; }
     }
     
     public static class PaperStatsDto {
@@ -305,5 +386,21 @@ public class PaperController {
         public void setSuccess(boolean success) { this.success = success; }
         public String getMessage() { return message; }
         public void setMessage(String message) { this.message = message; }
+    }
+
+    public static class SubjectCompletionDto {
+        private String subject;
+        private int totalQuestions;
+        private int completedQuestions;
+        private int completionPercentage;
+        
+        public String getSubject() { return subject; }
+        public void setSubject(String subject) { this.subject = subject; }
+        public int getTotalQuestions() { return totalQuestions; }
+        public void setTotalQuestions(int totalQuestions) { this.totalQuestions = totalQuestions; }
+        public int getCompletedQuestions() { return completedQuestions; }
+        public void setCompletedQuestions(int completedQuestions) { this.completedQuestions = completedQuestions; }
+        public int getCompletionPercentage() { return completionPercentage; }
+        public void setCompletionPercentage(int completionPercentage) { this.completionPercentage = completionPercentage; }
     }
 }

@@ -469,7 +469,23 @@ public class StudyController {
     
     // Helper method to calculate study streak
     private StudyStreakDto calculateStreak(List<StudySessionData> sessions) {
-        if (sessions.isEmpty()) {
+        // Include question completion dates in streak calculation
+        List<QuestionCompletionData> completions = csvDataService.getAllQuestionCompletions();
+        
+        // Get unique study dates from both sessions and question completions
+        Set<LocalDate> studyDates = new HashSet<>();
+        
+        // Add session dates
+        studyDates.addAll(sessions.stream()
+            .map(session -> session.getStartTime().toLocalDate())
+            .collect(Collectors.toSet()));
+        
+        // Add question completion dates
+        studyDates.addAll(completions.stream()
+            .map(completion -> completion.getCompletedAt().toLocalDate())
+            .collect(Collectors.toSet()));
+        
+        if (studyDates.isEmpty()) {
             StudyStreakDto streak = new StudyStreakDto();
             streak.setCurrentStreak(0);
             streak.setLongestStreak(0);
@@ -477,11 +493,6 @@ public class StudyController {
             streak.setWeeklyProgress(new boolean[]{false, false, false, false, false, false, false});
             return streak;
         }
-        
-        // Get unique study dates (ignoring time)
-        Set<LocalDate> studyDates = sessions.stream()
-            .map(session -> session.getStartTime().toLocalDate())
-            .collect(Collectors.toSet());
         
         List<LocalDate> sortedDates = studyDates.stream()
             .sorted()
@@ -674,6 +685,59 @@ public class StudyController {
         response.setMessage("Pomodoro session logged successfully");
         
         return ResponseEntity.ok(response);
+    }
+
+    /**
+     * Get today's study progress for streak banner
+     * GET /api/study/today-progress
+     */
+    @GetMapping("/today-progress")
+    public ResponseEntity<TodayProgressDto> getTodayProgress() {
+        try {
+            LocalDate today = LocalDate.now();
+            LocalDateTime startOfDay = today.atStartOfDay();
+            LocalDateTime endOfDay = today.atTime(LocalTime.MAX);
+            
+            // Count today's question completions
+            List<QuestionCompletionData> todayCompletions = csvDataService.getAllQuestionCompletions()
+                .stream()
+                .filter(completion -> 
+                    completion.getCompletedAt().isAfter(startOfDay) && 
+                    completion.getCompletedAt().isBefore(endOfDay)
+                )
+                .toList();
+            
+            // Calculate streak
+            List<StudySessionData> allSessions = csvDataService.getAllStudySessions();
+            StudyStreakDto streak = calculateStreak(allSessions);
+            
+            TodayProgressDto progress = new TodayProgressDto();
+            progress.setCurrentStreak(streak.getCurrentStreak());
+            progress.setQuestionsToday(todayCompletions.size());
+            progress.setDailyGoal(5); // Default daily goal, could be user-configurable
+            
+            return ResponseEntity.ok(progress);
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
+    /**
+     * Get weekly progress array for streak display
+     * GET /api/study/weekly-progress
+     */
+    @GetMapping("/weekly-progress")
+    public ResponseEntity<boolean[]> getWeeklyProgress() {
+        try {
+            List<StudySessionData> allSessions = csvDataService.getAllStudySessions();
+            StudyStreakDto streak = calculateStreak(allSessions);
+            
+            return ResponseEntity.ok(streak.getWeeklyProgress());
+            
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
     }
     
     // Request/Response DTOs (reusing from original controller)
@@ -875,5 +939,18 @@ public class StudyController {
         public void setType(String type) { this.type = type; }
         public String getNotes() { return notes; }
         public void setNotes(String notes) { this.notes = notes; }
+    }
+
+    public static class TodayProgressDto {
+        private int currentStreak;
+        private int questionsToday;
+        private int dailyGoal;
+        
+        public int getCurrentStreak() { return currentStreak; }
+        public void setCurrentStreak(int currentStreak) { this.currentStreak = currentStreak; }
+        public int getQuestionsToday() { return questionsToday; }
+        public void setQuestionsToday(int questionsToday) { this.questionsToday = questionsToday; }
+        public int getDailyGoal() { return dailyGoal; }
+        public void setDailyGoal(int dailyGoal) { this.dailyGoal = dailyGoal; }
     }
 }

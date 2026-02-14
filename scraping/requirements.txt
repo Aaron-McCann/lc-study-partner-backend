@@ -1,0 +1,23 @@
+# Web Scraping
+playwright>=1.40.0
+beautifulsoup4>=4.12.2
+requests>=2.31.0
+selenium>=4.15.2
+
+# Data Processing (compatible with Python 3.13)
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Data Validation
+jsonschema==4.20.0
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
+fake-useragent==1.4.0
+
+# Rate Limiting
+ratelimit==2.2.1
+
+# Logging
+loguru==0.7.2

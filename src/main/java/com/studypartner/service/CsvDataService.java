@@ -7,6 +7,7 @@ import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -24,6 +25,7 @@ public class CsvDataService {
     private static final String USER_PROFILE_FILE = DATA_DIR + "user_profile.csv";
     private static final String PAPERS_FILE = DATA_DIR + "papers.csv";
     private static final String QUESTIONS_FILE = DATA_DIR + "questions.csv";
+    private static final String QUESTION_COMPLETIONS_FILE = DATA_DIR + "question_completions.csv";
     
     private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
     
@@ -474,6 +476,95 @@ public class CsvDataService {
                 escapeField(question.getSource()),
                 escapeField(question.getSampleAnswer() != null ? question.getSampleAnswer() : ""),
                 formatDateTime(question.getCreatedAt())
+        );
+    }
+
+    // ============= QUESTION COMPLETIONS =============
+    
+    public List<QuestionCompletionData> getAllQuestionCompletions() {
+        return readCsvFile(QUESTION_COMPLETIONS_FILE, new CsvParser<QuestionCompletionData>() {
+            @Override
+            public QuestionCompletionData parse(String[] fields) {
+                return parseQuestionCompletion(fields);
+            }
+        });
+    }
+    
+    public List<QuestionCompletionData> getQuestionCompletionsBySubject(String subject) {
+        return getAllQuestionCompletions().stream()
+                .filter(completion -> completion.getSubject().equalsIgnoreCase(subject))
+                .collect(Collectors.toList());
+    }
+    
+    public boolean isQuestionCompleted(Long questionId) {
+        return getAllQuestionCompletions().stream()
+                .anyMatch(completion -> completion.getQuestionId().equals(questionId));
+    }
+    
+    public QuestionCompletionData saveQuestionCompletion(QuestionCompletionData completion) {
+        List<QuestionCompletionData> completions = getAllQuestionCompletions();
+        
+        // Check if already completed
+        boolean alreadyCompleted = completions.stream()
+                .anyMatch(c -> c.getQuestionId().equals(completion.getQuestionId()));
+        
+        if (alreadyCompleted) {
+            return completion; // Don't add duplicate
+        }
+        
+        if (completion.getId() == null) {
+            // Generate new ID
+            Long maxId = completions.stream()
+                    .mapToLong(QuestionCompletionData::getId)
+                    .max().orElse(0L);
+            completion.setId(maxId + 1);
+        }
+        
+        completions.add(completion);
+        writeCsvFile(QUESTION_COMPLETIONS_FILE, completions, new CsvFormatter<QuestionCompletionData>() {
+            @Override
+            public String format(QuestionCompletionData item) {
+                return formatQuestionCompletion(item);
+            }
+        });
+        return completion;
+    }
+    
+    public Map<String, Integer> getCompletionCountsBySubject() {
+        return getAllQuestionCompletions().stream()
+                .collect(Collectors.groupingBy(
+                    QuestionCompletionData::getSubject,
+                    Collectors.collectingAndThen(Collectors.counting(), Math::toIntExact)
+                ));
+    }
+    
+    private QuestionCompletionData parseQuestionCompletion(String[] fields) {
+        if (fields.length < 8) return null;
+        
+        QuestionCompletionData completion = new QuestionCompletionData();
+        completion.setId(parseId(fields[0]));
+        completion.setQuestionId(parseId(fields[1]));
+        completion.setPaperId(parseId(fields[2]));
+        completion.setSubject(fields[3]);
+        completion.setTopic(fields[4]);
+        completion.setCompletedAt(parseDateTime(fields[5]));
+        completion.setTimeSpentMinutes(parseInt(fields[6]));
+        completion.setNotes(fields[7].isEmpty() ? null : fields[7]);
+        completion.setCreatedAt(fields.length > 8 ? parseDateTime(fields[8]) : LocalDateTime.now());
+        return completion;
+    }
+    
+    private String formatQuestionCompletion(QuestionCompletionData completion) {
+        return String.format("%d,%d,%d,%s,%s,%s,%s,%s,%s",
+                completion.getId(),
+                completion.getQuestionId(),
+                completion.getPaperId() != null ? completion.getPaperId() : "",
+                escapeField(completion.getSubject()),
+                escapeField(completion.getTopic()),
+                formatDateTime(completion.getCompletedAt()),
+                completion.getTimeSpentMinutes() != null ? completion.getTimeSpentMinutes() : "",
+                escapeField(completion.getNotes() != null ? completion.getNotes() : ""),
+                formatDateTime(completion.getCreatedAt())
         );
     }
 }
