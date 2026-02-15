@@ -567,4 +567,167 @@ public class CsvDataService {
                 formatDateTime(completion.getCreatedAt())
         );
     }
+    
+    // ============= ACHIEVEMENTS =============
+    
+    public List<AchievementData> getAllAchievements() {
+        // Initialize default achievements if file doesn't exist
+        if (!new File(ACHIEVEMENT_DEFINITIONS_FILE).exists()) {
+            initializeDefaultAchievements();
+        }
+        
+        List<AchievementData> definitions = readCsvFile(ACHIEVEMENT_DEFINITIONS_FILE, this::parseAchievementDefinition);
+        List<AchievementData> userProgress = readCsvFile(USER_ACHIEVEMENTS_FILE, this::parseUserAchievement);
+        
+        // Merge definitions with user progress
+        return definitions.stream().map(definition -> {
+            AchievementData userAchievement = userProgress.stream()
+                    .filter(ua -> ua.getId() == definition.getId())
+                    .findFirst()
+                    .orElse(null);
+            
+            if (userAchievement != null) {
+                definition.setUnlocked(userAchievement.isUnlocked());
+                definition.setProgress(userAchievement.getProgress());
+                definition.setUnlockedAt(userAchievement.getUnlockedAt());
+            }
+            
+            return definition;
+        }).collect(Collectors.toList());
+    }
+    
+    public void updateAchievementProgress(int achievementId, int currentValue) {
+        List<AchievementData> achievements = getAllAchievements();
+        AchievementData achievement = achievements.stream()
+                .filter(a -> a.getId() == achievementId)
+                .findFirst()
+                .orElse(null);
+        
+        if (achievement != null) {
+            achievement.updateProgress(currentValue);
+            saveUserAchievement(achievement);
+        }
+    }
+    
+    private void saveUserAchievement(AchievementData achievement) {
+        List<AchievementData> userAchievements = readCsvFile(USER_ACHIEVEMENTS_FILE, this::parseUserAchievement);
+        userAchievements.removeIf(ua -> ua.getId() == achievement.getId());
+        userAchievements.add(achievement);
+        writeCsvFile(USER_ACHIEVEMENTS_FILE, userAchievements, this::formatUserAchievement);
+    }
+    
+    private void initializeDefaultAchievements() {
+        List<AchievementData> defaultAchievements = Arrays.asList(
+            new AchievementData(1, "First Steps", "Complete your first study session", "flame", "sessions", 1),
+            new AchievementData(2, "Getting Started", "Complete 5 study sessions", "book", "sessions", 5),
+            new AchievementData(3, "Study Streak", "Study for 3 days in a row", "target", "streak", 3),
+            new AchievementData(4, "Dedicated Learner", "Study for 10 hours total", "clock", "hours", 10),
+            new AchievementData(5, "Math Master", "Complete 20 math questions", "brain", "questions_math", 20),
+            new AchievementData(6, "Question Solver", "Answer 50 questions correctly", "star", "questions_total", 50),
+            new AchievementData(7, "Marathon Runner", "Study for 5 hours in one day", "zap", "daily_hours", 5),
+            new AchievementData(8, "Consistent Student", "Study for 7 days in a row", "award", "streak", 7)
+        );
+        
+        writeCsvFile(ACHIEVEMENT_DEFINITIONS_FILE, defaultAchievements, this::formatAchievementDefinition);
+    }
+    
+    private AchievementData parseAchievementDefinition(String[] fields) {
+        if (fields.length < 6) return null;
+        
+        AchievementData achievement = new AchievementData();
+        achievement.setId(parseInt(fields[0]));
+        achievement.setName(fields[1]);
+        achievement.setDescription(fields[2]);
+        achievement.setIconName(fields[3]);
+        achievement.setCategory(fields[4]);
+        achievement.setRequiredValue(parseInt(fields[5]));
+        
+        return achievement;
+    }
+    
+    private AchievementData parseUserAchievement(String[] fields) {
+        if (fields.length < 4) return null;
+        
+        AchievementData achievement = new AchievementData();
+        achievement.setId(parseInt(fields[0]));
+        achievement.setProgress(parseInt(fields[1]));
+        achievement.setUnlocked("true".equalsIgnoreCase(fields[2]));
+        achievement.setUnlockedAt(fields[3].isEmpty() ? null : parseDateTime(fields[3]));
+        
+        return achievement;
+    }
+    
+    private String formatAchievementDefinition(AchievementData achievement) {
+        return String.format("%d,%s,%s,%s,%s,%d",
+                achievement.getId(),
+                escapeField(achievement.getName()),
+                escapeField(achievement.getDescription()),
+                escapeField(achievement.getIconName()),
+                escapeField(achievement.getCategory()),
+                achievement.getRequiredValue()
+        );
+    }
+    
+    private String formatUserAchievement(AchievementData achievement) {
+        return String.format("%d,%d,%s,%s",
+                achievement.getId(),
+                achievement.getProgress(),
+                achievement.isUnlocked(),
+                achievement.getUnlockedAt() != null ? formatDateTime(achievement.getUnlockedAt()) : ""
+        );
+    }
+    
+    // ============= USER PROFILE =============
+    
+    public UserProfileData getUserProfile() {
+        List<UserProfileData> profiles = readCsvFile(USER_PROFILE_FILE, this::parseUserProfile);
+        if (profiles.isEmpty()) {
+            // Create default profile
+            UserProfileData defaultProfile = new UserProfileData("Student", "User", "student", "student@example.com");
+            defaultProfile.setId(1L);
+            saveUserProfile(defaultProfile);
+            return defaultProfile;
+        }
+        return profiles.get(0); // Single user system
+    }
+    
+    public UserProfileData saveUserProfile(UserProfileData profile) {
+        List<UserProfileData> profiles = new ArrayList<>();
+        profiles.add(profile);
+        writeCsvFile(USER_PROFILE_FILE, profiles, this::formatUserProfile);
+        return profile;
+    }
+    
+    private UserProfileData parseUserProfile(String[] fields) {
+        if (fields.length < 5) return null;
+        
+        UserProfileData profile = new UserProfileData();
+        profile.setId(Long.parseLong(fields[0]));
+        profile.setFirstName(fields[1]);
+        profile.setLastName(fields[2]);
+        profile.setUsername(fields[3]);
+        profile.setEmail(fields[4]);
+        profile.setAvatarUrl(fields.length > 5 ? fields[5] : null);
+        profile.setRole(fields.length > 6 ? fields[6] : "STUDENT");
+        profile.setDailyGoalQuestions(fields.length > 7 ? parseInt(fields[7]) : 5);
+        profile.setDailyGoalMinutes(fields.length > 8 ? parseInt(fields[8]) : 60);
+        profile.setCreatedAt(fields.length > 9 ? parseDateTime(fields[9]) : LocalDateTime.now());
+        
+        return profile;
+    }
+    
+    private String formatUserProfile(UserProfileData profile) {
+        return String.format("%d,%s,%s,%s,%s,%s,%s,%d,%d,%s",
+                profile.getId(),
+                escapeField(profile.getFirstName()),
+                escapeField(profile.getLastName()),
+                escapeField(profile.getUsername()),
+                escapeField(profile.getEmail()),
+                escapeField(profile.getAvatarUrl() != null ? profile.getAvatarUrl() : ""),
+                escapeField(profile.getRole()),
+                profile.getDailyGoalQuestions(),
+                profile.getDailyGoalMinutes(),
+                formatDateTime(profile.getCreatedAt())
+        );
+    }
 }

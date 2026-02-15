@@ -14,6 +14,8 @@ public class UserProfileData {
     private String email;
     private String avatarUrl;
     private String role; // STUDENT, TEACHER, ADMIN
+    private int dailyGoalQuestions = 5; // Default goal
+    private int dailyGoalMinutes = 60; // Default goal in minutes
     private LocalDateTime createdAt;
     
     // Constructors
@@ -52,4 +54,10 @@ public class UserProfileData {
     
     public LocalDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
+    
+    public int getDailyGoalQuestions() { return dailyGoalQuestions; }
+    public void setDailyGoalQuestions(int dailyGoalQuestions) { this.dailyGoalQuestions = dailyGoalQuestions; }
+    
+    public int getDailyGoalMinutes() { return dailyGoalMinutes; }
+    public void setDailyGoalMinutes(int dailyGoalMinutes) { this.dailyGoalMinutes = dailyGoalMinutes; }
 }

@@ -578,6 +578,7 @@ public class StudyController {
     private void updateAchievementProgress() {
         try {
             List<StudySessionData> allSessions = csvDataService.getAllStudySessions();
+            List<QuestionCompletionData> allQuestions = csvDataService.getAllQuestionCompletions();
             
             // Calculate current user stats
             int totalSessions = allSessions.size();
@@ -587,53 +588,100 @@ public class StudyController {
                 .sum();
             
             StudyStreakDto streak = calculateStreak(allSessions);
+            int mathQuestions = (int) allQuestions.stream()
+                .filter(q -> "Mathematics".equalsIgnoreCase(q.getSubject()))
+                .count();
+            int totalQuestions = allQuestions.size();
             
-            // Update achievements based on current stats
-            List<AchievementDefinitionData> achievements = csvDataService.getAllAchievementDefinitions();
+            // Update specific achievements
+            csvDataService.updateAchievementProgress(1, totalSessions); // First Steps
+            csvDataService.updateAchievementProgress(2, totalSessions); // Getting Started  
+            csvDataService.updateAchievementProgress(3, streak.getCurrentStreak()); // Study Streak
+            csvDataService.updateAchievementProgress(4, (int) totalHours); // Dedicated Learner
+            csvDataService.updateAchievementProgress(5, mathQuestions); // Math Master
+            csvDataService.updateAchievementProgress(6, totalQuestions); // Question Solver
+            csvDataService.updateAchievementProgress(8, streak.getCurrentStreak()); // Consistent Student
             
-            for (AchievementDefinitionData achievement : achievements) {
-                Optional<UserAchievementData> userAchievementOpt = csvDataService
-                    .getUserAchievementByAchievementId(achievement.getId());
-                
-                UserAchievementData userAchievement = userAchievementOpt
-                    .orElse(new UserAchievementData(achievement.getId(), achievement.getName()));
-                
-                if (!userAchievement.isUnlocked()) {
-                    Integer currentProgress = calculateCurrentProgress(achievement, totalSessions, totalHours, streak);
-                    userAchievement.setCurrentProgress(currentProgress);
-                    
-                    // Check if achievement should be unlocked
-                    if (achievement.getTargetValue() != null && currentProgress >= achievement.getTargetValue()) {
-                        userAchievement.unlock();
-                    } else if (achievement.getTargetValue() == null && currentProgress > 0) {
-                        userAchievement.unlock();
-                    }
-                    
-                    csvDataService.saveUserAchievement(userAchievement);
-                }
-            }
         } catch (Exception e) {
             // Log error but don't fail the main operation
             System.err.println("Error updating achievements: " + e.getMessage());
         }
     }
     
-    // Helper method to calculate current progress for an achievement
-    private Integer calculateCurrentProgress(AchievementDefinitionData achievement, int totalSessions, double totalHours, StudyStreakDto streak) {
-        return switch (achievement.getType()) {
-            case "SESSIONS_COMPLETED" -> totalSessions;
-            case "HOURS_STUDIED" -> (int) Math.round(totalHours);
-            case "STREAK_DAYS" -> streak.getCurrentStreak();
-            case "EARLY_SESSION" -> hasEarlySession() ? 1 : 0;
-            default -> 0;
-        };
+    @GetMapping("/achievements")
+    public ResponseEntity<?> getAchievements() {
+        try {
+            List<AchievementData> achievements = csvDataService.getAllAchievements();
+            
+            // Convert to DTOs
+            List<Map<String, Object>> achievementDtos = achievements.stream()
+                .map(achievement -> {
+                    Map<String, Object> dto = new HashMap<>();
+                    dto.put("id", achievement.getId());
+                    dto.put("name", achievement.getName());
+                    dto.put("description", achievement.getDescription());
+                    dto.put("iconName", achievement.getIconName());
+                    dto.put("unlocked", achievement.isUnlocked());
+                    dto.put("progress", achievement.getProgress());
+                    dto.put("unlockedAt", achievement.getUnlockedAt() != null ? achievement.getUnlockedAt().toString() : null);
+                    return dto;
+                })
+                .collect(Collectors.toList());
+            
+            return ResponseEntity.ok(achievementDtos);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("Error retrieving achievements: " + e.getMessage());
+        }
     }
     
-    // Helper method to check if user has any early morning sessions
-    private boolean hasEarlySession() {
-        List<StudySessionData> allSessions = csvDataService.getAllStudySessions();
-        return allSessions.stream()
-            .anyMatch(session -> session.getStartTime().getHour() < 7);
+    @GetMapping("/user-goals")
+    public ResponseEntity<?> getUserGoals() {
+        try {
+            UserProfileData userProfile = csvDataService.getUserProfile();
+            
+            Map<String, Object> goals = new HashMap<>();
+            goals.put("dailyGoalQuestions", userProfile.getDailyGoalQuestions());
+            goals.put("dailyGoalMinutes", userProfile.getDailyGoalMinutes());
+            
+            return ResponseEntity.ok(goals);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("Error retrieving user goals: " + e.getMessage());
+        }
+    }
+    
+    @PostMapping("/user-goals")
+    public ResponseEntity<?> updateUserGoals(@RequestBody Map<String, Integer> goalRequest) {
+        try {
+            UserProfileData userProfile = csvDataService.getUserProfile();
+            
+            if (goalRequest.containsKey("dailyGoalQuestions")) {
+                int questions = goalRequest.get("dailyGoalQuestions");
+                if (questions > 0 && questions <= 50) { // Reasonable limits
+                    userProfile.setDailyGoalQuestions(questions);
+                }
+            }
+            
+            if (goalRequest.containsKey("dailyGoalMinutes")) {
+                int minutes = goalRequest.get("dailyGoalMinutes");
+                if (minutes > 0 && minutes <= 480) { // Max 8 hours per day
+                    userProfile.setDailyGoalMinutes(minutes);
+                }
+            }
+            
+            csvDataService.saveUserProfile(userProfile);
+            
+            Map<String, Object> response = new HashMap<>();
+            response.put("dailyGoalQuestions", userProfile.getDailyGoalQuestions());
+            response.put("dailyGoalMinutes", userProfile.getDailyGoalMinutes());
+            response.put("message", "Goals updated successfully");
+            
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("Error updating user goals: " + e.getMessage());
+        }
     }
     
     // Helper method to convert entity to DTO
@@ -711,10 +759,13 @@ public class StudyController {
             List<StudySessionData> allSessions = csvDataService.getAllStudySessions();
             StudyStreakDto streak = calculateStreak(allSessions);
             
+            // Get user's daily goal from profile
+            UserProfileData userProfile = csvDataService.getUserProfile();
+            
             TodayProgressDto progress = new TodayProgressDto();
             progress.setCurrentStreak(streak.getCurrentStreak());
             progress.setQuestionsToday(todayCompletions.size());
-            progress.setDailyGoal(5); // Default daily goal, could be user-configurable
+            progress.setDailyGoal(userProfile.getDailyGoalQuestions()); // Dynamic daily goal
             
             return ResponseEntity.ok(progress);
             
